@@ -1,20 +1,9 @@
 [0] Config.pm:304> INFO - This is Biber 2.13
-[1] Config.pm:307> INFO - Logfile is 'build/Abgabe.blg'
-[51] biber:315> INFO - === Wed Feb  2, 2022, 22:22:17
-[78] Biber.pm:375> INFO - Reading 'build/Abgabe.bcf'
-[162] Biber.pm:905> INFO - Found 3 citekeys in bib section 0
-[185] Biber.pm:4196> INFO - Processing section 0
-[186] Utils.pm:75> INFO - Globbing data source 'references.bib'
-[187] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
-[205] Biber.pm:4373> INFO - Looking for bibtex format file 'references.bib' for section 0
-[210] bibtex.pm:1462> INFO - LaTeX decoding ...
-[284] bibtex.pm:1281> INFO - Found BibTeX data source 'references.bib'
-[321] Utils.pm:300> WARN - ISBN '978-3-519-30224-7 978-3-663-01497-3' in entry 'stolz_radioaktivitat_2003' is invalid - run biber with '--validate_datamodel' for details.
-[330] Utils.pm:300> WARN - ISBN '978-0-470-86198-1 978-0-470-86196-7' in entry 'gilmore_practical_2008' is invalid - run biber with '--validate_datamodel' for details.
-[349] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[349] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[349] Biber.pm:4024> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
-[349] Biber.pm:4030> INFO - No sort tailoring available for locale 'de-DE'
-[357] bbl.pm:648> INFO - Writing 'build/Abgabe.bbl' with encoding 'UTF-8'
-[361] bbl.pm:751> INFO - Output to build/Abgabe.bbl
-[361] Biber.pm:110> INFO - WARNINGS: 2
+[0] Config.pm:307> INFO - Logfile is 'build/Abgabe.blg'
+[24] biber:315> INFO - === Sun May 29, 2022, 14:26:00
+[39] Biber.pm:375> INFO - Reading 'build/Abgabe.bcf'
+[103] Biber.pm:905> INFO - Found 0 citekeys in bib section 0
+[109] Utils.pm:300> WARN - The file 'build/Abgabe.bcf' does not contain any citations!
+[118] bbl.pm:648> INFO - Writing 'build/Abgabe.bbl' with encoding 'UTF-8'
+[118] bbl.pm:751> INFO - Output to build/Abgabe.bbl
+[118] Biber.pm:110> INFO - WARNINGS: 1

@@ -15,7 +15,7 @@
 
         \begin{figure}[h]
           \centering
-          \includegraphics[width = 1\textwidth]{pictures/prinzip.png}
+          \includegraphics[width = 0.4\textwidth]{pictures/prinzip.png}
           \caption{asd}
           \label{fig:prinzip}
         \end{figure}
@@ -24,70 +24,138 @@
 
 
       \subsection{Wechselwirkungen}
-        Zur Vermessung des Höhenprofils der Oberfläche wird die distanzabhängige Kraft zwischen Messspitze und Oberfläche genutzt. Das zugehörige Potential wird als Lennard-Jones-Potential 
-        
-        \begin{equation*}
-          \text{U(R)} = 4\text{U}_0 \left[ \left(\frac{\text{R}_{\text{a}}}{\text{r}}\right)^{12} - \left(\frac{\text{R}_{\text{a}}}{\text{r}}\right)^{6} \right]
-        \end{equation*}
-        
-        angenähert, das einen positiven und demnach repulsiven Anteil und einen attraktiven Anteil besitzt, und in Abbildung \ref{fig:LJ} (a) mitsamt der resultierenden Kraft (b) und dem zugehörigen
-        Kraftgradienten (c) dargestellt ist.
 
-        \FloatBarrier
+        \subsubsection{Spitze - Oberfläche}
+          Zur Vermessung des Höhenprofils der Oberfläche wird die distanzabhängige Kraft zwischen Messspitze und Oberfläche genutzt. Das zugehörige Potential wird als Lennard-Jones-Potential 
 
-        \begin{figure}[h]
-          \centering
-          \includegraphics[width = 0.6\textwidth]{pictures/LJ.png}
-          \caption{}
-          \label{fig:LJ}
-        \end{figure}
+          \begin{equation*}
+            \text{U(R)} = 4\text{U}_0 \left[ \left(\frac{\text{R}_{\text{a}}}{\text{r}}\right)^{12} - \left(\frac{\text{R}_{\text{a}}}{\text{r}}\right)^{6} \right]
+          \end{equation*}
 
-        \FloatBarrier
+          angenähert, das einen positiven und demnach repulsiven Anteil und einen attraktiven Anteil besitzt, und in Abbildung \ref{fig:LJ} (a) mitsamt der resultierenden Kraft (b) und dem zugehörigen
+          Kraftgradienten (c) dargestellt ist.
 
-        Das Potential setzt sich aus verschiedenen Wechselwirkungen zusammen, die für unterschiedliche Entfernungen dominant sind.\newline 
-        Der attraktive Bereich für Abstände über \SI{1}{\nano\metre} resultiert hauptsächlich aus den \textit{Van-der-Waals-Kräften}. Diese beschreiben die Anziehung zweier eigentlich neutraler Atome durch die 
-        spontane Entstehung von fluktuierenden Dipolen. Entsteht in einem Atom eine 
-        spontaner Dipol, wird im benachbarten Atom ebenfalls ein Dipol induziert und die Atome ziehen sich an. Das zugehörige Potential fällt mit $\frac{1}{\text{r}^6}$ ab und ist demnach langreichweitig. 
-        Deswegen wechselwirkt nicht nur das vorderste Atom der Spitze mit der Oberfläche, sondern auch dahinterliegende.\newline
+          \FloatBarrier
 
-        Für Distanzen unter \SI{1}{\nano\metre} kommt es zu chemischen Bindungen, bei denen die Orbitale der beteiligten Atome hybridisieren. Führt dies zu einer Verringerrung der Gesamtenergie wirken diese 
-        Bindungen attraktiv. Erhöht sich die Gesamtenergie wirken die Bindungen repulsiv.
+          \begin{wrapfigure}{L}{6cm}
+            \includegraphics[scale = 0.3]{pictures/LJ.png}
+            \caption{hdf}
+            \label{fig:LJ}
+          \end{wrapfigure}
 
-        Für Distanzen unter \SI{1}{\angstrom} kommt es zu stark repulsiven Wechselwirkungen. Die dominante Abstoßung folgt aus dem Pauli-Prinzip, nach dem zwei Elektronen mit dem selben Spin nicht den selben 
-        Zustand besetzen dürfen. Bei sehr geringen Distanzen führt der Überlapp der Orbitale dazu, dass Elektronen in höhere unbesetzte Bänder ausweichen müssen. Dies führt zu einer starken Erhöhung der 
-        Gesamtenergie und somit zu einer repulsiven Kraft. Zusätzlich kann auch Coulombabstoßung zwischen den Kernen auftreten, wenn diese nicht komplett durch ihre Elektronen abgeschirmt sind.
+          \FloatBarrier
 
-        \FloatBarrier
+          Das Potential setzt sich aus verschiedenen Wechselwirkungen zusammen, die für unterschiedliche Entfernungen dominant sind.\newline 
+          Der attraktive Bereich für Abstände über \SI{1}{\nano\metre} resultiert hauptsächlich aus den \textit{Van-der-Waals-Kräften}. Diese beschreiben die Anziehung zweier eigentlich neutraler Atome durch die 
+          spontane Entstehung von fluktuierenden Dipolen. Entsteht in einem Atom eine 
+          spontaner Dipol, wird im benachbarten Atom ebenfalls ein Dipol induziert und die Atome ziehen sich an. Das zugehörige Potential fällt mit $\frac{1}{\text{r}^6}$ ab und ist demnach langreichweitig. 
+          Deswegen wechselwirkt nicht nur das vorderste Atom der Spitze mit der Oberfläche, sondern auch dahinterliegende.\newline
 
-        \begin{figure}[h]
-          \centering
-          \includegraphics[width = 0.6\textwidth]{pictures/Potentiale.png}
-          \caption{}
-          \label{fig:Potentiale}
-        \end{figure}
+          Für Distanzen unter \SI{1}{\nano\metre} kommt es zu chemischen Bindungen, bei denen die Orbitale der beteiligten Atome hybridisieren. Führt dies zu einer Verringerrung der Gesamtenergie wirken diese 
+          Bindungen attraktiv. Erhöht sich die Gesamtenergie wirken die Bindungen repulsiv.
 
-        \FloatBarrier
+          Für Distanzen unter \SI{1}{\angstrom} kommt es zu stark repulsiven Wechselwirkungen. Die dominante Abstoßung folgt aus dem Pauli-Prinzip, nach dem zwei Elektronen mit dem selben Spin nicht den selben 
+          Zustand besetzen dürfen. Bei sehr geringen Distanzen führt der Überlapp der Orbitale dazu, dass Elektronen in höhere unbesetzte Bänder ausweichen müssen. Dies führt zu einer starken Erhöhung der 
+          Gesamtenergie und somit zu einer repulsiven Kraft. Zusätzlich kann auch Coulombabstoßung zwischen den Kernen auftreten, wenn diese nicht komplett durch ihre Elektronen abgeschirmt sind.
 
+          Falls zwischen der Spitze und der Oberfläche eine Potentialdifferenz vorliegt, kommt es zusätzlich zu elektrostatischen Kräften. Diese können jedoch vermieden werden, indem die Potentialdifferenz durch
+          das Anlegen einer entsprechenden Spannung kompensiert wird.\newline
 
         
+        \subsubsection{Cantilever - Spitze - Oberfläche}
+
+          \FloatBarrier
+
+          \begin{wrapfigure}[28]{L}{5cm}
+            \includegraphics[scale = 0.3]{pictures/pot_contact.png}
+            \caption{hdf}
+            \label{fig:pot_contact}
+          \end{wrapfigure}
+
+          \FloatBarrier
+
+          In einem AFM-Aufbau ist die Spitze an einem Cantilever befestigt, der als Feder fungiert und so ebenfalls Einfluss auf die Gesamtkraft nimmt. Nach dem Hook'schen Gesetz ergibt sich eine Kraft 
+          
+          \begin{equation*}
+            \text{U}_{\text{F}} = \frac{1}{2} \text{k} \left(\text{z} - \text{z}_0\right)^2 \, ,
+          \end{equation*}
+          
+          die linear in der Auslenkung z um eine Ruheposition z$_0$ und proportional zur Federkonstante k ist. Die Auswirkungen dieser Kraft lassen sich über Abbildung \ref{fig:pot_contact} erklären, in der 
+          das Federpotential, für verschiedene Ruheposition auf das Lennard-Jones-Potential addiert, dargestellt ist. Wenn der Cantilever weit von der Oberfläche entfernt ist (a), besitzt des Potential ein 
+          Minimum an der Ruheposition des Cantilevers. Wird der Cantilever mitsamt der Spitze angenähert (b), entsteht ein zweites lokales Minimum. Dieses liegt nah an der Oberfläche und ist von der Ruheposition
+          nicht zu erreichen, da ein Maximum die beiden Minima trennt. Ab einer Grenze geht dieses Maximum in einen Sattelpunkt über und ein Übergang in das zweite Minimum wird möglich. Dieser Übergang wird als
+          snap-to-contact bezeichnet und beschreibt einen Endzustand, in dem die abstoßenden Kräfte ein weiteres Annähern an die Probe verhindern. 
+
+
+
+
+
+        \subsubsection{Kraft-Distanz-Kurven}
+
+          Aus den gegebenen Potentialverläufen lässt sich begründen, welche Kraft auf das System aus Messspitze und Cantilever wirkt, wenn es an die Oberfläche herangebracht oder entfernt wird. Dieses Verhalten
+          wird in Force-Distance-Curves dargestellt, die die Kraft für einen vollen Zyklus aus Annäherung und Entfernung gegen den Abstand auftragen. Charakteristisch für den Annäherungsprozess ist zunächst
+          eine Kräftefreiheit, bis zu einem plötzlichem negativem Kraftgradienten, der einer Anziehung zur Probe entspricht und aufgrund des snap-to-contacts auftritt. Da mit diesem Schritt die Messspitze auf 
+          der Oberfläche aufliegt, steigt die Kraft bei weierer Annäherung linear bis zu einem Maximum, bei dem das Annähern gestoppt wird. Wenn das Messsystem entfernt wird, sinkt die Kraft analog zu ihrem 
+          vorherigen Anstieg. Bis die wirkende Kraft bei dem selben Abstand wieder ihr Vorzeichen wechselt.
+
+
+          \FloatBarrier
+
+          \begin{figure}[h]
+            \centering
+            \includegraphics[width = 0.4\textwidth]{pictures/forcedist.png}
+            \caption{asd}
+            \label{fig:forcedist}
+          \end{figure}
+        
+          \FloatBarrier
+
+
+
+
+
 
       \newpage
 
 
       \subsection{Messspitze und Cantilever}
-        Um die Intensität der Strahlung in Abhängigkeit der Energie zu messen, wird von einem \textbf{Szintillationsdetektor} in Kombination mit einem \textbf{Diskrimantor} und einem 
-        \textbf{Vielkanal-Analysator} Gebrauch gemacht.
+        Die Messspitze und der Cantilever gehören zu den Hauptbauteilen, da auf sie die Kraft wirkt beziehungsweise sie die Kraft weitergeben, die später Rückschlüsse auf die Topologie der Oberfläche geben soll.
+        Deswegen müssen sie spezielle Eigenschaften besitzen, die in der Anwendung auch unterschiedliche Messmodi ermöglichen können.
 
         \subsubsection*{Messspitze}
-          Das Konzept von Szintillatoren beruht darauf, dass einfallende Strahlung hoher Energie Atome des Szintillationsmediums entweder ionisiert oder anregt und 
-          diese beim Relaxieren optische Photonen freisetzen. Die Menge an freigesetzten Photonen hängt dabei von der Energie der einfallenden Strahlung ab. Die optischen Photonen des Relaxationsprozesses 
-          werden anschließend von Photomultipliern detektiert. %Grundlegend wird zwischen organischen und anorganischen Szintillatoren unterschieden.
-        \newpage
-        \subsubsection*{Cantilever}
-          Um nur optische Photonen aus dem Szintillationsdetektor zu detektieren wird ein Diskrimantor eingesetzt. Dieser gibt erst ab einem einen Schwellwert übersteigenden Eingangssignal ein Ausgangssignal 
-          aus. So kann verhindert werden, dass bereits ein einzelnes spontan emmitiertes Photon einen Ausgangsimpuls am Photomultiplier hervorruft, der fälschlicherweise auf ein optisches Photon des 
-          Szintillationsdetektors zurückgeführt werden würde.
+          Die Messspitze ist das Bauteil, das der Oberfläche am nähesten kommt und tatsächlich mit ihr wechselwirkt. Eine unendliche glatte Oberfläche könnte mit einer stumpfen Spitze vermessen werden. Wenn
+          die Oberfläche jedoch nicht glatt ist und distinkte Hindernisse gemessen werden sollen, kommen neue Anforderungen auf die am besten über die in Abbildung \ref{fig:defekte} abgebildeten Messdefekte
+          zu begründen sind. In Abbildung \ref{fig:defekte} a) und b) ist zu erkennen, dass eine zu stumpfe Spitze womöglich nicht in der Lage ist zu steile Objekte zu erkennen. Das gemessene Profil (rot) ist
+          immer eine Faltung aus dem Profil der Spitze und dem der Oberfläche. Um nun kleine und steile Signale zu detektieren, muss die Spitze steiler zusammenlaufen als der steilste Gradient an der 
+          Probenoberfläche und dünner sein, als das kleinste Objekt. In der Anwendung sind Spitzendurchmesser im einstelligen Micrometerbereich und Krümmugsradien von wenigen Nanometern möglich. Eine weitere
+          Quelle für Defekte sind die in Abbildung \ref{fig:defekte} zu sehenden Beulen an der sonst flachen Spitze. Diese müssen unbedingt vermieden werden, da sie nicht vorhandene Strukturen an der Oberfläche
+          im Höhenprofil erzeugen. 
+        
+          \FloatBarrier
 
+          \begin{figure}[h]
+            \centering
+            \includegraphics[width = 0.8\textwidth]{pictures/defekte.png}
+            \caption{asd}
+            \label{fig:defekte}
+          \end{figure}
+        
+          \FloatBarrier
+
+        
+          \newpage
+        \subsubsection*{Cantilever}
+          Der Cantilever nimmt die auf die Messspitze wirkende Kraft auf, indem er sich verbiegt. Um diese Verbiegung zu Kraftmessung gut detektieren zu können, muss auch der Cantilever bestimmte Eigenschaften
+          besitzen. Diese sind besonders an verschiedene Messmodi gekoppelt. Da der Cantilever sehr geringe Kräfte im Bereich von $10^{-9} \si{\newton}$ detektierbar machen muss, soll er sich bereits bei diesen
+          Kräften genügend auslenken. Hier werden Federkonstanten von ca. $10 \si{\newton\per\metre}$, die detektierbare Auslenkungen im Angström Bereich erlauben. Zusätzlich soll der Cantilever eine  
+          Resonanzfrequenz >> $10 \si{\kilo\hertz}$ besitzen, um in dynamischen Messungen, bei denen sich der Cantilever bewegt, die Messgeschwindigkeit zu erhöhen. Aufgrund der geringen Federkonstante folgt
+          aus der Anforderung an die Resonanzfrequenz
+
+          \begin{equation*}
+            \omega_{\text{Res}} = \sqrt{\frac{\text{k}}{\text{m}}}
+          \end{equation*}
+
+          eine sehr geringe Masse des Cantilevers im Microgrammbereich.
 
 
       \newpage
