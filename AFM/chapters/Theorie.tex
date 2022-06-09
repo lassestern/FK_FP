@@ -16,7 +16,7 @@
         \begin{figure}[h]
           \centering
           \includegraphics[width = 0.4\textwidth]{pictures/prinzip.png}
-          \caption{asd}
+          \caption{Entnommen aus \cite{meyer_atomic_1992}}
           \label{fig:prinzip}
         \end{figure}
     
@@ -39,7 +39,7 @@
 
           \begin{wrapfigure}{L}{6cm}
             \includegraphics[scale = 0.3]{pictures/LJ.png}
-            \caption{hdf}
+            \caption{Zusammensetzung des gesamten Potentials zwischen Messspitze und Oberfläche aus anziehendem und abstoßendem Potential in der Beschreibung eines Lennard-Jones-Potentials. Entnommen aus \cite{voigtlander_scanning_2015}}
             \label{fig:LJ}
           \end{wrapfigure}
 
@@ -66,9 +66,9 @@
 
           \FloatBarrier
 
-          \begin{wrapfigure}[28]{L}{5cm}
+          \begin{wrapfigure}[36]{L}{5cm}
             \includegraphics[scale = 0.3]{pictures/pot_contact.png}
-            \caption{hdf}
+            \caption{Mit abnehmender Distanz zwischen Messspitze und Probe entsteht zunächst ein zweites lokales Minimum nahe der Oberfläche. Ab einem gewissen Abstand verschwindet das erste lokale Minima und die Messspitze springt an die Oberfläche (snap-to-contact). Entnommen aus \cite{voigtlander_scanning_2015}}
             \label{fig:pot_contact}
           \end{wrapfigure}
 
@@ -136,7 +136,7 @@
           \begin{figure}[h]
             \centering
             \includegraphics[width = 0.8\textwidth]{pictures/defekte.png}
-            \caption{asd}
+            \caption{Es können Messartifakte auftreten, wenn die Spitze nicht in der Lage ist steile An- oder Abstiege im Höhenprofil zu erkennen oder Defekte an der Messspitze vorhanden sind. Bearbeitet aus \cite{tu_dortmund_versuchsanleitung_nodate}}
             \label{fig:defekte}
           \end{figure}
         
@@ -158,11 +158,35 @@
           eine sehr geringe Masse des Cantilevers im Microgrammbereich.
 
 
+          \begin{figure}[h]
+            \centering
+            \includegraphics[width = 0.6\textwidth]{pictures/Cantilever_Spitze.png}
+            \caption{Teil eines Cantilevers mit angebrachter Spitze, die einen maximalen Durchmesser von circa $5 \si{\micro\metre}$. Entnommen aus \cite{wiesendanger_scanning_1998}}
+            \label{fig:Cantilever_Spitze}
+          \end{figure}
+        
+          \FloatBarrier
+
+
+
+
       \newpage
       \subsection{Detektionssysteme}
-          In diesem Versuch soll die Zusammensetzung von neun Würfeln innerhalb einer 3x3-Würfelebene bestimmt werden. Dazu wird der Würfel aus verschiedenen Richtungen bestrahlt und die transmittierte 
-          Intensität gemessen. In eine Richtung i ergibt sich diese zu
+          Zur Bestimmung der wirkenden Kraft muss in statischen Messung die Auslenkung des Cantilevers und in dynamischen Messungen dessen Schwingungsamplitude gemessen werden. Dafür kann auf elektrische
+          oder optische Detektionsmechanismen zurückgegriffen werden. 
+          Zu den elektrischen Detektionsmechanismen gehören die Kondensatormethode, die Elektronentunnelmethode sowie Piezoelektrische Methoden. Bei der Kondensatormethode bilden der Cantilever und eine
+          Elektrode einen Kondensator, dessen abstandsabhängige Kapazität gemessen wird. Während diese Methode sehr stabil und einfach zu betreiben ist, stellt die elektronstatische Anziehung des Cantilevers
+          an die Elektrode ein Problem dar. Bei der atomar auflösenden Elektronentunnelmethode wird der Tunnelstrom zwischen einer Spitze eines Elektronentunnelmikroskops (STM) und dem Cantilever gemessen. 
+          Der Betrieb im Vakuum ist jedoch umständlich und die Wechselwirkung der STM Spitze mit dem Cantilever beeinflusst die genaue Distanzmessung. Bei den piezoelektrischen Methoden induziert die Verbiegung
+          des Cantilevers eine Spannung in piezoelektrischen Kristallen, die direkt oder über eine Widerstandsänderung gemessen werden und so zur Distanzberechnung genutzt werden kann. 
+          Besonders sensitive Messungen lassen sich mit einer optischen Interferometriemessung durchführen, bei der durch Auslenkung des Cantilevers die optische Weglänge des Lichts geändert und aus dem so
+          veränderten Interfernzeffekten eben diese Auslenkung berechnet wird.
 
+          Ein weitere, technisch deutlich einfacher umsetzbare Technik beruht auf dem Lichtzeigerprinzip. Hier wird ein Laserstrahl auf den Cantilever geschossen und von diesem auf eine Viersegmentdiode 
+          reflektiert. Diese besteht aus vier einzelnen Dioden und kann aus dem Intensitätsverhltnis der einzelnen Dioden die Position des Laserstrahls relativ zum Zentrum der Photdiode bestimmen. Aufgrund
+          des Einsatzes von vier Photdioden lässt sich so neben der vertikalen auch die laterale Auslenkung bestimmen. Die mit dieser Methode minimal messbare vertikale Auslenkung ist unter anderem proportional
+          zur Wellenlänge des Lasers und der Spotgröße des Laserstrahl auf dem Cantilevers, da beides den störenden Einfluss der Interferenz senkt. Durch Optimierung dieser Parameter lassen sich mit dem
+          Lichtzeigerprinzip vertikale Auslenkung ab einem Bereich um circa $1 \si{\micro\metre}$ messen.  
 
       
 
@@ -178,7 +202,8 @@
           über der Oberfläche konstant gehalten und die Änderung der Biegung gemessen werden (\textit{constant height}) oder die Biegung  und demenstprechend auch die Kraft konstant gehalten werden, indem
           der Abstand zwischen Messspitze und Oberfläche durchgehend nachreguliert wird (\textit{constant force}). In dynmaischen Messungen schwingt das System aus Cantilever und Messspitze mit dessen 
           Resonanzfrequenz von einigen kHz. Nähert sich die Spitze nun mit jeder Schwingperiode stark genug an die Oberfläche an, dass repulsive Kräfte auftreten, wird die AFM im \textit{tapping-mode}
-          betrieben, der die dynamischen Messungen mit Oberflächenkontakt beschreibt. Die Distanz wird aus der Erhöhung der Resonanzfrequenz durch die abstoßende Kraft berechnet. 
+          betrieben, der die dynamischen Messungen mit Oberflächenkontakt beschreibt. Die Distanz wird aus der Änderung der Schwingungsamplitude aufgrund der durch die abstoßende Kraft veränderten 
+          Schwingfrequenz berechnet. Um eine möglichst starke Änderung der Amplitude bei geringen Kräften zu beobachten, wird eine Anregungsfrequenz des Cantilevers nahe der Resonanzfrequenz gewählt.
           
           
           Liegt die Entfernung zwischen Messspitze und Oberfläche zwischen \SI{10}{\nano\metre} und \SI{10}{\micro\metre}, stehen beiden nicht in Kontakt (\textit{non contact mode}) und es wirkt eine 
@@ -190,8 +215,15 @@
       
       \newpage
       \subsection{Piezoelemente}
-          In diesem Versuch soll die Zusammensetzung von neun Würfeln innerhalb einer 3x3-Würfelebene bestimmt werden. Dazu wird der Würfel aus verschiedenen Richtungen bestrahlt und die transmittierte 
-          Intensität gemessen. In eine Richtung i ergibt sich diese zu
+          Um mit den beschriebenen Messmethoden die gesamte Oberfläche untersuchen zu können, werden die Spitze und die Oberfläche durch Piezoelemente relativ zueinande verschoben. Piezoelemente bestehen aus 
+          nicht zentrosymmetrischen, ferroelektrischen Materialien, wie zum Beispiel Quarz, in deren Kristallgitter Ionen durch ein externes elektrisches Feld verschoben werden können. Die resultierende 
+          Verformung des gesamten Piezoelements ist proportional zu dem angelegten E-Feld und lässt sich demnach einfach über eine Spannung messen. In dem genutzen Aufbau kann so die Probe über drei 
+          entkoppelte Piezoelemente in x-, y- und z-Richtung verschoben werden. Ein Nachteil der ferroelektrischen Materialien ist die Ausbildung von elektrischen Domänen, in denen eine definierte elektrische
+          Polarisation ausildet. Ähnlich zu ferromagnetischen Materialien führt das Anlegen eines elektrischen Feldes zur Ausrichtung der einzelnen Domänen, sodass die spannungsabhängige Auslenkung des
+          Piezoelements nach Anlegen einer maximalen Spannung beim anschließenden absenken der Spannung nicht gleich verläuft. Dieser Hystereseeffekt kann in Kraft-Distanz-Kurven beobachtet werden. 
+          Während der Verlauf beim Hineinfahren und Hinausfahren aus dem repulsiven Bereich in einer Kraft-Distanz-Kurve genau übereinander liegen sollte, führt die 
+          Hysterese dazu, dass die beiden Linien leicht versetzt verlaufe. So kann dieser Effekt quantisiert und in den Topographiemessungen korrigiert werden. Zusätzlich kann der Hysterese entgegengewirkt werden, 
+          indem die momentane Auslenkung des Piezoelements wiederum durch auf das Element aufgelegte piezoelektrische Flächen analog zum Abschnitt Detektionsmechanismen gemessen und entsprechend nachreguliert wird. 
 
 
 

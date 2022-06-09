@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  29 MAY 2022 15:01
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  9 JUN 2022 20:40
  restricted system commands enabled.
 **Abgabe.tex
 (./Abgabe.tex
@@ -55,7 +55,7 @@ Lua module: luaotfload-multiscript 2019-09-13 3.00 luaotfload submodule / multis
 cript
 Inserting `luaotfload.rewrite_fontname' at position 5 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.122 seconds
+luaotfload | main : initialization completed in 0.180 seconds
 (./inputs/header.tex
 (/home/lasse/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2019/02/01 v3.26b KOMA-Script document class (article)
@@ -1874,14 +1874,39 @@ File: pictures/prinzip.png Graphic file (type png)
 Package luatex.def Info: pictures/prinzip.png  used on input line 18.
 (luatex.def)             Requested size: 167.29967pt x 136.22859pt.
  [3<./pictures/prinzip.png>]
-<pictures/LJ.png, id=55, 534.99875pt x 876.27374pt>
+<pictures/LJ.png, id=58, 534.99875pt x 876.27374pt>
 File: pictures/LJ.png Graphic file (type png)
 <use pictures/LJ.png>
 Package luatex.def Info: pictures/LJ.png  used on input line 41.
 (luatex.def)             Requested size: 160.50085pt x 262.88414pt.
 
-Underfull \hbox (badness 2111) in paragraph at lines 48--53
-\TU/lmr/m/n/10.95 ta-ne Ent-ste-hung von fluk-tu-ie-ren-den Di-po-len.
+Underfull \hbox (badness 6608) in paragraph at lines 42--42
+\TU/lmr/m/n/10.95 ge-sam-ten Po-ten-ti-als
+ []
+
+
+Underfull \hbox (badness 4543) in paragraph at lines 42--42
+\TU/lmr/m/n/10.95 zwi-schen Mess-spit-ze
+ []
+
+
+Underfull \hbox (badness 2326) in paragraph at lines 42--42
+\TU/lmr/m/n/10.95 und Ober-flä-che aus
+ []
+
+
+Underfull \hbox (badness 2401) in paragraph at lines 42--42
+\TU/lmr/m/n/10.95 sto-ßen-dem Po-ten-ti-al
+ []
+
+
+Underfull \hbox (badness 1365) in paragraph at lines 42--42
+\TU/lmr/m/n/10.95 ei-nes Lennard-Jones-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
+\TU/lmr/m/n/10.95 Potentials. Ent-nom-
  []
 
 
@@ -1889,41 +1914,126 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--53
 
  []
 
-[4<./pictures/LJ.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 61--63
 
  []
 
-<pictures/pot_contact.png, id=67, 427.5975pt x 856.19875pt>
+
+Package wrapfig Warning: Collision between wrapping environments on input line 6
+9.
+
+<pictures/pot_contact.png, id=61, 427.5975pt x 856.19875pt>
 File: pictures/pot_contact.png Graphic file (type png)
 <use pictures/pot_contact.png>
 Package luatex.def Info: pictures/pot_contact.png  used on input line 70.
 (luatex.def)             Requested size: 128.28023pt x 256.8616pt.
-[5<./pictures/pot_contact.png>]
-<pictures/forcedist.png, id=76, 703.62875pt x 508.90125pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+\TU/lmr/m/n/10.95 der Di-stanz
+ []
+
+
+Underfull \hbox (badness 1163) in paragraph at lines 71--71
+\TU/lmr/m/n/10.95 zwi-schen Mess-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+\TU/lmr/m/n/10.95 spit-ze und
+ []
+
+
+Underfull \hbox (badness 1694) in paragraph at lines 71--71
+\TU/lmr/m/n/10.95 Pro-be ent-steht
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+\TU/lmr/m/n/10.95 zu-nächst ein
+ []
+
+
+Underfull \hbox (badness 2698) in paragraph at lines 71--71
+\TU/lmr/m/n/10.95 zwei-tes lo-ka-les
+ []
+
+
+Underfull \hbox (badness 5388) in paragraph at lines 71--71
+\TU/lmr/m/n/10.95 Ab ei-nem ge-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+\TU/lmr/m/n/10.95 ver-schwin-det
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+\TU/lmr/m/n/10.95 das ers-te lo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+\TU/lmr/m/n/10.95 ka-le Mi-ni-ma
+ []
+
+
+Underfull \hbox (badness 2142) in paragraph at lines 71--71
+\TU/lmr/m/n/10.95 und die Mess-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+\TU/lmr/m/n/10.95 spit-ze springt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+\TU/lmr/m/n/10.95 an die Ober-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+\TU/lmr/m/n/10.95 flä-che (snap-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+\TU/lmr/m/n/10.95 to-contact).
+ []
+
+[4] [5<./pictures/LJ.png>]
+<pictures/forcedist.png, id=83, 703.62875pt x 508.90125pt>
 File: pictures/forcedist.png Graphic file (type png)
 <use pictures/forcedist.png>
 Package luatex.def Info: pictures/forcedist.png  used on input line 106.
 (luatex.def)             Requested size: 167.29967pt x 120.9973pt.
  [6<./pictures/forcedist.png>]
-<pictures/defekte.png, id=86, 1067.99pt x 243.91125pt>
+<pictures/defekte.png, id=93, 1067.99pt x 243.91125pt>
 File: pictures/defekte.png Graphic file (type png)
 <use pictures/defekte.png>
 Package luatex.def Info: pictures/defekte.png  used on input line 138.
 (luatex.def)             Requested size: 334.60571pt x 76.41933pt.
- [7<./pictures/defekte.png>] [8] [9] [10]) [11]
+ [7<./pictures/defekte.png>]
+<pictures/Cantilever_Spitze.png, id=105, 473.77pt x 327.2225pt>
+File: pictures/Cantilever_Spitze.png Graphic file (type png)
+<use pictures/Cantilever_Spitze.png>
+Package luatex.def Info: pictures/Cantilever_Spitze.png  used on input line 163.
 
-LaTeX Warning: Empty bibliography on input line 26.
-
+(luatex.def)             Requested size: 250.95587pt x 173.32722pt.
+ [8<./pictures/pot_contact.png><./pictures/Cantilever_Spitze.png>]
+[9] [10] [11] [12]) [13]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
+ [14]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
-(./build/Abgabe.aux)
+ (./build/Abgabe.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
 Package rerunfilecheck Info: File `Abgabe.aux' has not changed.
-(rerunfilecheck)             Checksum: 509E4CD97A86A373A1DE56BBCF27465A;7090.
+(rerunfilecheck)             Checksum: 3F17C3BFB14A61B76DE7B1621C41242C;10376.
 Package rerunfilecheck Info: File `Abgabe.toc' has not changed.
-(rerunfilecheck)             Checksum: 1106DDEB9A29B5E20E63FCF9CCEDCFA0;1066.
+(rerunfilecheck)             Checksum: D2FD0829C7AC0BE3B2F8A57BC4BB1225;1066.
 Package logreq Info: Writing requests to 'Abgabe.run.xml'.
 
 \openout1 = Abgabe.run.xml
@@ -1931,30 +2041,32 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 28.
 )
 
 Here is how much of LuaTeX's memory you used:
- 43179 strings out of 494291
- 100000,1977958 words of node,token memory allocated
- 62728 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 penalty, 8318 glyph, 1707 attribu
-te, 80 glue_spec, 246 attribute_list, 1 write nodes
-   avail lists: 1:4,2:711,3:86,4:64,5:204,6:24,7:442,8:58,9:138,10:54,11:333
- 46182 multiletter control sequences out of 65536+600000
- 212 fonts using 80794591 bytes
+ 43411 strings out of 494291
+ 156335,1977958 words of node,token memory allocated
+ 112680 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 penalty, 15259 glyph, 2302 attrib
+ute, 81 glue_spec, 331 attribute_list, 1 write nodes
+   avail lists: 1:12,2:839,3:89,4:63,5:247,6:27,7:2125,8:64,9:189,10:30,11:401
+ 46398 multiletter control sequences out of 65536+600000
+ 213 fonts using 80925167 bytes
  56i,15n,109p,9142b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
-</home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinm
-odern-math.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public
-/lm/lmroman8-regular.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opent
+</home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmmono10-re
+gular.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/l
+mromancaps10-regular.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opent
 ype/public/lm-math/latinmodern-math.otf></home/lasse/.local/texlive/2019/texmf-d
-ist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/lasse/.local/texli
-ve/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/lasse/.loc
-al/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/
-lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.
-otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman
-12-regular.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public
-/lm/lmsans10-bold.otf>
-Output written on Abgabe.pdf (11 pages, 226595 bytes).
+ist/fonts/opentype/public/lm/lmroman8-regular.otf></home/lasse/.local/texlive/20
+19/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/lasse/.l
+ocal/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf>
+</home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-b
+old.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmr
+oman10-italic.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/pub
+lic/lm/lmroman10-regular.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/o
+pentype/public/lm/lmroman12-regular.otf></home/lasse/.local/texlive/2019/texmf-d
+ist/fonts/opentype/public/lm/lmsans10-bold.otf>
+Output written on Abgabe.pdf (14 pages, 316585 bytes).
 
-PDF statistics: 207 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 131072)
+PDF statistics: 257 PDF objects out of 1000 (max. 8388607)
+ 189 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 131072)
  89 words of extra memory for PDF output out of 10000 (max. 100000000)
 

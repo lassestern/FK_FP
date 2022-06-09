@@ -2129,6 +2129,16 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1">meyer_atomic_1992</bcf:citekey>
+    <bcf:citekey order="2">meyer_atomic_1992</bcf:citekey>
+    <bcf:citekey order="3">voigtlander_scanning_2015</bcf:citekey>
+    <bcf:citekey order="4">voigtlander_scanning_2015</bcf:citekey>
+    <bcf:citekey order="5">voigtlander_scanning_2015</bcf:citekey>
+    <bcf:citekey order="6">voigtlander_scanning_2015</bcf:citekey>
+    <bcf:citekey order="7">tu_dortmund_versuchsanleitung_nodate</bcf:citekey>
+    <bcf:citekey order="8">tu_dortmund_versuchsanleitung_nodate</bcf:citekey>
+    <bcf:citekey order="9">wiesendanger_scanning_1998</bcf:citekey>
+    <bcf:citekey order="10">wiesendanger_scanning_1998</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

@@ -377,6 +377,10 @@ INPUT /home/lasse/.local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbo
 INPUT /home/lasse/.local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
 INPUT /home/lasse/.local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /home/lasse/.local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT ./pictures/Cantilever_Spitze.png
+INPUT ./pictures/Cantilever_Spitze.png
+INPUT ./pictures/Cantilever_Spitze.png
+INPUT /home/lasse/.local/texlive/2019/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc
 INPUT build/Abgabe.aux
 INPUT build/Abgabe.run.xml
 OUTPUT build/Abgabe.run.xml
