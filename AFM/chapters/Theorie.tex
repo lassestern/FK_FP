@@ -26,6 +26,16 @@
       \subsection{Wechselwirkungen}
 
         \subsubsection{Spitze - Oberfläche}
+
+          \FloatBarrier
+
+          \begin{wrapfigure}[38]{L}{8.2cm}
+            \includegraphics[scale = 0.42]{pictures/LJ.png}
+            \caption{Zusammensetzung des gesamten Potentials zwischen Messspitze und Oberfläche aus anziehendem und abstoßendem Potential in der Beschreibung eines Lennard-Jones-Potentials. Entnommen aus \cite{voigtlander_scanning_2015}}
+            \label{fig:LJ}
+          \end{wrapfigure}
+          \FloatBarrier
+
           Zur Vermessung des Höhenprofils der Oberfläche wird die distanzabhängige Kraft zwischen Messspitze und Oberfläche genutzt. Das zugehörige Potential wird als Lennard-Jones-Potential 
 
           \begin{equation*}
@@ -35,15 +45,8 @@
           angenähert, das einen positiven und demnach repulsiven Anteil und einen attraktiven Anteil besitzt, und in Abbildung \ref{fig:LJ} (a) mitsamt der resultierenden Kraft (b) und dem zugehörigen
           Kraftgradienten (c) dargestellt ist.
 
-          \FloatBarrier
 
-          \begin{wrapfigure}{L}{6cm}
-            \includegraphics[scale = 0.3]{pictures/LJ.png}
-            \caption{Zusammensetzung des gesamten Potentials zwischen Messspitze und Oberfläche aus anziehendem und abstoßendem Potential in der Beschreibung eines Lennard-Jones-Potentials. Entnommen aus \cite{voigtlander_scanning_2015}}
-            \label{fig:LJ}
-          \end{wrapfigure}
-
-          \FloatBarrier
+          
 
           Das Potential setzt sich aus verschiedenen Wechselwirkungen zusammen, die für unterschiedliche Entfernungen dominant sind.\newline 
           Der attraktive Bereich für Abstände über \SI{1}{\nano\metre} resultiert hauptsächlich aus den \textit{Van-der-Waals-Kräften}. Diese beschreiben die Anziehung zweier eigentlich neutraler Atome durch die 
@@ -54,33 +57,35 @@
           Für Distanzen unter \SI{1}{\nano\metre} kommt es zu chemischen Bindungen, bei denen die Orbitale der beteiligten Atome hybridisieren. Führt dies zu einer Verringerrung der Gesamtenergie wirken diese 
           Bindungen attraktiv. Erhöht sich die Gesamtenergie wirken die Bindungen repulsiv.
 
-          Für Distanzen unter \SI{1}{\angstrom} kommt es zu stark repulsiven Wechselwirkungen. Die dominante Abstoßung folgt aus dem Pauli-Prinzip, nach dem zwei Elektronen mit dem selben Spin nicht den selben 
-          Zustand besetzen dürfen. Bei sehr geringen Distanzen führt der Überlapp der Orbitale dazu, dass Elektronen in höhere unbesetzte Bänder ausweichen müssen. Dies führt zu einer starken Erhöhung der 
-          Gesamtenergie und somit zu einer repulsiven Kraft. Zusätzlich kann auch Coulombabstoßung zwischen den Kernen auftreten, wenn diese nicht komplett durch ihre Elektronen abgeschirmt sind.
+          Relevanter für diese Distanzen unter \SI{1}{\angstrom} ist das Auftreten stark repulsiver Wechselwirkungen. Die dominante Abstoßung folgt aus dem Pauli-Prinzip, nach dem zwei Elektronen mit dem 
+          selben Spin nicht den selben Zustand besetzen dürfen. Bei sehr geringen Distanzen führt der Überlapp der Orbitale dazu, dass Elektronen in höhere unbesetzte Bänder ausweichen müssen. Dies führt zu einer 
+          starken Erhöhung der Gesamtenergie und somit zu einer repulsiven Kraft. Zusätzlich kann auch Coulombabstoßung zwischen den Kernen auftreten, wenn diese nicht komplett durch ihre Elektronen 
+          abgeschirmt sind.
 
           Falls zwischen der Spitze und der Oberfläche eine Potentialdifferenz vorliegt, kommt es zusätzlich zu elektrostatischen Kräften. Diese können jedoch vermieden werden, indem die Potentialdifferenz durch
           das Anlegen einer entsprechenden Spannung kompensiert wird.\newline
-
-        
+          
+        \newpage
         \subsubsection{Cantilever - Spitze - Oberfläche}
 
           \FloatBarrier
 
-          \begin{wrapfigure}[36]{L}{5cm}
-            \includegraphics[scale = 0.3]{pictures/pot_contact.png}
+          \begin{wrapfigure}[34]{L}{8cm}
+            \includegraphics[scale = 0.45]{pictures/pot_contact.png}
             \caption{Mit abnehmender Distanz zwischen Messspitze und Probe entsteht zunächst ein zweites lokales Minimum nahe der Oberfläche. Ab einem gewissen Abstand verschwindet das erste lokale Minima und die Messspitze springt an die Oberfläche (snap-to-contact). Entnommen aus \cite{voigtlander_scanning_2015}}
             \label{fig:pot_contact}
           \end{wrapfigure}
 
-          \FloatBarrier
-
+          \FloatBarrier      
+          %
           In einem AFM-Aufbau ist die Spitze an einem Cantilever befestigt, der als Feder fungiert und so ebenfalls Einfluss auf die Gesamtkraft nimmt. Nach dem Hook'schen Gesetz ergibt sich eine Kraft 
-          
+          %
           \begin{equation*}
             \text{U}_{\text{F}} = \frac{1}{2} \text{k} \left(\text{z} - \text{z}_0\right)^2 \, ,
           \end{equation*}
-          
-          die linear in der Auslenkung z um eine Ruheposition z$_0$ und proportional zur Federkonstante k ist. Die Auswirkungen dieser Kraft lassen sich über Abbildung \ref{fig:pot_contact} erklären, in der 
+          %
+          die linear in der Auslenkung z um eine Ruheposition z$_0$ und proportional zur Federkonstante k ist. 
+          Die Auswirkungen dieser Kraft lassen sich über Abbildung \ref{fig:pot_contact} erklären, in der 
           das Federpotential, für verschiedene Ruheposition auf das Lennard-Jones-Potential addiert, dargestellt ist. Wenn der Cantilever weit von der Oberfläche entfernt ist (a), besitzt des Potential ein 
           Minimum an der Ruheposition des Cantilevers. Wird der Cantilever mitsamt der Spitze angenähert (b), entsteht ein zweites lokales Minimum. Dieses liegt nah an der Oberfläche und ist von der Ruheposition
           nicht zu erreichen, da ein Maximum die beiden Minima trennt. Ab einer Grenze geht dieses Maximum in einen Sattelpunkt über und ein Übergang in das zweite Minimum wird möglich. Dieser Übergang wird als
@@ -89,7 +94,7 @@
 
 
 
-
+        \newpage
         \subsubsection{Kraft-Distanz-Kurven}
 
           Aus den gegebenen Potentialverläufen lässt sich begründen, welche Kraft auf das System aus Messspitze und Cantilever wirkt, wenn es an die Oberfläche herangebracht oder entfernt wird. Dieses Verhalten
