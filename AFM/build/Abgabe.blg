@@ -1,19 +1,19 @@
-[0] Config.pm:304> INFO - This is Biber 2.13
-[0] Config.pm:307> INFO - Logfile is 'build/Abgabe.blg'
-[27] biber:315> INFO - === Thu Jun  9, 2022, 20:36:35
-[53] Biber.pm:375> INFO - Reading 'build/Abgabe.bcf'
-[127] Biber.pm:905> INFO - Found 4 citekeys in bib section 0
-[142] Biber.pm:4196> INFO - Processing section 0
-[143] Utils.pm:75> INFO - Globbing data source 'references.bib'
-[144] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
-[155] Biber.pm:4373> INFO - Looking for bibtex format file 'references.bib' for section 0
-[157] bibtex.pm:1462> INFO - LaTeX decoding ...
-[212] bibtex.pm:1281> INFO - Found BibTeX data source 'references.bib'
-[238] Utils.pm:300> WARN - ISBN '978-3-662-45239-4 978-3-662-45240-0' in entry 'voigtlander_scanning_2015' is invalid - run biber with '--validate_datamodel' for details.
-[258] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[258] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[258] Biber.pm:4024> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
-[258] Biber.pm:4030> INFO - No sort tailoring available for locale 'de-DE'
-[265] bbl.pm:648> INFO - Writing 'build/Abgabe.bbl' with encoding 'UTF-8'
-[269] bbl.pm:751> INFO - Output to build/Abgabe.bbl
-[269] Biber.pm:110> INFO - WARNINGS: 1
+[1] Config.pm:304> INFO - This is Biber 2.13
+[2] Config.pm:307> INFO - Logfile is 'build/Abgabe.blg'
+[53] biber:315> INFO - === Sun Jun 26, 2022, 18:14:01
+[85] Biber.pm:375> INFO - Reading 'build/Abgabe.bcf'
+[198] Biber.pm:905> INFO - Found 5 citekeys in bib section 0
+[216] Biber.pm:4196> INFO - Processing section 0
+[218] Utils.pm:75> INFO - Globbing data source 'references.bib'
+[218] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
+[234] Biber.pm:4373> INFO - Looking for bibtex format file 'references.bib' for section 0
+[237] bibtex.pm:1462> INFO - LaTeX decoding ...
+[321] bibtex.pm:1281> INFO - Found BibTeX data source 'references.bib'
+[360] Utils.pm:300> WARN - ISBN '978-3-662-45239-4 978-3-662-45240-0' in entry 'voigtlander_scanning_2015' is invalid - run biber with '--validate_datamodel' for details.
+[402] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[402] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[403] Biber.pm:4024> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
+[403] Biber.pm:4030> INFO - No sort tailoring available for locale 'de-DE'
+[416] bbl.pm:648> INFO - Writing 'build/Abgabe.bbl' with encoding 'UTF-8'
+[422] bbl.pm:751> INFO - Output to build/Abgabe.bbl
+[422] Biber.pm:110> INFO - WARNINGS: 1

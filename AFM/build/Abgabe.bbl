@@ -108,6 +108,36 @@
       \verb http://link.springer.com/10.1007/978-3-662-45240-0
       \endverb
     \endentry
+    \entry{park_systems_force-distance_nodate}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=4e9b1b2c4a61567f1ed7ab6b2256494e}{%
+           family={Systems},
+           familyi={S\bibinitperiod},
+           given={Park},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{4e9b1b2c4a61567f1ed7ab6b2256494e}
+      \strng{fullhash}{4e9b1b2c4a61567f1ed7ab6b2256494e}
+      \strng{bibnamehash}{4e9b1b2c4a61567f1ed7ab6b2256494e}
+      \strng{authorbibnamehash}{4e9b1b2c4a61567f1ed7ab6b2256494e}
+      \strng{authornamehash}{4e9b1b2c4a61567f1ed7ab6b2256494e}
+      \strng{authorfullhash}{4e9b1b2c4a61567f1ed7ab6b2256494e}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Force-Distance Spectroscopy}
+      \field{urlday}{26}
+      \field{urlmonth}{6}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.parksystems.com/jp/index.php/park-spm-modes/force-measurement/244-force-distance-spectroscopy#
+      \endverb
+      \verb{url}
+      \verb https://www.parksystems.com/jp/index.php/park-spm-modes/force-measurement/244-force-distance-spectroscopy#
+      \endverb
+    \endentry
     \entry{tu_dortmund_versuchsanleitung_nodate}{misc}{}
       \name{author}{1}{}{%
         {{hash=f75df706eccca2d56ed63592858b16fb}{%
@@ -122,8 +152,8 @@
       \strng{authorbibnamehash}{f75df706eccca2d56ed63592858b16fb}
       \strng{authornamehash}{f75df706eccca2d56ed63592858b16fb}
       \strng{authorfullhash}{f75df706eccca2d56ed63592858b16fb}
-      \field{sortinit}{7}
-      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Versuchsanleitung Rasterkraftmikroskopie}
@@ -146,8 +176,8 @@
       \strng{authorbibnamehash}{f97eeb6faf9552be28739cf4dc62622b}
       \strng{authornamehash}{f97eeb6faf9552be28739cf4dc62622b}
       \strng{authorfullhash}{f97eeb6faf9552be28739cf4dc62622b}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{The investigation and manipulation of matter on the atomic scale have been revolutionised by scanning tunnelling microscopy and related scanning probe techniques. This book is the first to provide a clear and comprehensive introduction to this subject. Beginning with the theoretical background of scanning tunnelling microscopy, the design and instrumentation of practical {STM} and associated systems are described in detail, as are the applications of these techniques in fields such as condensed matter physics, chemistry, biology, and nanotechnology. Containing 350 illustrations, and over 1200 references, this unique book represents an ideal introduction to the subject for final-year undergraduates in physics or materials science. It will also be invaluable to graduate students and researchers in any branch of science where scanning probe techniques are used.}

@@ -344,6 +344,9 @@ INPUT ./pictures/pot_contact.png
 INPUT ./pictures/forcedist.png
 INPUT ./pictures/forcedist.png
 INPUT ./pictures/forcedist.png
+INPUT ./pictures/force_hard_soft.png
+INPUT ./pictures/force_hard_soft.png
+INPUT ./pictures/force_hard_soft.png
 INPUT ./pictures/defekte.png
 INPUT ./pictures/defekte.png
 INPUT ./pictures/defekte.png
@@ -380,6 +383,15 @@ INPUT /home/lasse/.local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbo
 INPUT ./pictures/Cantilever_Spitze.png
 INPUT ./pictures/Cantilever_Spitze.png
 INPUT ./pictures/Cantilever_Spitze.png
+INPUT ./pictures/detektion.png
+INPUT ./pictures/detektion.png
+INPUT ./pictures/detektion.png
+INPUT ./pictures/const_height_force.png
+INPUT ./pictures/const_height_force.png
+INPUT ./pictures/const_height_force.png
+INPUT ./pictures/hysterese.png
+INPUT ./pictures/hysterese.png
+INPUT ./pictures/hysterese.png
 INPUT /home/lasse/.local/texlive/2019/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc
 INPUT build/Abgabe.aux
 INPUT build/Abgabe.run.xml

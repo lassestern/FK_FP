@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  10 JUN 2022 10:31
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  26 JUN 2022 18:23
  restricted system commands enabled.
 **Abgabe.tex
 (./Abgabe.tex
@@ -55,7 +55,7 @@ Lua module: luaotfload-multiscript 2019-09-13 3.00 luaotfload submodule / multis
 cript
 Inserting `luaotfload.rewrite_fontname' at position 5 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.120 seconds
+luaotfload | main : initialization completed in 0.111 seconds
 (./inputs/header.tex
 (/home/lasse/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2019/02/01 v3.26b KOMA-Script document class (article)
@@ -1871,65 +1871,65 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 15.
 <pictures/prinzip.png, id=44, 799.98875pt x 651.43375pt>
 File: pictures/prinzip.png Graphic file (type png)
 <use pictures/prinzip.png>
-Package luatex.def Info: pictures/prinzip.png  used on input line 18.
+Package luatex.def Info: pictures/prinzip.png  used on input line 19.
 (luatex.def)             Requested size: 167.29967pt x 136.22859pt.
 <pictures/LJ.png, id=47, 534.99875pt x 876.27374pt>
 File: pictures/LJ.png Graphic file (type png)
 <use pictures/LJ.png>
-Package luatex.def Info: pictures/LJ.png  used on input line 33.
+Package luatex.def Info: pictures/LJ.png  used on input line 34.
 (luatex.def)             Requested size: 224.69794pt x 368.03246pt.
 
-Underfull \hbox (badness 3049) in paragraph at lines 34--34
+Underfull \hbox (badness 3049) in paragraph at lines 35--35
 \TU/lmr/m/n/10.95 schrei-bung ei-nes Lennard-Jones-
  []
 
 [3<./pictures/prinzip.png>]
-Underfull \hbox (badness 5475) in paragraph at lines 51--56
+Underfull \hbox (badness 5475) in paragraph at lines 52--57
 \TU/lmr/m/n/10.95 Der at-trak-ti-ve Be-reich für Ab-
  []
 
 
-Underfull \hbox (badness 3312) in paragraph at lines 51--56
+Underfull \hbox (badness 3312) in paragraph at lines 52--57
 \TU/lmr/m/n/10.95 säch-lich aus den \TU/lmr/m/it/10.95 Van-der-Waals-
  []
 
 
-Underfull \hbox (badness 3250) in paragraph at lines 51--56
+Underfull \hbox (badness 3250) in paragraph at lines 52--57
 \TU/lmr/m/n/10.95 zie-hung zwei-er ei-gent-lich neu-tra-
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 51--56
+Underfull \hbox (badness 1502) in paragraph at lines 52--57
 \TU/lmr/m/n/10.95 ste-hung von fluk-tu-ie-ren-den Di-po-
  []
 
 
-Underfull \hbox (badness 1478) in paragraph at lines 51--56
+Underfull \hbox (badness 1478) in paragraph at lines 52--57
 \TU/lmr/m/n/10.95 len. Ent-steht in ei-nem Atom ei-
  []
 
 
-Underfull \hbox (badness 1077) in paragraph at lines 51--56
+Underfull \hbox (badness 1077) in paragraph at lines 52--57
 \TU/lmr/m/n/10.95 ne spon-ta-ner Di-pol, wird im be-
  []
 
 
-Underfull \hbox (badness 2189) in paragraph at lines 51--56
+Underfull \hbox (badness 2189) in paragraph at lines 52--57
 \TU/lmr/m/n/10.95 sel-wirkt nicht nur das vor-ders-te
  []
 
 
-Underfull \hbox (badness 1655) in paragraph at lines 51--56
+Underfull \hbox (badness 1655) in paragraph at lines 52--57
 \TU/lmr/m/n/10.95 che, son-dern auch da-hin-ter-lie-gen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--56
+Underfull \hbox (badness 10000) in paragraph at lines 52--57
 
  []
 
 [4<./pictures/LJ.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 65--67
+Underfull \hbox (badness 10000) in paragraph at lines 66--68
 
  []
 
@@ -1937,44 +1937,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--67
 <pictures/pot_contact.png, id=77, 427.5975pt x 856.19875pt>
 File: pictures/pot_contact.png Graphic file (type png)
 <use pictures/pot_contact.png>
-Package luatex.def Info: pictures/pot_contact.png  used on input line 74.
+Package luatex.def Info: pictures/pot_contact.png  used on input line 77.
 (luatex.def)             Requested size: 192.41708pt x 385.28587pt.
 
-Underfull \hbox (badness 1221) in paragraph at lines 75--75
+Underfull \hbox (badness 1221) in paragraph at lines 78--78
 [][]\TU/lmr/m/n/10.95 Mit ab-neh-men-der Di-stanz zwi-
  []
 
 [6<./pictures/pot_contact.png>]
-<pictures/forcedist.png, id=88, 703.62875pt x 508.90125pt>
+<pictures/forcedist.png, id=89, 691.58376pt x 452.69125pt>
 File: pictures/forcedist.png Graphic file (type png)
 <use pictures/forcedist.png>
-Package luatex.def Info: pictures/forcedist.png  used on input line 111.
-(luatex.def)             Requested size: 167.29967pt x 120.9973pt.
- [7<./pictures/forcedist.png>]
-<pictures/defekte.png, id=98, 1067.99pt x 243.91125pt>
+Package luatex.def Info: pictures/forcedist.png  used on input line 113.
+(luatex.def)             Requested size: 167.29967pt x 109.50464pt.
+<pictures/force_hard_soft.png, id=93, 809.0225pt x 301.125pt>
+File: pictures/force_hard_soft.png Graphic file (type png)
+<use pictures/force_hard_soft.png>
+Package luatex.def Info: pictures/force_hard_soft.png  used on input line 130.
+(luatex.def)             Requested size: 167.29967pt x 62.2686pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7<./pictures/forcedist.png>]
+<pictures/defekte.png, id=108, 1067.99pt x 243.91125pt>
 File: pictures/defekte.png Graphic file (type png)
 <use pictures/defekte.png>
-Package luatex.def Info: pictures/defekte.png  used on input line 143.
+Package luatex.def Info: pictures/defekte.png  used on input line 163.
 (luatex.def)             Requested size: 334.60571pt x 76.41933pt.
- [8<./pictures/defekte.png>]
-<pictures/Cantilever_Spitze.png, id=110, 473.77pt x 327.2225pt>
+ [8<./pictures/force_hard_soft.png><./pictures/defekte.png>]
+<pictures/Cantilever_Spitze.png, id=121, 473.77pt x 327.2225pt>
 File: pictures/Cantilever_Spitze.png Graphic file (type png)
 <use pictures/Cantilever_Spitze.png>
-Package luatex.def Info: pictures/Cantilever_Spitze.png  used on input line 168.
+Package luatex.def Info: pictures/Cantilever_Spitze.png  used on input line 188.
 
 (luatex.def)             Requested size: 250.95587pt x 173.32722pt.
- [9<./pictures/Cantilever_Spitze.png>] [10] [11]) [12]
+ [9<./pictures/Cantilever_Spitze.png>]
+<pictures/detektion.png, id=133, 1189.44376pt x 289.08pt>
+File: pictures/detektion.png Graphic file (type png)
+<use pictures/detektion.png>
+Package luatex.def Info: pictures/detektion.png  used on input line 221.
+(luatex.def)             Requested size: 167.29967pt x 40.65617pt.
+ [10<./pictures/detektion.png>]
+<pictures/const_height_force.png, id=144, 792.9625pt x 770.88pt>
+File: pictures/const_height_force.png Graphic file (type png)
+<use pictures/const_height_force.png>
+Package luatex.def Info: pictures/const_height_force.png  used on input line 246
+.
+(luatex.def)             Requested size: 167.29967pt x 162.63062pt.
+[11<./pictures/const_height_force.png>] [12]
+<pictures/hysterese.png, id=161, 912.40875pt x 643.40375pt>
+File: pictures/hysterese.png Graphic file (type png)
+<use pictures/hysterese.png>
+Package luatex.def Info: pictures/hysterese.png  used on input line 286.
+(luatex.def)             Requested size: 250.95587pt x 176.96112pt.
+) [13<./pictures/hysterese.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
- [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
 
-(./build/Abgabe.aux)
+[14]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
+ (./build/Abgabe.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
 Package rerunfilecheck Info: File `Abgabe.aux' has not changed.
-(rerunfilecheck)             Checksum: 9D35108E3EE3B99394B29A6B26753D8C;10377.
+(rerunfilecheck)             Checksum: 23A7A6DC56E0A4A16BA700284C2C9D1B;14389.
 Package rerunfilecheck Info: File `Abgabe.toc' has not changed.
-(rerunfilecheck)             Checksum: 9354A2BF77143A0838880DF2CEF2B37C;1067.
+(rerunfilecheck)             Checksum: 4755B385F8489984B93CBECE42B93C50;1067.
 Package logreq Info: Writing requests to 'Abgabe.run.xml'.
 
 \openout1 = Abgabe.run.xml
@@ -1982,14 +2010,14 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 28.
 )
 
 Here is how much of LuaTeX's memory you used:
- 43410 strings out of 494291
- 156265,1977958 words of node,token memory allocated
- 112804 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 penalty, 15279 glyph, 2295 attrib
-ute, 81 glue_spec, 330 attribute_list, 1 write nodes
-   avail lists: 1:6,2:831,3:90,4:51,5:237,6:29,7:2049,8:65,9:144,10:40,11:386
- 46398 multiletter control sequences out of 65536+600000
- 213 fonts using 80924111 bytes
+ 43462 strings out of 494291
+ 195330,1977958 words of node,token memory allocated
+ 134777 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 penalty, 18370 glyph, 2442 attrib
+ute, 81 glue_spec, 351 attribute_list, 1 write nodes
+   avail lists: 1:11,2:903,3:87,4:49,5:203,6:28,7:1789,8:69,9:144,10:44,11:417
+ 46420 multiletter control sequences out of 65536+600000
+ 213 fonts using 80924815 bytes
  56i,15n,109p,9142b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmmono10-re
 gular.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/l
@@ -2004,10 +2032,10 @@ oman10-italic.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/pub
 lic/lm/lmroman10-regular.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/o
 pentype/public/lm/lmroman12-regular.otf></home/lasse/.local/texlive/2019/texmf-d
 ist/fonts/opentype/public/lm/lmsans10-bold.otf>
-Output written on Abgabe.pdf (13 pages, 315952 bytes).
+Output written on Abgabe.pdf (14 pages, 773509 bytes).
 
-PDF statistics: 253 PDF objects out of 1000 (max. 8388607)
- 186 compressed objects within 2 object streams
- 39 named destinations out of 1000 (max. 131072)
+PDF statistics: 289 PDF objects out of 1000 (max. 8388607)
+ 207 compressed objects within 3 object streams
+ 45 named destinations out of 1000 (max. 131072)
  89 words of extra memory for PDF output out of 10000 (max. 100000000)
 
