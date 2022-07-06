@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber build/Abgabe"] 1657125394 "build/Abgabe.bcf" "build/Abgabe.bbl" "build/Abgabe" 1657125811
-  "build/Abgabe.bcf" 1657125811 106644 7367cf4504e76bb9e64f44eb50e54a57 "lualatex"
+["biber build/Abgabe"] 1657125394 "build/Abgabe.bcf" "build/Abgabe.bbl" "build/Abgabe" 1657126438
+  "build/Abgabe.bcf" 1657126438 106644 7367cf4504e76bb9e64f44eb50e54a57 "lualatex"
   "references.bib" 1653813822 10386 6dd30348a9cb415b51a4385c0a1e6f0a ""
   (generated)
   "build/Abgabe.bbl"
   "build/Abgabe.blg"
-["lualatex"] 1657125805 "Abgabe.tex" "build/Abgabe.pdf" "Abgabe" 1657125811
+["lualatex"] 1657126433 "Abgabe.tex" "build/Abgabe.pdf" "Abgabe" 1657126438
   "/Users/michaelgutnikov/Library/texlive/2021/texmf-var/luatex-cache/generic/fonts/otl/latinmodern-math.luc" 1637225370 544970 88adcc23fa016aecf59bf8e4460c6311 ""
   "/Users/michaelgutnikov/Library/texlive/2021/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc" 1637225372 77666 456f66587d6df4c09314d352fc1885e2 ""
   "/Users/michaelgutnikov/Library/texlive/2021/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc" 1637225368 124231 5220ef58fbc72f945aade0dc8a11acde ""
@@ -27,6 +27,7 @@
   "/usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf" 1255129361 118828 4d461c73423fe2666dad2ff0dfc3ca68 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf" 1255129361 111536 ae9d1b331000d544f47e5223081b7b54 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf" 1255129361 110400 d844cffffa1af59f9d2bb1bfdb6f1a2c ""
+  "/usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf" 1255129361 111948 cee9e390fd6d23cfb4d6871ba2a9ee5b ""
   "/usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf" 1255129361 108740 82741d58d9334b5242a3acb1d982bd05 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf" 1255129361 107448 a9e5b7aaaf5f74194deee407f2fd1552 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -229,14 +230,14 @@
   "/usr/local/texlive/2021/texmf-var/tex/generic/config/language.dat" 1635026275 6665 0dec0483c8c05fa8db2e123aaa357b66 ""
   "/usr/local/texlive/2021/texmf-var/web2c/luahbtex/lualatex.fmt" 1635026334 3365237 d13e2ede0d8ddccea5ec63ecd2dc794e ""
   "Abgabe.tex" 1653813822 602 35528849a74e0be870360a0819c7d35b ""
-  "build/Abgabe.aux" 1657125811 10928 d4f6943eddd35965a4c26097819dc640 "lualatex"
+  "build/Abgabe.aux" 1657126438 10797 401f56372b016fabccc25660fc34e691 "lualatex"
   "build/Abgabe.bbl" 1657125395 3078 f31cd8b983239e320471da9a573f2be6 "biber build/Abgabe"
-  "build/Abgabe.run.xml" 1657125811 2445 4e649849037410f902e1c4caa5967ccb "lualatex"
-  "build/Abgabe.toc" 1657125811 1137 3270a3508b62f5dac7f47b435ab7662f "lualatex"
+  "build/Abgabe.run.xml" 1657126438 2445 4e649849037410f902e1c4caa5967ccb "lualatex"
+  "build/Abgabe.toc" 1657126438 1136 0fefae49b19a6ada9ef264eb8f5b8941 "lualatex"
   "chapters/Auswertung.tex" 1653813822 6647 3f7d0374ef6c075fc0d7bc0fa8dbda02 ""
   "chapters/Diskussion.tex" 1653813822 1597 f3e30fa47e43ee0ffc067a1d1f74588c ""
   "chapters/Durchfuehrung.tex" 1653813822 8049 51c2b2c7838b023b2699251a6510905c ""
-  "chapters/Theorie.tex" 1657125800 8982 44a068137bcb355530ed4bc1df3e7bfd ""
+  "chapters/Theorie.tex" 1657126431 6313 6062a11fcbb6833f2566ccdd2a829580 ""
   "inputs/header.tex" 1657121890 2650 4076a27e9424866598177bb142da0da1 ""
   "pictures/Aufbau.png" 1657121551 1936358 e84404664be7933e5324ce17064f1b38 ""
   "pictures/Farbe.png" 1653837254 2723088 b56d20e18fb7e67b5fd327355750de1a ""

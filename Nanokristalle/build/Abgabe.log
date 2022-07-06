@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.10.23)  6 JUL 2022 18:43
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.10.23)  6 JUL 2022 18:53
  restricted system commands enabled.
 **Abgabe.tex
 (./Abgabe.tex
@@ -1639,122 +1639,114 @@ File: pictures/Prozess.png Graphic file (type png)
 <use pictures/Prozess.png>
 Package luatex.def Info: pictures/Prozess.png  used on input line 33.
 (luatex.def)             Requested size: 250.95587pt x 152.56337pt.
-<pictures/Farbe.png, id=58, 832.10875pt x 516.93124pt>
+ [4<./pictures/Prozess.png>]
+<pictures/Farbe.png, id=66, 832.10875pt x 516.93124pt>
 File: pictures/Farbe.png Graphic file (type png)
 <use pictures/Farbe.png>
-Package luatex.def Info: pictures/Farbe.png  used on input line 47.
-(luatex.def)             Requested size: 34.34521pt x 21.33955pt.
-<pictures/Farbe2.png, id=59, 571.13374pt x 404.51125pt>
+Package luatex.def Info: pictures/Farbe.png  used on input line 49.
+(luatex.def)             Requested size: 206.09674pt x 128.0374pt.
+
+Overfull \hbox (5.33588pt too wide) in paragraph at lines 49--50
+ [][] 
+ []
+
+<pictures/Farbe2.png, id=67, 571.13374pt x 404.51125pt>
 File: pictures/Farbe2.png Graphic file (type png)
 <use pictures/Farbe2.png>
-Package luatex.def Info: pictures/Farbe2.png  used on input line 52.
-(luatex.def)             Requested size: 30.12701pt x 21.33955pt.
- [4<./pictures/Prozess.png>] [5<./pictures/Farbe.png><./pictures/Farbe2.png>]
-LaTeX Font Info:    Calculating math sizes for size <7.63434> on input line 93.
-
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 7.63515pt on input line 93.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 5.34457pt on input line 93.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 3.81757pt on input line 93.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 7.63351pt on input line 93.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 5.34343pt on input line 93.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 3.81676pt on input line 93.
-) (./chapters/Durchfuehrung.tex [6]
-<pictures/Aufbau.png, id=91, 674.52pt x 478.78876pt>
+Package luatex.def Info: pictures/Farbe2.png  used on input line 54.
+(luatex.def)             Requested size: 180.77956pt x 128.0374pt.
+) (./chapters/Durchfuehrung.tex [5<./pictures/Farbe.png><./pictures/Farbe2.png>]
+<pictures/Aufbau.png, id=82, 674.52pt x 478.78876pt>
 File: pictures/Aufbau.png Graphic file (type png)
 <use pictures/Aufbau.png>
 Package luatex.def Info: pictures/Aufbau.png  used on input line 6.
 (luatex.def)             Requested size: 250.95587pt x 178.12802pt.
 
 
-LaTeX Warning: Reference `fig:Richtungen' on page 7 undefined on input line 22.
+LaTeX Warning: Reference `fig:Richtungen' on page 6 undefined on input line 22.
 
 
 
-LaTeX Warning: Reference `fig:Richtungen' on page 7 undefined on input line 29.
+LaTeX Warning: Reference `fig:Richtungen' on page 6 undefined on input line 29.
 
 
-) (./chapters/Auswertung.tex [7<./pictures/Aufbau.png>]
+) (./chapters/Auswertung.tex [6<./pictures/Aufbau.png>]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 10.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:Richtungen' on page 8 undefined on input line 10.
+LaTeX Warning: Reference `fig:Richtungen' on page 7 undefined on input line 10.
 
 
 
-LaTeX Warning: Reference `fig:Richtungen' on page 8 undefined on input line 10.
+LaTeX Warning: Reference `fig:Richtungen' on page 7 undefined on input line 10.
 
 
 
-LaTeX Warning: Reference `unsere_matrix' on page 8 undefined on input line 33.
+LaTeX Warning: Reference `unsere_matrix' on page 7 undefined on input line 33.
 
 
-LaTeX Warning: Reference `unsere_matrix' on page 8 undefined on input line 39.
+LaTeX Warning: Reference `unsere_matrix' on page 7 undefined on input line 39.
 
-[8]
+[7]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 67.
 See the caption package documentation for explanation.
 
-[9]
+[8]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 107.
 See the caption package documentation for explanation.
 
-) (./chapters/Diskussion.tex) [10]
+) (./chapters/Diskussion.tex) [9]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [11] (./build/Abgabe.aux)
+ [10] (./build/Abgabe.aux)
 Package rerunfilecheck Info: File `Abgabe.aux' has not changed.
-(rerunfilecheck)             Checksum: D4F6943EDDD35965A4C26097819DC640;10928.
+(rerunfilecheck)             Checksum: 401F56372B016FABCCC25660FC34E691;10797.
 
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Abgabe.toc' has not changed.
-(rerunfilecheck)             Checksum: 3270A3508B62F5DAC7F47B435AB7662F;1137.
+(rerunfilecheck)             Checksum: 0FEFAE49B19A6ADA9EF264EB8F5B8941;1136.
 Package logreq Info: Writing requests to 'Abgabe.run.xml'.
 
 \openout1 = Abgabe.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 37878 strings out of 478092
+ 37663 strings out of 478092
  100000,1977958 words of node,token memory allocated
- 973 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 penalty, 2 glyph, 151 attribute, 
-77 glue_spec, 23 attribute_list, 1 write nodes
-   avail lists: 1:4,2:4279,3:127,4:95,5:485,6:27,7:6259,8:68,9:828,10:25,11:669
- 57061 multiletter control sequences out of 65536+600000
- 192 fonts using 82638319 bytes
- 113i,12n,117p,10658b,2933s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 813 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 penalty, 2 glyph, 81 attribute, 7
+7 glue_spec, 13 attribute_list, 1 write nodes
+   avail lists: 1:4,2:4279,3:125,4:95,5:332,6:26,7:6170,8:68,9:828,10:25,11:619
+ 56852 multiletter control sequences out of 65536+600000
+ 93 fonts using 34788135 bytes
+ 113i,10n,117p,10658b,2933s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.ot
 f></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmromancaps10-reg
 ular.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-
 bold.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm-math/latin
 modern-math.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmr
-oman10-italic.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm-m
-ath/latinmodern-math.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/publ
-ic/lm-math/latinmodern-math.otf></usr/local/texlive/2021/texmf-dist/fonts/openty
-pe/public/lm/lmroman10-regular.otf></usr/local/texlive/2021/texmf-dist/fonts/ope
-ntype/public/lm/lmroman12-regular.otf></usr/local/texlive/2021/texmf-dist/fonts/
-opentype/public/lm/lmsans10-bold.otf>
-Output written on Abgabe.pdf (11 pages, 6877098 bytes).
+oman8-regular.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/l
+mroman10-italic.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm
+-math/latinmodern-math.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/pu
+blic/lm-math/latinmodern-math.otf></usr/local/texlive/2021/texmf-dist/fonts/open
+type/public/lm/lmroman10-regular.otf></usr/local/texlive/2021/texmf-dist/fonts/o
+pentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2021/texmf-dist/font
+s/opentype/public/lm/lmsans10-bold.otf>
+Output written on Abgabe.pdf (10 pages, 6873019 bytes).
 
-PDF statistics: 232 PDF objects out of 1000 (max. 8388607)
- 173 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 131072)
+PDF statistics: 225 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 131072)
  65 words of extra memory for PDF output out of 10000 (max. 100000000)
 
