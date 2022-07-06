@@ -34,10 +34,12 @@
         \caption{\textit{a)} Photolumineszenz durch Einfangen von Exzitonen durch den Quantenpunkt. \textit{b)} Geladene Exzitonen durch Anwesenheit einer weiteren Ladung an der Bandlücke. \textit{c)} Rekombination aus angeregten Zuständen durch das Einfangen mehrerer Exzitonen bei hohen Anregungsdichten. Entnommen aus \cite{tu_dortmund_versuchsanleitung_2021-6}}
         \label{fig:Prozess}
       \end{figure}
-      Die Rekombinationsenergie, also die Energie des ausgesendeten Photons berechnet sich aus der Bandlücke über welche das Elektron-Loch-Paar relaxiert, also der quantisierten Zustände und der Exzitonenbindungsenergie, welche durch die Coulomb-Wechselwirkung von Elektron und Loch gegeben ist.
+      Die Rekombinationsenergie, also die Energie des ausgesendeten Photons
       \begin{equation}
-        E_\gamma = \frac{h^2}{8R^2} blablabla
+          E_R = E_g + \frac{\pi^2\hbar^2}{ 2  a^2} \left(\frac{1}{m_e^*} + \frac{1}{m_h^*}\right) -\frac{\mu e^4}{32\pi^2\varepsilon_0^2 \varepsilon_r^2 \hbar^2}
+          - 1.786\cdot \frac{e^2}{4\pi\varepsilon_r\varepsilon_0 a}.
       \end{equation}
+      berechnet sich aus der Bandlücke $E_g$ über welche das Elektron-Loch-Paar relaxiert, also der quantisierten Zustände. Der zweite Summand beschreibt jeweils die Energie des Elektrons bzw. des Lochs und der dritte Summand die Exzitonenbindungsenergie, welche durch die Coulomb-Wechselwirkung zwischen Elektron und Loch gegeben ist. Der letzte Term berücksichtigt räumliche Einschränkung, die sowohl das Elektron als auch das Loch erfährt.
       Somit lässt sich die Farbe des ausgestrahlten Lichtes über die Größe der Nanokristalle, wie in Abbildung \ref{fig:Farbe} zu erkennen einstellen.
       \begin{figure}[h]
         \begin{subfigure}{0.48\textwidth}
@@ -51,5 +53,52 @@
         \end{subfigure}
         \caption{Photolumineszenz von verschieden großen $CdSe$ Nanokristallen. \textit{(links)} Abhängigkeit der Wellenlänge bzw. Energie von der Größe der Quantenpunkte. \textit{(rechts)} Entnommen aus \cite{tu_dortmund_versuchsanleitung_2021-6}}
         \label{fig:Farbe}
-      \end{figure}      Befinden sich bereits Elektronen im Leitungsband und/oder Löcher im Valenzband, so kann es zu sogenannten geladenen Exzitonen kommen. Dabei entstehen kleine Verschiebungen in der Energie im Vergleich zum regulären Exziton.
+      \end{figure}
+      Befinden sich bereits Elektronen im Leitungsband und/oder Löcher im Valenzband, so kann es zu sogenannten geladenen Exzitonen kommen. Dabei entstehen kleine Verschiebungen in der Energie im Vergleich zum regulären Exziton.
       Falls weitere Exzitonen vom Quantenpunkt eingefangen werden, so enstehen z.B. Biexzitonen im Falle von zwei Exzitonen kommen. Bei besonders hohen Anregungsdichten können so viele Exzitonen in den Quantenpunkt geraten, dass eine Rekombination nicht mehr nur aus dem Grundzustand, sondern auch aus den angeregten Zuständen beobachtet werden kann, was zu einer noch größeren Abweichung in der Rekombinationsenergie führt. Diese Prozesse sind ebenfalls in Abbildung \ref{fig:Prozess} graphisch dargestellt.
+
+Das Spektrum der Elektronen bzw. Löcher,
+die sich innerhalb des Topfes befinden, lässt sich vereinfacht durch Lösung der Schrödingergleichung berechnen:
+\begin{equation}
+  \left[-\frac{\hbar^2}{2 m} \nabla^2 + V(\vec{r}) \right] \Psi(\vec{r}) = E \Psi(\vec{r}), \quad
+  V(\vec{r}) = \begin{cases}
+0,& \quad r > a\\
+-V_0,& \quad r \leq a
+\end{cases}
+\end{equation}
+mit der Ausdehnung des Quantentopfes $a$ und dem Einschlusspotential $V_0$.
+Im Eindimensionalen Fall lassen sich die Energiezustände
+anhand einer Quantenzahl $n \in N$ beschreiben:
+\begin{equation}
+  E_n = \frac{\pi^2\hbar^2n^2}{ 2 m a^2}.
+  \label{eq: qw_energy}
+\end{equation}
+Es zeigt sich also, dass die Energien, die letztlich die Lumineszenzenergien festlegen, durch die Größe $a$ der Nanokristalle
+moduliert werden können. Diese Eigenschaft bleibt auch im dreidimensionalen Fall erhalten, wobei hier zur Beschreibung der
+Energieniveaus $E_{n, l}$ noch eine Drehimpulsquantenzahl $l \in N$ benötigt wird. Der Grundzustandsenergie
+$(n = 1, l = 0)$ ist jedoch ebenfalls durch~\eqref{eq: qw_energy} mit $n = 1$ gegeben. Für die Energie $E_R$, die bei Rekombination eines
+Elektrons mit einem Loch im Grundzustand frei wird, gilt daher
+\begin{equation}
+  E_R = E_g + \frac{\pi^2\hbar^2}{ 2  a^2} \left(\frac{1}{m_e^*} + \frac{1}{m_h^*}\right),
+\end{equation}
+mit den effektiven Massen von Elektron und Loch $m_e^*$ und $m_h^*$
+
+Neben dem Potentialverlauf der Nanostruktur muss ebenfalls die Wechselwirkung zwischen Elektronen und Löchern berücksichtigt werden.
+Diese lässt sich durch das Exziton-Modell beschreiben. Hierin werden Elektronen und Löcher wie freie Teilchen behandelt, die eine
+Coulomb-Anziehung aufeinander ausüben. Die Wechselwirkung mit der Umgebnung wird duch eine relative Permeabilität
+$\varepsilon_r$ moduliert. Es lassen sich so in Analogie zum Wasserstoffatom Bindungsenergien $E_m$ ($m \in N$) finden
+\begin{equation}
+  E_m = \frac{\mu e^4}{2 (4\pi\varepsilon_0 \varepsilon_r \hbar)^2} \cdot \frac{1}{m^2},
+\end{equation}
+mit der reduzierten Masse $\mu = \sfrac{m_e^* \cdot m_h^*}{(m_e^* + m_h^*)}$.
+Hierdurch entstehen quantisierte Energiezustände innerhalb der
+Bandlücke des Materials. Zusätzlich muss noch, anders als im Volumenhalbleiter, der Einfluss der räumlichen
+Einschränkung der Elektronen und Löcher berücksichtigt werden. Hierdurch ergibt sich ein letzter Summand mit einer
+$\sfrac{1}{a}$-Abhängigkeit, der die Übergangsenergie beeinflusst. Es gilt damit insgesamt für die
+Rekombinationsenergie im Grundzustand
+\begin{equation}
+  E_R = E_g + \frac{\pi^2\hbar^2}{ 2  a^2} \left(\frac{1}{m_e^*} + \frac{1}{m_h^*}\right) -\frac{\mu e^4}{2 (4\pi\varepsilon_0 \varepsilon_r \hbar)^2}
+  - \num{1.786} \frac{e^2}{4\pi\varepsilon_r\varepsilon_0 a}.
+  \label{eq: E_R}
+\end{equation}
+Dieses Modell kann verwendet werden, um aus gemessenen Photolumineszenzspektren den Durchmesser der Nanosphären $a$ zu bestimmen.
