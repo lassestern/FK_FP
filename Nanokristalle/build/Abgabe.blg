@@ -1,9 +1,17 @@
-[0] Config.pm:304> INFO - This is Biber 2.13
-[0] Config.pm:307> INFO - Logfile is 'build/Abgabe.blg'
-[37] biber:315> INFO - === Wed Jul  6, 2022, 18:41:29
-[54] Biber.pm:375> INFO - Reading 'build/Abgabe.bcf'
-[136] Biber.pm:905> INFO - Found 0 citekeys in bib section 0
-[143] Utils.pm:300> WARN - The file 'build/Abgabe.bcf' does not contain any citations!
-[158] bbl.pm:648> INFO - Writing 'build/Abgabe.bbl' with encoding 'UTF-8'
-[158] bbl.pm:751> INFO - Output to build/Abgabe.bbl
-[159] Biber.pm:110> INFO - WARNINGS: 1
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'build/Abgabe.blg'
+[61] biber-darwin:340> INFO - === Mi Jul  6, 2022, 18:36:35
+[75] Biber.pm:415> INFO - Reading 'build/Abgabe.bcf'
+[158] Biber.pm:952> INFO - Found 2 citekeys in bib section 0
+[171] Biber.pm:4340> INFO - Processing section 0
+[180] Biber.pm:4531> INFO - Looking for bibtex format file 'references.bib' for section 0
+[181] bibtex.pm:1689> INFO - LaTeX decoding ...
+[208] bibtex.pm:1494> INFO - Found BibTeX data source 'references.bib'
+[249] Utils.pm:395> WARN - ISBN '978-0-470-86198-1 978-0-470-86196-7' in entry 'gilmore_practical_2008' is invalid - run biber with '--validate_datamodel' for details.
+[259] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[259] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[259] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
+[259] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
+[264] bbl.pm:654> INFO - Writing 'build/Abgabe.bbl' with encoding 'UTF-8'
+[265] bbl.pm:757> INFO - Output to build/Abgabe.bbl
+[265] Biber.pm:128> INFO - WARNINGS: 1

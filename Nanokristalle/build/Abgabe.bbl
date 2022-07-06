@@ -16,5 +16,77 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{tu_dortmund_versuchsanleitung_2021-6}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{%
+           family={Dortmund},
+           familyi={D\bibinitperiod},
+           given={{TU}},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{fullhash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{bibnamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authorbibnamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authornamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authorfullhash}{2821a70f99517ac7757c95300d43e95c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Versuchsanleitung V14 - Tomographie mit Gamma-Strahlung}
+      \field{year}{2021}
+      \field{dateera}{ce}
+    \endentry
+    \entry{gilmore_practical_2008}{book}{}
+      \name{author}{1}{}{%
+        {{hash=aed4ec0547c9426d82bf4245f5e06196}{%
+           family={Gilmore},
+           familyi={G\bibinitperiod},
+           given={Gordon\bibnamedelima R.},
+           giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Chichester, {UK}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons, Ltd}%
+      }
+      \strng{namehash}{aed4ec0547c9426d82bf4245f5e06196}
+      \strng{fullhash}{aed4ec0547c9426d82bf4245f5e06196}
+      \strng{bibnamehash}{aed4ec0547c9426d82bf4245f5e06196}
+      \strng{authorbibnamehash}{aed4ec0547c9426d82bf4245f5e06196}
+      \strng{authornamehash}{aed4ec0547c9426d82bf4245f5e06196}
+      \strng{authorfullhash}{aed4ec0547c9426d82bf4245f5e06196}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{18}
+      \field{isbn}{978-0-470-86198-1 978-0-470-86196-7}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{title}{Practical Gamma-Ray Spectrometry}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1002/9780470861981
+      \endverb
+      \verb{urlraw}
+      \verb http://doi.wiley.com/10.1002/9780470861981
+      \endverb
+      \verb{url}
+      \verb http://doi.wiley.com/10.1002/9780470861981
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
