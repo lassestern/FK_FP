@@ -39,7 +39,7 @@ def gauß(x, sigma, x0, A):
     return A*np.exp(-(x-x0)**2/(2*sigma**2))
 
 def pq(p, q):
-    return -p/2 + np.sqrt((p/2)**2 - q)
+    return -p/2 + unp.sqrt((p/2)**2 - q)
 
 
 
@@ -220,14 +220,15 @@ I_4_pol90 = I_4_pol90/(pol6(lam_4_pol90, *grating_fit) * 1000)
 min = (0, 400, 0)
 max = (40, 700, 0.000018)
 boundaries = (min, max)
-
 guess = ([12, 650, 0.00001])
-
-
-
 params_gauß_1_pol0, cov_gauß_1_pol0 = curve_fit(gauß, lam_1_pol0[2000:], I_1_pol0[2000:]/(0.75), p0=guess, bounds=boundaries)
 params_gauß_1_pol90, cov_gauß_1_pol90 = curve_fit(gauß, lam_1_pol90[2050:], I_1_pol90[2050:]/(0.75), p0=guess, bounds=boundaries)
 # print(params_gauß_1_pol0)
+errors_1_pol0 = np.sqrt(np.diag(cov_gauß_1_pol0))
+errors_1_pol90 = np.sqrt(np.diag(cov_gauß_1_pol90))
+
+
+
 
 min = (0, 400, 0)
 max = (40, 700, 0.000023)
@@ -236,6 +237,9 @@ guess = ([12, 570, 0.00002])
 params_gauß_2_pol0, cov_gauß_2_pol0 = curve_fit(gauß, lam_2_pol0, I_2_pol0/(0.5), p0=guess, bounds=boundaries)
 params_gauß_2_pol90, cov_gauß_2_pol90 = curve_fit(gauß, lam_2_pol90, I_2_pol90/(0.5), p0=guess, bounds=boundaries)
 print(params_gauß_2_pol0)
+errors_2_pol0 = np.sqrt(np.diag(cov_gauß_1_pol0))
+errors_2_pol90 = np.sqrt(np.diag(cov_gauß_1_pol90))
+
 
 
 min = (0, 400, 0)
@@ -244,6 +248,9 @@ boundaries = (min, max)
 guess = ([15, 580, 0.00003])
 params_gauß_3_pol0, cov_gauß_3_pol0 = curve_fit(gauß, lam_3_pol0[1200:3000], I_3_pol0[1200:3000]/(0.3), p0=guess, bounds=boundaries)
 params_gauß_3_pol90, cov_gauß_3_pol90 = curve_fit(gauß, lam_3_pol90[1200:3000], I_3_pol90[1200:3000]/(0.3), p0=guess, bounds=boundaries)
+errors_3_pol0 = np.sqrt(np.diag(cov_gauß_1_pol0))
+errors_3_pol90 = np.sqrt(np.diag(cov_gauß_1_pol90))
+
 
 
 min = (0, 400, 0)
@@ -252,8 +259,8 @@ boundaries = (min, max)
 guess = ([30, 540, 0.00001])
 params_gauß_4_pol0, cov_gauß_4_pol0 = curve_fit(gauß, lam_4_pol0, I_4_pol0/(1), p0=guess, bounds=boundaries)
 params_gauß_4_pol90, cov_gauß_4_pol90 = curve_fit(gauß, lam_4_pol90, I_4_pol90/(1), p0=guess, bounds=boundaries)
-
-
+errors_4_pol0 = np.sqrt(np.diag(cov_gauß_1_pol0))
+errors_4_pol90 = np.sqrt(np.diag(cov_gauß_1_pol90))
 
 
 
@@ -265,15 +272,36 @@ lambda_fit = np.linspace(320, 747, 1000)*10**(-9)
 #Materialeigenschaften des Kerns (CdSe)
 E_G = 1.74*const.e
 m_e = 0.13*const.m_e
-Eg = 1.84*const.e
+# Eg = 1.84*const.e
 m_h = -0.45*const.m_e  
 mu = m_e*m_h/(m_h+m_e)
 epsilon_r = 9.15
 
-E_R_1 = const.h * const.c/(params_gauß_1_pol0[1]*10**(-9))
-E_R_2 = const.h * const.c/(params_gauß_2_pol0[1]*10**(-9))
-E_R_3 = const.h * const.c/(params_gauß_3_pol0[1]*10**(-9))
-E_R_4 = const.h * const.c/(params_gauß_4_pol0[1]*10**(-9))
+lambda1 = unp.uarray(params_gauß_1_pol0[1], errors_1_pol0[1])
+lambda2 = unp.uarray(params_gauß_2_pol0[1], errors_2_pol0[1])
+lambda3 = unp.uarray(params_gauß_3_pol0[1], errors_3_pol0[1])
+lambda4 = unp.uarray(params_gauß_4_pol0[1], errors_4_pol0[1])
+
+
+Imax1_pol0 = unp.uarray(params_gauß_1_pol0[2], errors_1_pol0[2])
+Imax2_pol0 = unp.uarray(params_gauß_2_pol0[2], errors_2_pol0[2])
+Imax3_pol0 = unp.uarray(params_gauß_3_pol0[2], errors_3_pol0[2])
+Imax4_pol0 = unp.uarray(params_gauß_4_pol0[2], errors_4_pol0[2])
+
+Imax1_pol90 = unp.uarray(params_gauß_1_pol90[2], errors_1_pol90[2])
+Imax2_pol90 = unp.uarray(params_gauß_2_pol90[2], errors_2_pol90[2])
+Imax3_pol90 = unp.uarray(params_gauß_3_pol90[2], errors_3_pol90[2])
+Imax4_pol90 = unp.uarray(params_gauß_4_pol90[2], errors_4_pol90[2])
+
+# E_R_1 = const.h * const.c/(params_gauß_1_pol0[1]*10**(-9))
+# E_R_2 = const.h * const.c/(params_gauß_2_pol0[1]*10**(-9))
+# E_R_3 = const.h * const.c/(params_gauß_3_pol0[1]*10**(-9))
+# E_R_4 = const.h * const.c/(params_gauß_4_pol0[1]*10**(-9))
+
+E_R_1 = const.h * const.c/(lambda1*10**(-9))
+E_R_2 = const.h * const.c/(lambda2*10**(-9))
+E_R_3 = const.h * const.c/(lambda3*10**(-9))
+E_R_4 = const.h * const.c/(lambda4*10**(-9))
 
 def q(E_R):
     return -(np.pi*const.hbar)**2/2 *(1/m_e + 1/m_h)/(E_R- E_G + mu * const.e**4/(2*(4*np.pi * const.epsilon_0 * epsilon_r * const.hbar)**2)) 
@@ -281,27 +309,31 @@ def q(E_R):
 def p(E_R):
     return (1.786 * const.e**2/(4*np.pi * const.epsilon_0 * epsilon_r))/(E_R- E_G + mu * const.e**4/(2*(4*np.pi * const.epsilon_0 * epsilon_r * const.hbar)**2)) 
 
-
+# Polarisationsgrad: {((params_gauß_1_pol0[2] - params_gauß_1_pol90[2]))/(params_gauß_1_pol0[2] + params_gauß_1_pol90[2])}
 
 print(f"""
 Probe 1
-Emission bei: {params_gauß_1_pol0[1]} nm
-Polarisationsgrad: {((params_gauß_1_pol0[2] - params_gauß_1_pol90[2]))/(params_gauß_1_pol0[2] + params_gauß_1_pol90[2])}
+Emission bei: {lambda1} nm
+I_max0: {Imax1_pol0} und I_max90: {Imax1_pol90}
+Polarisationsgrad: {(Imax1_pol0 - Imax1_pol90)/((Imax1_pol0 + Imax1_pol90))}
 Durchmesser: {pq(p(E_R_1), q(E_R_1))}
 
 Probe 2
-Emission bei: {params_gauß_2_pol0[1]} nm
-Polarisationsgrad: {((params_gauß_2_pol0[2] - params_gauß_2_pol90[2]))/(params_gauß_2_pol0[2] + params_gauß_2_pol90[2])}
+Emission bei: {lambda2} nm
+I_max0: {Imax2_pol0} und I_max90: {Imax2_pol90}
+Polarisationsgrad: {(Imax2_pol0 - Imax2_pol90)/((Imax2_pol0 + Imax2_pol90))}
 Durchmesser: {pq(p(E_R_2), q(E_R_2))}
 
 Probe 3
-Emission bei: {params_gauß_3_pol0[1]} nm
-Polarisationsgrad: {((params_gauß_3_pol0[2] - params_gauß_3_pol90[2]))/(params_gauß_3_pol0[2] + params_gauß_3_pol90[2])}
+Emission bei: {lambda3} nm
+I_max0: {Imax3_pol0} und I_max90: {Imax3_pol90}
+Polarisationsgrad: {(Imax3_pol0 - Imax3_pol90)/((Imax3_pol0 + Imax3_pol90))}
 Durchmesser: {pq(p(E_R_4), q(E_R_3))}
 
 Probe 4
-Emission bei: {params_gauß_4_pol0[1]} nm
-Polarisationsgrad: {((params_gauß_4_pol0[2] - params_gauß_4_pol90[2]))/(params_gauß_4_pol0[2] + params_gauß_4_pol90[2])}
+Emission bei: {lambda4} nm
+I_max0: {Imax4_pol0} und I_max90: {Imax4_pol90}
+Polarisationsgrad: {(Imax4_pol0 - Imax4_pol90)/((Imax4_pol0 + Imax4_pol90))}
 Durchmesser: {pq(p(E_R_4), q(E_R_4))}
 
 """)
@@ -309,8 +341,8 @@ Durchmesser: {pq(p(E_R_4), q(E_R_4))}
 
 
 
-plt.plot(lam_1_pol0, I_1_pol0 * 100000, linewidth=0.2, label=r'Messung')
-plt.plot(lambda_fit*10**(9), gauß(lambda_fit*10**(9), *params_gauß_1_pol0)* 100000, linewidth=0.2, label=r'Gauß Fit')
+plt.plot(lam_1_pol0, I_1_pol0 * 100000, label=r'Messung')
+plt.plot(lambda_fit*10**(9), gauß(lambda_fit*10**(9), *params_gauß_1_pol0)* 100000, label=r'Gauß Fit')
 plt.xlabel(r'$\lambda$ [nm]')
 plt.ylabel(r'I [will. Einh.]')
 #plt.xlim(-30,30)
@@ -320,8 +352,8 @@ plt.savefig('Kristall_1.pdf')
 plt.clf()
 
 
-plt.plot(lam_2_pol0, I_2_pol0* 100000, linewidth=0.2, label=r'Messung')
-plt.plot(lambda_fit*10**(9), gauß(lambda_fit*10**(9), *params_gauß_2_pol0)* 100000, linewidth=0.2, label=r'Gauß Fit')
+plt.plot(lam_2_pol0, I_2_pol0* 100000, label=r'Messung')
+plt.plot(lambda_fit*10**(9), gauß(lambda_fit*10**(9), *params_gauß_2_pol0)* 100000, label=r'Gauß Fit')
 plt.xlabel(r'$\lambda$ [nm]')
 plt.ylabel(r'I [will. Einh.]')
 #plt.xlim(-30,30)
@@ -331,8 +363,8 @@ plt.savefig('Kristall_2.pdf')
 plt.clf()
 
 
-plt.plot(lam_3_pol0, I_3_pol0* 100000, linewidth=0.2, label=r'Messung')
-plt.plot(lambda_fit*10**(9), gauß(lambda_fit*10**(9), *params_gauß_3_pol0)* 100000, linewidth=0.2, label=r'Gauß Fit')
+plt.plot(lam_3_pol0, I_3_pol0* 100000, label=r'Messung')
+plt.plot(lambda_fit*10**(9), gauß(lambda_fit*10**(9), *params_gauß_3_pol0)* 100000, label=r'Gauß Fit')
 plt.xlabel(r'$\lambda$ [nm]')
 plt.ylabel(r'I [will. Einh.]')
 #plt.xlim(-30,30)
@@ -342,8 +374,8 @@ plt.savefig('Kristall_3.pdf')
 plt.clf()
 
 
-plt.plot(lam_4_pol0, I_4_pol0* 100000, linewidth=0.2, label=r'Messung')
-plt.plot(lambda_fit*10**(9), gauß(lambda_fit*10**(9), *params_gauß_4_pol0)* 100000, linewidth=0.2, label=r'Gauß Fit')
+plt.plot(lam_4_pol0, I_4_pol0* 100000, label=r'Messung')
+plt.plot(lambda_fit*10**(9), gauß(lambda_fit*10**(9), *params_gauß_4_pol0)* 100000, label=r'Gauß Fit')
 plt.xlabel(r'$\lambda$ [nm]')
 plt.ylabel(r'I [will. Einh.]')
 #plt.xlim(-30,30)
@@ -652,10 +684,10 @@ plt.clf()
 # params_gauß_4_636, cov_gauß_4_636 = curve_fit(gauß, lam_4_636*10**(-9), I_4_636/(1))
 
 
-plt.plot(lam_1_pol0, savgol_filter(I_1_pol0, 51, 3), linewidth=0.4, label=r'$\lambda_{Laser}=405$nm')
-plt.plot(lam_1_448, savgol_filter(I_1_448, 51, 3), linewidth=0.4, label=r'$\lambda_{Laser}=448$nm')
-plt.plot(lam_1_518, savgol_filter(I_1_518, 51, 3), linewidth=0.4, label=r'$\lambda_{Laser}=518$nm')
-plt.plot(lam_1_636, savgol_filter(I_1_636, 51, 3), linewidth=0.4, label=r'$\lambda_{Laser}=636$nm')
+plt.plot(lam_1_pol0, savgol_filter(I_1_pol0, 51, 3)*10000, linewidth=0.8, label=r'$\lambda_{Laser}=405$nm')
+plt.plot(lam_1_448, savgol_filter(I_1_448, 51, 3)*10000, linewidth=0.8, label=r'$\lambda_{Laser}=448$nm')
+plt.plot(lam_1_518, savgol_filter(I_1_518, 51, 3)*10000, linewidth=0.8, label=r'$\lambda_{Laser}=518$nm')
+plt.plot(lam_1_636, savgol_filter(I_1_636, 51, 3)*10000, linewidth=0.8, label=r'$\lambda_{Laser}=636$nm')
 plt.xlabel(r'$\lambda$ [nm]')
 plt.ylabel(r'I [will. Einh.]')
 #plt.xlim(-30,30)
@@ -665,10 +697,10 @@ plt.savefig('Probe_1_lambda.pdf')
 plt.clf()
 
 
-plt.plot(lam_2_pol0, savgol_filter(I_2_pol0, 51, 3), linewidth=0.4, label=r'$\lambda_{Laser}=405$nm')
-plt.plot(lam_2_448, savgol_filter(I_2_448, 51, 3), linewidth=0.4, label=r'$\lambda_{Laser}=448$nm')
-plt.plot(lam_2_518, savgol_filter(I_2_518, 51, 3), linewidth=0.4, label=r'$\lambda_{Laser}=518$nm')
-plt.plot(lam_2_636, savgol_filter(I_2_636, 51, 3), linewidth=0.4, label=r'$\lambda_{Laser}=636$nm')
+plt.plot(lam_2_pol0, savgol_filter(I_2_pol0, 51, 3)*10000, linewidth=0.8, label=r'$\lambda_{Laser}=405$nm')
+plt.plot(lam_2_448, savgol_filter(I_2_448, 51, 3)*10000, linewidth=0.8, label=r'$\lambda_{Laser}=448$nm')
+plt.plot(lam_2_518, savgol_filter(I_2_518, 51, 3)*10000, linewidth=0.8, label=r'$\lambda_{Laser}=518$nm')
+plt.plot(lam_2_636, savgol_filter(I_2_636, 51, 3)*10000, linewidth=0.8, label=r'$\lambda_{Laser}=636$nm')
 plt.xlabel(r'$\lambda$ [nm]')
 plt.ylabel(r'I [will. Einh.]')
 #plt.xlim(-30,30)
@@ -678,10 +710,10 @@ plt.savefig('Probe_2_lambda.pdf')
 plt.clf()
 
 
-plt.plot(lam_3_pol0, savgol_filter(I_3_pol0, 51, 3), linewidth=0.4, label=r'$\lambda_{Laser}=405$nm')
-plt.plot(lam_3_448, savgol_filter(I_3_448, 51, 3), linewidth=0.4, label=r'$\lambda_{Laser}=448$nm')
-plt.plot(lam_3_518, savgol_filter(I_3_518, 51, 3), linewidth=0.4, label=r'$\lambda_{Laser}=518$nm')
-plt.plot(lam_3_636, savgol_filter(I_3_636, 51, 3), linewidth=0.4, label=r'$\lambda_{Laser}=636$nm')
+plt.plot(lam_3_pol0, savgol_filter(I_3_pol0, 51, 3)*10000, linewidth=0.8, label=r'$\lambda_{Laser}=405$nm')
+plt.plot(lam_3_448, savgol_filter(I_3_448, 51, 3)*10000, linewidth=0.8, label=r'$\lambda_{Laser}=448$nm')
+plt.plot(lam_3_518, savgol_filter(I_3_518, 51, 3)*10000, linewidth=0.8, label=r'$\lambda_{Laser}=518$nm')
+plt.plot(lam_3_636, savgol_filter(I_3_636, 51, 3)*10000, linewidth=0.8, label=r'$\lambda_{Laser}=636$nm')
 plt.xlabel(r'$\lambda$ [nm]')
 plt.ylabel(r'I [will. Einh.]')
 #plt.xlim(-30,30)
@@ -691,10 +723,10 @@ plt.savefig('Probe_3_lambda.pdf')
 plt.clf()
 
 
-plt.plot(lam_4_pol0, savgol_filter(I_4_pol0, 51, 3), linewidth=0.4, label=r'$\lambda_{Laser}=405$nm')
-plt.plot(lam_4_448, savgol_filter(I_4_448, 51, 3), linewidth=0.4, label=r'$\lambda_{Laser}=448$nm')
-plt.plot(lam_4_518, savgol_filter(I_4_518, 51, 3), linewidth=0.4, label=r'$\lambda_{Laser}=518$nm')
-plt.plot(lam_4_636, savgol_filter(I_4_636, 51, 3), linewidth=0.4, label=r'$\lambda_{Laser}=636$nm')
+plt.plot(lam_4_pol0, savgol_filter(I_4_pol0, 51, 3)*10000, linewidth=0.8, label=r'$\lambda_{Laser}=405$nm')
+plt.plot(lam_4_448, savgol_filter(I_4_448, 51, 3)*10000, linewidth=0.8, label=r'$\lambda_{Laser}=448$nm')
+plt.plot(lam_4_518, savgol_filter(I_4_518, 51, 3)*10000, linewidth=0.8, label=r'$\lambda_{Laser}=518$nm')
+plt.plot(lam_4_636, savgol_filter(I_4_636, 51, 3)*10000, linewidth=0.8, label=r'$\lambda_{Laser}=636$nm')
 plt.xlabel(r'$\lambda$ [nm]')
 plt.ylabel(r'I [will. Einh.]')
 #plt.xlim(-30,30)

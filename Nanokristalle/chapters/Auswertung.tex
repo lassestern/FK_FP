@@ -1,127 +1,118 @@
 \newpage
 \section{Auswertung}
-Die im Folgenden genannten Intensitäten ergeben sich aus dem Flächeninhalt des Peaks bei einer Energie von $661,7\,\text{eV}$
-im Absorptionsspektrum, da es sich dabei um die Energie der verwendeten Cs-Lampe handelt \cite{gilmore_practical_2008}.
 
-Die gemessenen Intensitäten für die vier ausgemessenen Würfel sind in Tabelle \ref{tab:Werte} aufgetragen.
-Dabei beschreiben die Intensitäten für den ersten Würfel, also nur die Aluminium-Hülle, die Grundintensität $I_0$.
-\begin{center}
-    \captionof{table}{Messwerte der Absorptionsmessungen für eine Messzeit von jeweils $\Delta t=300\,\text{s}$.
-                        $i$ beschriebt die in Abbildung \ref{fig:Richtungen} gezeigten Bestrahlungsrichtungen.}
-    \label{tab:Werte}
-    \begin{tabular}{c c c c c}
-        \toprule
-        $i$ & $I_0$ (Al-Hülle) & $I_i$ (Würfel 2) & $I_i$ (Würfel 3) & $I_i$ (Würfel 4) \\
-        \midrule
-        1  & (56088$\pm$279) & (47413$\pm$251) & (1800$\pm$21) & (46723$\pm$254) \\
-        2  & (55842$\pm$282) & (47567$\pm$265) & (1033$\pm$51) & (184$\pm$31) \\
-        3  & (56650$\pm$292) & (47079$\pm$268) & (1346$\pm$60) & (44259$\pm$264) \\
-        4  & (55866$\pm$290) & (47204$\pm$266) & (2670$\pm$70) & (12147$\pm$130) \\
-        5  & (55383$\pm$284) & (44569$\pm$252) & (612$\pm$13)  & (9232$\pm$116) \\
-        6  & (54930$\pm$275) & (46910$\pm$253) & (2257$\pm$60) & (11316$\pm$129) \\
-        7  &  &  &  & (11028$\pm$158) \\
-        8  &  &  &  & (15401$\pm$148) \\
-        9  &  &  &  & (15514$\pm$150) \\
-        10 &  &  &  & (12527$\pm$135) \\
-        11 &  &  &  & (8965$\pm$120) \\
-        12 &  &  &  & (10907$\pm$127) \\
-        \bottomrule
-    \end{tabular}
-\end{center}
+\subsection{Anregung mit 405\,nm}
+    \subsubsection*{Untersuchung des Kristalldurchmessers und der Polarisation}
+        Die gemessenen Emissionsspektren der verschiedenen Proben werden zunächst auf die Integrationszeit und die Sensitivität des Spektrometers normiert, um vergleichbare Daten zu erhalten. Die so erhaltenen 
+        Spektren sind für die drei CdSe-Nanokristallproben in Abbildung \ref{fig:size_kol} dargestellt und zeigen jeweils ein deutliches Maximum bei der Photolumineszenzwellenlänge. Um diese Wellenlänge sowie 
+        die zugehörige Emissionsintensität zu bestimmen, wird an die einzelnen Spektren eine Gauß-Funktion
 
-Um die Absoptionskoeffizienten der verschiedenen Würfelmaterialien bestimmen zu können, muss für die drei Messreihen der Intensität $I_i$
-das Gleichungssystem \ref{unsere_matrix} gelöst werden.
-Dabei handelt es sich in der Regel um ein nicht-quadratisches lineares Gleichungssystem.
-Dieses wird mit der Methode kleinster Quadrate auf eine quadratische Form angenähert und dann nach den Absorptionskoeffizienten $\mu_j$ gelöst.
+        \begin{equation*}
+            \text{f(x)} = \text{A} \exp\left(- \frac{\left(\text{x-x}\right)_0^2}{2\sigma^2}\right)
+        \end{equation*}
 
-Das Ergebnis dieses Verfahrens für die beiden homogen gefüllten Würfel ist in Tabelle \ref{tab:Erg} zu sehen.
-Da es sich dabei eben um homogene Würfel handelt und diese lediglich mit den Projektionen $i=1,...,6$ vermessen wurden (siehe Tabelle \ref{tab:Werte}),
-wird die Geometriematrix aus Gleichung \ref{unsere_matrix} in diesem Fall wie folgt vereinfacht.
-\begin{equation}
-    \begin{pmatrix}
-        1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
-        0 & 0 & 0 & 1 & 1 & 1 & 0 & 0 & 0 \\
-        0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 \\
-        0 & \sqrt{2} & 0 & 0 & 0 & \sqrt{2} & 0 & 0 & 0 \\
-        \sqrt{2} & 0 & 0 & 0 & \sqrt{2} & 0 & 0 & 0 & \sqrt{2} \\
-        0 & 0 & 0 & \sqrt{2} & 0 & 0 & 0 & \sqrt{2} & 0 \\
-        0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 1 \\
-        0 & 1 & 0 & 0 & 1 & 0 & 0 & 1 & 0 \\
-        1 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 \\
-        0 & 0 & 0 & 0 & 0 & \sqrt{2} & 0 & \sqrt{2} & 0 \\
-        0 & 0 & \sqrt{2} & 0 & \sqrt{2} & 0 & \sqrt{2} & 0 & 0 \\
-        0 & \sqrt{2} & 0 & \sqrt{2} & 0 & 0 & 0 & 0 & 0 
-      \end{pmatrix}
-      \qquad \Longrightarrow \qquad
-      \begin{pmatrix}
-        3 \\
-        3 \\
-        3 \\
-        2\sqrt{2} \\
-        3\sqrt{2} \\
-        2\sqrt{2} \\
-      \end{pmatrix}
-\end{equation}
-% \newpage
-\begin{center}
-    \captionof{table}{Berechnete Absorptionskoeffizienten für die neun Teilwürfel der zwei homogonen Würfel.}
-    \label{tab:Erg}
-    \begin{tabular}{c c c c c}
-        \toprule
-        $\mu$ / $\text{cm}^{-1}$ (Würfel 2) & Abw. / \% (Delrin) & $\mu$ / $\text{cm}^{-1}$ (Würfel 3) & Abw. / \% (Blei) \\
-        \midrule
-        (0,055$\pm$0.003) & 52,16 & (1.152$\pm$0.010) & 7,85 \\
-        \bottomrule
-    \end{tabular}
-\end{center}
-Von den uns gegebenen möglichen Materialien, ähnelt Würfel 2 vom Absorptionskoeffizienten her Delrin ($\mu_{Delrin}=0.116\,\text{cm}^{-1}$)
-und Würfel 3 dem von Blei ($\mu_{Blei}=1.2497\,\text{cm}^{-1}$). Die Abweichungen der Absorptionskoeffizienten sind ebenfalls in der Tabelle ablesbar.
+        angepasst.
 
-Da im Falle des letzten Würfels in in allen 12 Orientierungen gemessen wurde ($i=1,...,12$),
-die Grundintensität $I_0$ jedoch lediglich in 6 Richtungen ($i=1,...,6$) (siehe Tabelle \ref{tab:Werte}) gemessen wurde,
-wurden die Messwerte für die fehlenden 6 Orientierungen ($i=6,...,12$) beim leeren Würfel von den ersten 6 übernommen.
-Diese Einzelmessungen sind daher nicht mehr unabhängig voneinander.
-Unter Beachtung der Korrelation dieser Einzelmessungen, wurde die Lösung für die Absorptionskoeffizienten
-mittels der Methode kleinster Quadrate gefunden und ist in Tabelle \ref{tab:Erg2} aufgetragen.
-% \begin{center}
-%     \captionof{table}{Berechnete Absorptionskoeffizienten für den inhomogen gefüllten Würfel.}
-%     \label{tab:Erg2}
-%     \begin{tabular}{c c c c}
-%         \toprule
-%         $j$ & $\mu_j$ / $\text{cm}^{-1}$ (Würfel 4) & Material & Abweichung / \% \\
-%         \midrule
-%         1 & (-0.1711$\pm$0.0088) & / & / \\
-%         2 & (-0.2806$\pm$0.0172) & / & / \\
-%         3 & (0.0360$\pm$0.0062)  & Delrin & 68,97$\,$\% \\
-%         4 & (1.6296$\pm$0.0374)  & Blei & 30,40$\,$\% \\
-%         5 & (1.6441$\pm$0.0396)  & Blei & 31,56$\,$\% \\
-%         6 & (1.5675$\pm$0.0370)  & Blei & 25,43$\,$\% \\
-%         7 & (-0.1167$\pm$0.0082) & / & / \\
-%         8 & (-0.3045$\pm$0.0172) & / & / \\
-%         9 & (0.0697$\pm$0.0062)  & Delrin & 39,91$\,$\% \\
-%         \bottomrule
-%     \end{tabular}
-% \end{center}
-\newpage
-\begin{center}
-    \captionof{table}{Berechnete Absorptionskoeffizienten für den inhomogen gefüllten Würfel.}
-    \label{tab:Erg2}
-    \begin{tabular}{c c c c}
-        \toprule
-        $j$ & $\mu_j$ / $\text{cm}^{-1}$ (Würfel 4) & Material & Abweichung / \% \\
-        \midrule
-        1 & (-0,17$\pm$0,08) & / & / \\
-        2 & (-0,28$\pm$0,08) & / & / \\
-        3 & (0,04$\pm$0,08)  & Delrin & 68,97 \\
-        4 & (1,63$\pm$0,10)  & Blei & 30,40 \\
-        5 & (1,64$\pm$0,11)  & Blei & 31,56 \\
-        6 & (1,57$\pm$0,10)  & Blei & 25,43 \\
-        7 & (-0,12$\pm$0,08) & / & / \\
-        8 & (-0,30$\pm$0,08) & / & / \\
-        9 & (0,07$\pm$0,08)  & Delrin & 39,91 \\
-        \bottomrule
-    \end{tabular}
-\end{center}
-Den negativen Lösungen für die Absoptionskoeffizienten werden keine Materialien zugeordnet.
-Auf mögliche Gründe dafür wird in der Diskussion eingegangen.
-Die Materialien und die Abweichungen für die restlichen Absoptionskoeffizienten sind in Tabelle \ref{tab:Erg2} eingetragen.
+        \FloatBarrier
+
+        \begin{figure}[h]
+        \centering
+        \includegraphics[width = 0.45\textwidth]{Kristall_1.pdf}
+        \includegraphics[width = 0.45\textwidth]{Kristall_2.pdf}
+        \includegraphics[width = 0.45\textwidth]{Kristall_3.pdf}
+        \label{fig:size_kol}
+        \caption{Verlauf der Emissionsspektren mitsamt der angepassten Gauß-Funktionen für die CdSe-Nanokristalle unterschiedlicher Größen.}
+        %   \label{fig:size_kol}
+        \end{figure}
+
+        \FloatBarrier
+
+        Aus dem Parameter x$_0$, der die zentrale Emissionswellenlänge angibt, können über Formel REF und den Materialeigenschaften von CdSe (REF),
+
+        \begin{center}
+            \captionof{table}{Materialeigenschaften von CdSe}
+            \label{tab:prop_CdSe}
+            \begin{tabular}{c c}
+                \toprule
+                $\text{m}_{\text{e}}^*$ &  0,13$\text{m}_{\text{e}}$\\
+                $\text{m}_{\text{h}}^*$ &  -0,45$\text{m}_{\text{h}}$\\
+                $\text{E}_{\text{G}}$ &  \SI{1.74}{\electronvolt}\\
+                $\epsilon_{\text{r}}$ &  \num{9.5}\\
+                \bottomrule
+            \end{tabular}
+        \end{center}
+
+
+        wie der effektiven Elektronenmasse $\text{m}_{\text{e}}$, der effektiven Lochmasse $\text{m}_{\text{h}}$, der Energielücke $\text{E}_{\text{G}}$ und der relativen Permittivität $\epsilon_{\text{r}}$,
+        die Durchmesser der Nanokristalle berechnet werden. Diese sind zusammen mit den Anpassungsergebnissen in Tabelle REF aufgelistet. Da die Emissionsspektren für um 90° verschiedene Polarisationen gemessen
+        worden sind, können aus den maximalen Intensitäten der Anpassungen an die beiden Spektren unterschiedlicher Polarisation auch die Polarisationen der emittierten Strahlung bestimmt werden.
+
+
+        \begin{center}
+            \captionof{table}{Ergebnisse}
+            \label{tab:Werte}
+            \begin{tabular}{c c c c c c}
+                \toprule
+                Probe & $\text{x}_0 $ [nm] & $\text{I}_{\text{max, 0°}}$ [a.u.] & $\text{I}_{\text{max, 90°}}$ [a.u.] & P & d [nm] \\
+                \midrule
+                1  & (641,74$\pm$0,14) & (1,800$\pm$0,014) & (1,800$\pm$0,014) & (0,0$\pm$0,5)\% & (2,4773$\pm$0,0018) \\
+                2  & (580,99$\pm$0,14) & (2,300$\pm$0,014) & (2,300$\pm$0,014) & (0,0$\pm$0,5)\% & (1,8964$\pm$0,0010) \\
+                3  & (540,85$\pm$0,14) & (3,500$\pm$0,014) & (3,500$\pm$0,014) & (0,0$\pm$0,4)\% & (1,6624$\pm$0,0010) \\
+
+                \bottomrule
+            \end{tabular}
+        \end{center}
+
+        Aus den so erhaltenen Ergebnissen wird zu einem die klare Abhängigkeit der Photolumineszenzwellenlänge von deutlich und zum anderen auch die nicht vorhandene Polarisation des emittierten Lichts. Dies deckt
+        sich mit der Vorstellung einer isotropen Strahlung bei zufälliger Rekombination der Elektronen-Loch-Paare.
+
+
+    \subsubsection*{Abhängigkeit der Photolumineszenz von der Anregungsleistung}
+        Neben der Abhängigkeit der Photolumineszenzwellenlänge von den Ausmaßen des Nanokristalls soll auch die Abhängigkeit der Photolumineszenzintensität von der Leistung des anregenden Lasers untersucht werden. 
+        Dazu wird an Spektren mit Anregungsleistungen von \SI{1}{\milli\watt} bis \SI{20}{\milli\watt} jeweils die obige Gauß-Funktion angepasst und die maximale Intensität bestimmt. Diese sind in Abbildung 
+        \ref{fig:IvsP} gegen die Anregungsleistung aufgetragen und zeigen deutlich einen linearen Zusammenhang, der einen Sprung bei einer Laserleistung von circa \SI{7}{\milli\watt} aufweist. 
+
+
+        \FloatBarrier
+
+        \begin{figure}[h]
+        \centering
+        \includegraphics[width = 0.6\textwidth]{I_P.pdf}
+        \label{fig:IvsP}
+        \caption{Angepasste maximale Intensität der Photolumineszenz gegen die anregenden Laserleistung.}
+        %   \label{fig:size_kol}
+        \end{figure}
+
+        \FloatBarrier
+
+
+\subsection{Untersuchung mit verschiedenen Anregungswellenlängen}
+    Zur Untersuchung der Photolumineszenz bei Anregung mit verschiedenen Wellenlängen wurden zusätzlich zu den Spektren bei $\lambda_{\text{Laser}}=$\SI{405}{\nano\metre} auch Spektren für Anregungsleistung
+    von \SI{448}{\nano\metre}, \SI{518}{\nano\metre} und \SI{636}{\nano\metre} aufgenommen und analog auf die Spektrometereffizienz und Integrationszeit normiert. Die Spektren der verschiedenen Wellenlängen 
+    sind für die vier verschiedenen Proben in Abbildung \ref{fig:PLvsLambda} dargestellt. In all diesen Spektren sind teils dünne Maxima zu erkennen. Bei diesen handelt es sich um Reflexionen des anregenden
+    Lasers in das Spektrometers, da die Wellenlänge dieser Maxima exakt auf der Anregungswellenlängen liegen.
+
+
+
+
+
+
+
+
+
+
+\FloatBarrier
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width = 0.48\textwidth]{Probe_1_lambda.pdf}
+  \includegraphics[width = 0.48\textwidth]{Probe_2_lambda.pdf}
+  \includegraphics[width = 0.48\textwidth]{Probe_3_lambda.pdf}
+  \includegraphics[width = 0.48\textwidth]{Probe_4_lambda.pdf}
+  \label{fig:PLvsLambda}
+  \caption{Angepasste maximale Intensität der Photolumineszenz gegen die anregenden Laserleistung.}
+%   \label{fig:size_kol}
+\end{figure}
+
+\FloatBarrier
+
