@@ -1,93 +1,41 @@
 \newpage
 \section{Versuchsaufbau und -durchführung}
-        Der Aufbau des Versuches ist in Abbildung \ref{fig:Aufbau} zu sehen.
+        Der Aufbau des Versuches ist in Abbildung \ref{fig:Aufbau} zu sehen und kann in einen Abschnitt zur Anregung der Photolumineszenz und einen zu derer Detektion unterteilt werden. 
         \begin{figure}[h]
           \centering
-          \includegraphics[width = 0.6\textwidth]{pictures/Aufbau.png}
-          \caption{Der Aufbau zur Vermessung der Absorptionkoeffizienten unbekannter Materialien. Entnommen aus \cite{tu_dortmund_versuchsanleitung_2021-6}}
+          \includegraphics[width = 1\textwidth]{pictures/PL_Aufbau.png}
+          \caption{Der Aufbau zur Vermessung der Photolumineszenz der verschiedenen Proben.}
           \label{fig:Aufbau}
         \end{figure}
-        Ein $^{137}\text{Cs}$-Strahler sendet aus einer kleinen Öffnung kollimierte $\gamma$-Strahlung aus.
-        Diese passiert eine Halterung in der die zu untersuchenden Würfel eingebaut, bewegt und rotiert werden können.
-        Diese Würfel bestehen aus $3\times3\times3$ Elementarwürfeln mit je $1\,\text{cm}$ Kantenlänge in einer dünnen Aluminiumhülle.
-        Im Rahmen dieses Versuches wird nur die mittlere $3\times3$ Schicht der Würfel untersucht.
-        Um die übriggebliebene Intensität, nach Durchqueren des Würfels, zu messen,
-        trifft die Strahlung daraufhin auf einen anorganischen Szintillationsdetektor.
-        Dabei werden die Atome des Szintillatormaterials angeregt, welche sich durch Emission eines Photons wieder abregen.
-        Diese Photonen treffen auf einen Photomultiplier, welcher an einen Multichannelanalyzer angeschlossen ist,
-        der die gemessenen Impulse der Größe nach in ein Histogramm einsortiert und dieses auf dem Computer ausgibt.
-        Der gesamte Aufbau ist zusätzlich mit einer Wand aus Blei-Blöcken abgeschirmt.
 
-        % Als Erstes wird eine Leermessung ohne eingespannten Würfel durchgeführt.
-        Nun werden der Reihe nach vier verschiedene Würfel in der Halterung befestigt und nach der in Abbildung \ref{fig:Richtungen}
-        gezeigten Projektion bestrahlt.
-        Bei dem ersten Würfel handelt es sich lediglich um eine Hülle aus Aluminium.
-        Die nächsten zwei Würfel sind zusätzlich homogen gefüllt.
-        Diese werden jeweils aus sechs Richtungen ($I_1,...,I_6$) bestrahlt und
-        die entsprechenden Absorptionsspektren aufgenommen.
-        Als letztes wird ein Würfel unbekannter Zusammensetzung untersucht,
-        indem dieser aus allen 12 Richtungen der Projektion aus Abbildung \ref{fig:Richtungen} bestrahlt wird.
-        % \begin{figure}[h]
-        %     \centering
-        %     \includegraphics[width = 0.6\textwidth]{pictures/richtungen.png}
-        %     \caption{Schematische Darstellung der Mittelschicht der Würfel. Die verschiedenen Bestrahlungsrichtungen sind ebenfalls eingetragen.}
-        %     \label{fig:Projektion}
-        %   \end{figure}
-          
+        Der Anregungsabschnitt besteht aus dichroitischem Spiegel, der Licht mit einer Wellenlänge über \SI{425}{\nano\metre} reflektiert und Licht mit einer höheren Wellenlänge transmittiert. Dieser Spiegel 
+        wird einseitig mit einem Diodenlaser der Wellenlänge \SI{405}{\nano\metre} bestrahlt, dessen Licht durchläuft einerseits einen optischen Isolator, um eine Rückreflexion in den Diodenlaser zu verhindern 
+        und wird andererseits durch eine Glan-Taylor-Prisma in seiner Polarisation definiert. Dieser Laserstrahl wird gemäß der obigen Beschreibung durch den dichroitischen Spiegel direkt in Richtung Probe
+        transmittiert. In einem zweiten Anregungspfad können drei weitere Laser der Wellenlängen \SI{450}{\nano\metre}, \SI{518}{\nano\metre} und \SI{636}{\nano\metre} platziert werden, deren Licht vom 
+        dichroitischen Spiegel wiederum auf die Probenküvette reflektiert wird. Hinter dem dichroitischen Spiegel kann eine Si-Photodiode platziert werden, um die Anregungsleistung des Lasers zu messen.
+        Es werden 4 Proben benutzt. 3 Proben sind CdSe-Nanokristalle unterschiedlicher Größe und eine Probe enthält Kohlenstoff-Nanopartikel.
+        Im Detektionsabschnitt wird die durch Anregung der Proben entstehende Photolumineszenz-Strahlung \ref{fig:PL} zunächst durch eine achromatische Linse mit einer Brennweite von \SI{60}{\milli\metre} 
+        kollimiert. Zur Untersuchung der Polarisation der Photolumineszenz wird ein $\lambda$/2-Plättchen mit einem Glan-Taylor-Prisma kombiniert, sodass nur eine ausgewählte Polarisation des kollimierten 
+        Lichts transmittiert wird. Zuletzt wird die Strahlung des \SI{405}{\nano\metre}-Lasers über einen Interferenzfilter ausgefiltert und die verbleibende Strahlung per Glasfaserkabel in ein Spektrometer 
+        eingekoppelt.
+        \newpage
+        Nachdem der Strahl justiert worden ist, werden zunächst alle Proben mit dem \SI{405}{\nano\metre}-Laser und einer Leistung von \SI{1}{\milli\watt} angeregt und die zugehörige Photolumineszenz 
+        in Abhängigkeit der Polarisation dieser per Spektrometer vermessen.
 
-    %     Um die Spektrallinien und deren Aufspaltung zu vermessen, wird eine Cadmium-Spektrallampe innerhalb eines Elektromagnetens so platziert, dass das Licht der Lampe senkrecht zu den Magnetfeldlinien 
-    %     beobachtet werden kann. Dieses ausgesendete Licht wird zunächst durch das Objetiv O kollimiert und anschließend durch die Kondensorlinse L$_1$ möglichst genau auf den Spalt S$_1$ abgebildet. Hinter 
-    %     dem Spalt wird das Licht durch die Linse L$_2$ erneut kollimiert und durchläuft daraufhin ein Geradsichtprisma, in dem die Wellenlängenkomponenten aufgrund unterschiedlich starker Brechung räumlich 
-    %     getrennt werden. Es ergeben sich eine grüne, blaue, dunkelblaue und rote Komponente. Die nun getrennten Komponenten durchlaufen einen Polarisationsfilter, der ermöglicht nur ausgewählte Übergänge zu 
-    %     beobachten und werden durch die Linse L$_3$ auf einen weiteren Spalt S$_2$ fokussiert. Dieser ist verschiebbar, sodass eine ausgewählte Wellenlängenkomponenten den Spalt durchlaufen kann, während alle 
-    %     anderen Komponenten blockiert werden. Zuletzt wird das Licht über die Linse L$_4$ auf die Lummer-Gehrcke-Platte fokussiert. Diese erzeugt ein Interferenzmuster, das über eine Digitalkamera aufgenommen 
-    %     und aus dem die Wellenlänge des Lichts bestimmt werden kann.
+        Anschließend wird die Photolumineszenz der ersten Probe bei Bestrahlung durch \SI{405}{\nano\metre}-Laser für Anregungsleistungen zwischen \SI{1}{\milli\watt} und \SI{20}{\milli\watt} in Schritten
+        von ungefähr \SI{1}{\milli\watt} unabhängig von der Polarisation per Spektrometer vermessen.
 
-    %     \FloatBarrier
+        Zuletzt werden die Photolumineszenzspektren aller vier Proben bei Anregung mit den vier verschiedenen Laserwellenlängen erneut unabhängig von der Polarisation aufgenommen. 
 
-    %     \begin{figure}[h]
-    %       \centering
-    %       \includegraphics[width = 0.8\textwidth]{pictures/Aufbau.png}
-    %       \caption{Der Aufbau zur Vermessung der Spektrallinien sowie deren Aufspaltung. Das Licht stammt aus einer Cadmium-Spektrallampe und die Spektrallinien werden durch einen Elektromagneten aufgespalten. Anschließend wird das Licht durch ein Geradsichtprisma räumlich in seine Wellenlängenkomponenten zerlegt. Die Komponenten können einzeln auf eine Lummer-Gehrcke-Platte abgebildet werden und erzeugen dort ein Interferenzbild.}
-    %       \label{fig:Aufbau}
-    %     \end{figure}
-    
-    %     \FloatBarrier
+        \FloatBarrier
 
-    
+        \begin{figure}[h]
+          \centering
+          \includegraphics[width = 0.3\textwidth]{pictures/PL1.jpg}
+          \includegraphics[width = 0.3\textwidth]{pictures/PL2.jpg}
+          \includegraphics[width = 0.3\textwidth]{pictures/PL3.jpg}
+          \caption{Die Photolumineszenz drei verschiedener Proben.}
+          \label{fig:PL}
+        \end{figure}
 
-    % \subsection{Kalibrierung des Magnetfelds}
-    %     Für die Auswertung der Aufspaltung ist die Kenntnis des angelegten Magnetfelds notwendigs. Da das Magnetfeld jedoch nicht gemessen werden kann, während die Spektrallampe in den Elektromagneten 
-    %     eingesetzt ist, wird das Magnetfeld im Zentrum des Elektromagneten zunächst kalibriert. Dazu wird das Magnetfeld in Abhängigkeit vom angelegtem Spulenstrom mit einer Hall-Sonde im Bereich von 
-    %     \SI{0.4}{\ampere} bis \SI{7.2}{\ampere} vermessen. So soll ein Zusammenhang zwischen Magnetfeldstärke und Stromstärke ermittelt werden, der es ermöglicht die angelegte Magnetfeldstärke über den 
-    %     Spulenstrom zu berechnen.   
-
-    % \subsection{Vermessung der Spektrallinienaufspaltung}
-    %     \subsubsection*{Vermessung des normalen Zeeman-Effekts}
-    %         Zur Vermessung des normalen Zeeman-Effekts wird die rote Spektrallinie untersucht. Dazu wird diese auf die Lummer-Gehrcke-Platte abgebildet und das Interferenzbild für vier Fälle aufgenommen.
-            
-    %         \begin{enumerate}
-    %             \item I$_{\text{Spule}}$ = \SI{0}{\ampere}, $\qquad$    $\varphi_{\text{Pol}}$ = \SI{0}{\degree}
-    %             \item I$_{\text{Spule}}$ = \SI{0}{\ampere}, $\qquad$    $\varphi_{\text{Pol}}$ = \SI{90}{\degree}
-    %             \item I$_{\text{Spule}}$ = \SI{5}{\ampere}, $\qquad$    $\varphi_{\text{Pol}}$ = \SI{0}{\degree}
-    %             \item I$_{\text{Spule}}$ = \SI{5}{\ampere}, $\qquad$    $\varphi_{\text{Pol}}$ = \SI{90}{\degree}
-    %         \end{enumerate}
-
-    %         In den ersten beiden Fällen liegt kein Magnetfeld an und die Spektrallinie sollte nicht aufgespalten sein. Im dritten und vierten Fall sind die Spektrallinien aufgespalten. Es sollte dennoch nur 
-    %         im dritten Fall eine optische Aufspaltung erkennbar sein, da das Licht des normalen Übergangs hier nicht durch den Polarisationsfilter herausgefiltert wird.
-            
-            
-    %     \subsubsection*{Vermessung des anormalen Zeeman-Effekts}
-    %         Zur Vermessung des anormalen Zeeman-Effekts wird die blaue Spektrallinie untersucht. Diese wird wie die rote auf die Lummer-Gehrcke-Platte abgebildet und das Interferenzbild für folgende vier Fälle 
-    %         aufgenommen. Hier ist der letzte Fall durch eine Magnetfeldstärke definiert, da die zugehörigen Daten aus einem externen Experiment übernommen werden mussten.
-            
-    %         \begin{enumerate}
-    %             \item I$_{\text{Spule}}$ = \SI{0}{\ampere}, $\qquad$    $\varphi_{\text{Pol}}$ = \SI{0}{\degree}
-    %             \item I$_{\text{Spule}}$ = \SI{0}{\ampere}, $\qquad$    $\varphi_{\text{Pol}}$ = \SI{90}{\degree}
-    %             \item I$_{\text{Spule}}$ = \SI{2.6}{\ampere}, $\qquad$    $\varphi_{\text{Pol}}$ = \SI{0}{\degree}
-    %             \item B$_{\text{Spule}}$ = \SI{1.009}{\tesla}, $\qquad$    $\varphi_{\text{Pol}}$ = \SI{90}{\degree}
-    %         \end{enumerate}
-
-    %         Erneut sollte für die ersten beiden Fällen keine Aufspaltung zu sehen sein. Im dritten und vierten Fall sind die Spektrallinien erneut aufgespalten. Bei dieser Beobachtung sollte die optische 
-    %         Aufspaltung im Gegensatz zur Beobachtung des normalen Zeeman-Effekts im vierten Fall bei einem Polarisationswinkel von \SI{90}{\degree} zu sehen sein.
-        
+        \FloatBarrier

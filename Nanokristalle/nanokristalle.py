@@ -272,10 +272,17 @@ lambda_fit = np.linspace(320, 747, 1000)*10**(-9)
 #Materialeigenschaften des Kerns (CdSe)
 E_G = 1.74*const.e
 m_e = 0.13*const.m_e
-# Eg = 1.84*const.e
 m_h = -0.45*const.m_e  
 mu = m_e*m_h/(m_h+m_e)
 epsilon_r = 9.15
+
+
+#Materialeigenschaften des C-QDots
+E_G_C = 0*const.e
+m_e_C = 0.2*const.m_e
+m_h_C = -0.25*const.m_e  
+mu_C = m_e*m_h/(m_h+m_e)
+epsilon_r_C = 9.15
 
 lambda1 = unp.uarray(params_gauß_1_pol0[1], errors_1_pol0[1])
 lambda2 = unp.uarray(params_gauß_2_pol0[1], errors_2_pol0[1])
@@ -690,6 +697,7 @@ plt.plot(lam_1_518, savgol_filter(I_1_518, 51, 3)*10000, linewidth=0.8, label=r'
 plt.plot(lam_1_636, savgol_filter(I_1_636, 51, 3)*10000, linewidth=0.8, label=r'$\lambda_{Laser}=636$nm')
 plt.xlabel(r'$\lambda$ [nm]')
 plt.ylabel(r'I [will. Einh.]')
+plt.title("CdSe: 2,48 nm")
 #plt.xlim(-30,30)
 #plt.ylim(-30,30)
 plt.legend(loc='best')
@@ -703,6 +711,7 @@ plt.plot(lam_2_518, savgol_filter(I_2_518, 51, 3)*10000, linewidth=0.8, label=r'
 plt.plot(lam_2_636, savgol_filter(I_2_636, 51, 3)*10000, linewidth=0.8, label=r'$\lambda_{Laser}=636$nm')
 plt.xlabel(r'$\lambda$ [nm]')
 plt.ylabel(r'I [will. Einh.]')
+plt.title("CdSe: 1,90 nm")
 #plt.xlim(-30,30)
 #plt.ylim(-30,30)
 plt.legend(loc='best')
@@ -716,6 +725,7 @@ plt.plot(lam_3_518, savgol_filter(I_3_518, 51, 3)*10000, linewidth=0.8, label=r'
 plt.plot(lam_3_636, savgol_filter(I_3_636, 51, 3)*10000, linewidth=0.8, label=r'$\lambda_{Laser}=636$nm')
 plt.xlabel(r'$\lambda$ [nm]')
 plt.ylabel(r'I [will. Einh.]')
+plt.title("CdSe: 1,66 nm")
 #plt.xlim(-30,30)
 #plt.ylim(-30,30)
 plt.legend(loc='best')
@@ -729,6 +739,7 @@ plt.plot(lam_4_518, savgol_filter(I_4_518, 51, 3)*10000, linewidth=0.8, label=r'
 plt.plot(lam_4_636, savgol_filter(I_4_636, 51, 3)*10000, linewidth=0.8, label=r'$\lambda_{Laser}=636$nm')
 plt.xlabel(r'$\lambda$ [nm]')
 plt.ylabel(r'I [will. Einh.]')
+plt.title("C Q-Dots")
 #plt.xlim(-30,30)
 #plt.ylim(-30,30)
 plt.legend(loc='best')
