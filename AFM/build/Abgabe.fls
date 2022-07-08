@@ -392,6 +392,14 @@ INPUT ./pictures/const_height_force.png
 INPUT ./pictures/hysterese.png
 INPUT ./pictures/hysterese.png
 INPUT ./pictures/hysterese.png
+INPUT ./chapters/Durchfuehrung.tex
+INPUT ./chapters/Durchfuehrung.tex
+INPUT ./pictures/Aufbau.png
+INPUT ./pictures/Aufbau.png
+INPUT ./pictures/Aufbau.png
+INPUT ./pictures/Mikrostruktur.png
+INPUT ./pictures/Mikrostruktur.png
+INPUT ./pictures/Mikrostruktur.png
 INPUT /home/lasse/.local/texlive/2019/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc
 INPUT build/Abgabe.aux
 INPUT build/Abgabe.run.xml

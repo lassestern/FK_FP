@@ -208,7 +208,7 @@
           veränderten Interfernzeffekten eben diese Auslenkung berechnet wird.
 
           Ein weitere, technisch deutlich einfacher umsetzbare Technik beruht auf dem Lichtzeigerprinzip. Hier wird ein Laserstrahl auf den Cantilever geschossen und von diesem auf eine Viersegmentdiode 
-          reflektiert. Diese besteht aus vier einzelnen Dioden und kann aus dem Intensitätsverhltnis der einzelnen Dioden die Position des Laserstrahls relativ zum Zentrum der Photdiode bestimmen. Aufgrund
+          reflektiert. Diese besteht aus vier einzelnen Dioden und kann aus dem Intensitätsverhältnis der einzelnen Dioden die Position des Laserstrahls relativ zum Zentrum der Photdiode bestimmen. Aufgrund
           des Einsatzes von vier Photdioden lässt sich so neben der vertikalen auch die laterale Auslenkung bestimmen. Die mit dieser Methode minimal messbare vertikale Auslenkung ist unter anderem proportional
           zur Wellenlänge des Lasers und der Spotgröße des Laserstrahl auf dem Cantilevers, da beides den störenden Einfluss der Interferenz senkt. Durch Optimierung dieser Parameter lassen sich mit dem
           Lichtzeigerprinzip vertikale Auslenkung ab einem Bereich um circa $1 \si{\micro\metre}$ messen.
@@ -289,6 +289,13 @@
           \end{figure}
         
           \FloatBarrier
+
+
+        \subsection{Disc-Speichermedien}
+          Um auf Discs Informationen zu speichern und diese optisch auszulesen, werden entlang von Rillen Absenkungen vorbestimmter Höhe in die Disc gepresst. Wenn ein Ausleselaser über die Rille scannt, kommt
+          es an den Kanten der Absenkungen zu destruktiver Interferenz. Der Abfall der reflektierten Intesität wird vom Computer als 1 gespeichert, währen die vorhandene Intensität als 0 gedeutet wird. Da die
+          Abfrage in einem vordefinierten Abstand wiederholt wird können so mehrere Einsen sowie Nullen und somit Informationen gespeichert werden. Umso dichter die Rillen aneinandern liegen und je kürzer die
+          Länge der Absenkungen ist, desto mehr Informationen können auf den Discs immer gleichen Durchmessers gespeichert werden.
 
 
 
