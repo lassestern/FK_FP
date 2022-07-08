@@ -34,14 +34,99 @@
       \strng{authornamehash}{f75df706eccca2d56ed63592858b16fb}
       \strng{authorfullhash}{f75df706eccca2d56ed63592858b16fb}
       \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Versuchsanleitung Photolumineszenz von kolloidalen Nanokristallen}
+      \field{title}{Versuchsanleitung: Photolumineszenz von kolloidalen Nanokristallen}
       \field{urlday}{3}
       \field{urlmonth}{7}
       \field{urlyear}{2022}
       \field{urldateera}{ce}
+    \endentry
+    \entry{karsten}{book}{}
+      \name{author}{1}{}{%
+        {{hash=b4fe3d295260871611c0b3b758287b49}{%
+           family={Karsten},
+           familyi={K\bibinitperiod},
+           given={Lars},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Göttingen}%
+      }
+      \list{publisher}{1}{%
+        {Cuvillier}%
+      }
+      \strng{namehash}{b4fe3d295260871611c0b3b758287b49}
+      \strng{fullhash}{b4fe3d295260871611c0b3b758287b49}
+      \strng{bibnamehash}{b4fe3d295260871611c0b3b758287b49}
+      \strng{authorbibnamehash}{b4fe3d295260871611c0b3b758287b49}
+      \strng{authornamehash}{b4fe3d295260871611c0b3b758287b49}
+      \strng{authorfullhash}{b4fe3d295260871611c0b3b758287b49}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-86537-076-1}
+      \field{title}{Photolumineszenzspektroskopie an Halbleiterquantenpunkten}
+      \field{year}{2004}
+      \field{dateera}{ce}
+    \endentry
+    \entry{7242091}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=ec01820f9f8f4fb8d7128fd45cc80829}{%
+           family={{Hens, Zeger}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \strng{namehash}{ec01820f9f8f4fb8d7128fd45cc80829}
+      \strng{fullhash}{ec01820f9f8f4fb8d7128fd45cc80829}
+      \strng{bibnamehash}{ec01820f9f8f4fb8d7128fd45cc80829}
+      \strng{authorbibnamehash}{ec01820f9f8f4fb8d7128fd45cc80829}
+      \strng{authornamehash}{ec01820f9f8f4fb8d7128fd45cc80829}
+      \strng{authorfullhash}{ec01820f9f8f4fb8d7128fd45cc80829}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{{0036-8075}}
+      \field{number}{{6240}}
+      \field{series}{{SCIENCE}}
+      \field{title}{{Economical routes to colloidal nanocrystals}}
+      \field{volume}{{348}}
+      \field{year}{{2015}}
+      \field{pages}{{1211\bibrangedash 1212}}
+      \range{pages}{-1}
+      \verb{urlraw}
+      \verb {http://dx.doi.org/10.1126/science.aab0866}
+      \endverb
+      \verb{url}
+      \verb %7Bhttp://dx.doi.org/10.1126/science.aab0866%7D
+      \endverb
+    \endentry
+    \entry{braam}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=3b19ad5a460fff75ac047765caef3be2}{%
+           family={Braam},
+           familyi={B\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{3b19ad5a460fff75ac047765caef3be2}
+      \strng{fullhash}{3b19ad5a460fff75ac047765caef3be2}
+      \strng{bibnamehash}{3b19ad5a460fff75ac047765caef3be2}
+      \strng{authorbibnamehash}{3b19ad5a460fff75ac047765caef3be2}
+      \strng{authornamehash}{3b19ad5a460fff75ac047765caef3be2}
+      \strng{authorfullhash}{3b19ad5a460fff75ac047765caef3be2}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Photolumineszenz-Spektroskopie an einzelnen Nanopartikeln}
+      \field{year}{2011}
+      \field{dateera}{ce}
     \endentry
     \entry{foll_semiconductors_nodate}{misc}{}
       \name{author}{1}{}{%
@@ -57,8 +142,8 @@
       \strng{authorbibnamehash}{a69082c53f145d578c16a18803f3aedd}
       \strng{authornamehash}{a69082c53f145d578c16a18803f3aedd}
       \strng{authorfullhash}{a69082c53f145d578c16a18803f3aedd}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Semiconductors - Script}
