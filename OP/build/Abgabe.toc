@@ -1,0 +1,18 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Ziel}{3}{section.1}% 
+\contentsline {section}{\numberline {2}Theoretische Grundlagen}{3}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Messprinzip}{3}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}Wechselwirkungen}{4}{subsection.2.2}% 
+\contentsline {subsubsection}{\numberline {2.2.1}Spitze - Oberfläche}{4}{subsubsection.2.2.1}% 
+\contentsline {subsubsection}{\numberline {2.2.2}Cantilever - Spitze - Oberfläche}{6}{subsubsection.2.2.2}% 
+\contentsline {subsubsection}{\numberline {2.2.3}Kraft-Distanz-Kurven}{7}{subsubsection.2.2.3}% 
+\contentsline {subsection}{\numberline {2.3}Messspitze und Cantilever}{8}{subsection.2.3}% 
+\contentsline {subsection}{\numberline {2.4}Detektionssysteme}{10}{subsection.2.4}% 
+\contentsline {subsection}{\numberline {2.5}Messmodi}{11}{subsection.2.5}% 
+\contentsline {subsection}{\numberline {2.6}Piezoelemente}{13}{subsection.2.6}% 
+\contentsline {subsection}{\numberline {2.7}Disc-Speichermedien}{14}{subsection.2.7}% 
+\contentsline {section}{\numberline {3}Versuchsaufbau und -durchführung}{15}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Aufbau und Messvorbereitung}{15}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Untersuchung einer Mikrostrukturprobe}{16}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}Untersuchung einer CD, DVD und Bluray}{16}{subsection.3.3}% 
