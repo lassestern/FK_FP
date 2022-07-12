@@ -18,7 +18,7 @@
 
 
     \subsubsection{Mode-Locking}
-      In dem Resonator eines Laser können für bis zu 100000 longitudinale Moden entstehen, die im Dauerstrich Laserbetrieb ohne feste Phasenbeziehung schwingen. Beim Mode-Locking wird versucht zwischen den 
+      In dem Resonator eines Laser können bis zu 100000 longitudinale Moden entstehen, die im Dauerstrich Laserbetrieb ohne feste Phasenbeziehung schwingen. Beim Mode-Locking wird versucht zwischen den 
       einzelnen Moden eine feste Phasenbeziehung zu erreichen, sodass es zu Interferenz zwischen den stehenden Wellen kommen kann. Dies führt, wie in Abbildung \ref{fig:Modelocking} a) zu sehen, zu einer 
       periodischen Wiederholung der Intensität mit der Durchlaufzeit durch den Resonator $T_C$. Zur Optimierung der Interferenz wird versucht die Phase aller Moden anzugleichen, sodass, wie in 
       Abbildung \ref{fig:Modelocking} b) dargestellt, letztendlich nur noch ein einzelnes ultrakurzes Wellenpaket durch den Resonator wandert und ausgekoppelt werden kann. Das Wellenpaket setzt sich also
@@ -31,20 +31,54 @@
 
       bestimmt. 
       Umgesetzt werden kann das Modelocking entweder durch die aktive Modulation, bei der zum Beispiel ein Shutter aktiv oszilliert, um längere Pulse abzuschwächen, oder durch passive Modulationen. In dem hier 
-      genutzen System wird mit der Additiven Puls Modenkopplung eine passive Modulationsart genutzt. Diese beruht darauf, dass zunächst elliptisch polarisiertes Licht durch ein Medium läuft, dessen 
-      Brechungsindex linear mit der Intensität des Lichts ansteigt. Dies führt zu einer Rotation der Ellipse, da die lineare Komponente der Ellipse mit der stärkeren Amplitude stärker zeitlich verzögert wird.
+      genutzen System wird mit der Additiven Puls Modenkopplung eine passive Modulationsart genutzt. Diese beruht darauf, dass zunächst elliptisch polarisiertes Licht im Dauerstrichbetrieb durch ein Medium 
+      läuft, dessen Brechungsindex linear mit der Intensität des Lichts ansteigt. Wenn eine zufällige Fluktuation der Laserintensität die Form eines Pulses annimmt, führt der nicht lineare Brechungsindex 
+      zu einer Rotation der Ellipse, da die lineare Komponente der Ellipse mit der stärkeren Amplitude stärker zeitlich verzögert und damit die Phasenverschiebung der beiden zueinander verändert wird. Diese
+      Rotation ist für das Zentrum des Pules größer als für die weniger intensiven Anteile. Dieser Puls durchläuft nun ein $\lambda/4$-Plättchen, das den Puls linear polarisiert und anschließend eine  
+      $\lambda/2$-Plättchen, das den Puls um einen Winkel dreht. Dieser Winkel ergibt für die Pulse maximaler Intensität einen Polarisationswinkel, sodass der Anteil maximaler Amplitude durch einen 
+      Polarized Beam-Splitter Cube (PBSC) transmittiert wird. Für Pulsanteile geringerer Intensität ist der finale Winkel nicht optimal, sodass diese Anteile unterdrückt und effektiv abgeschnitten werden. Nach
+      Transmission durch den PBSC wird der Puls erneut aus einer Kombination von einem $\lambda/2$- und $\lambda/4$-Plättchen elliptisch polarisiert. Die so erreichbaren Pulsdauern liegen im Bereich von 
+      \SI{100}{\femto\second}, sofern der Strahlungsübergang des Lasers eine genügend große Linienbreite und somit viele Lasefähige Moden besitzt. 
 
       \FloatBarrier
       \begin{figure}[h]
         \centering
         \includegraphics[width = 0.44\textwidth]{pictures/ML_phase_const.png}
-        includegraphics[width = 0.44\textwidth]{pictures/ML_phase_gleich.png}
+        \includegraphics[width = 0.44\textwidth]{pictures/ML_phase_gleich.png}
         \caption{a) Zeitlicher Verlauf der Intensität des Laser bei Überlagerung der Moden mit fester Phasenbeziehung. b)Zeitlicher Verlauf der Intensität, wenn die Moden alle die gleiche Phase besitzen. Entnommen aus \cite{tu_dortmund_versuchsanleitung_nodate}}
         \label{fig:Modelocking}
       \end{figure}
       \FloatBarrier
       
-      
+    \newpage
     \subsubsection{fs-Laser}
-      Der in diesem Versuch genutzte Laser 
+
+      Das in diesem Versuch genutzte und in Abbildung \ref{fig:Laser} dargestellte Lasersystem setzt sich aus einem Faserlaser zusammen, der mit einem Ringresonator in Kombination mit Verzögerungsplättchen 
+      und eines PBSCs, einer undotierten Faser mit negativer Group-Velocity-Dispersion (GVD), einer dotierten Faser mit positiver GVD und weiteren Verzögerungsplättchen und Silizium Prismen zur Erzeugung von
+      ultrakurzen Pulsen genutzt wird. 
+
+      \FloatBarrier
+      \begin{figure}[h]
+        \centering
+        \includegraphics[width = 0.9\textwidth]{pictures/Laser.png}
+        \caption{Aufbau des Laser zur Erzeugung von ultrakurzen Pulsen. Entnommen aus \cite{tu_dortmund_versuchsanleitung_nodate}}
+        \label{fig:Laser}
+      \end{figure}
+      \FloatBarrier
+
+      Zur Erzeugung der primären Strahlung wird eine Quarzglas-Glasfaser genutzt, deren innerer Kern mit Er$^{3+}$-Ionen dotiert ist und als aktives Medium fungiert. Ein infraroter Laser mit einer Wellenlänge von 
+      \SI{980}{\nano\metre} regt die Er$^{3+}$-Ionen in den höchsten Zustand eines Drei-Niveau-Systems an, dessen Übergang in den Grundzustand dipolverboten ist. Daher kann schnell eine Besetzungs erreicht 
+      werden und durch Übergang in den zweithöchsten Zustand anschließend ein strahlender Übergang stattfinden. Dieser emitiert bei einer zentralen Wellenlänge von \SI{1550}{\nano\metre} und besitzt eine 
+      große Bandbreite, da die zugehörigen Zustände durch die Elektron-Phonon-Wechselwirkung des dotierten inneren Kerns mit dem undotierten Quarzglas der äußeren Schicht stark verbreitert sind.
+      
+      Die so entstehende Strahlung befindet sich zunächst im Dauerstrichbetrieb und wird wie zuvor beschrieben über die Additiven Puls Modenkopplung in transformiert. Anschließend werden die 
   
+
+      \FloatBarrier
+      \begin{figure}[h]
+        \centering
+        \includegraphics[width = 0.9\textwidth]{pictures/Dispersion.png}
+        \caption{Aufbau des Laser zur Erzeugung von ultrakurzen Pulsen. Entnommen aus \cite{tu_dortmund_versuchsanleitung_nodate}}
+        \label{fig:Dispersion}
+      \end{figure}
+      \FloatBarrier

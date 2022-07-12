@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  8 JUL 2022 14:30
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  12 JUL 2022 23:48
  restricted system commands enabled.
 **Abgabe.tex
 (./Abgabe.tex
@@ -55,7 +55,7 @@ Lua module: luaotfload-multiscript 2019-09-13 3.00 luaotfload submodule / multis
 cript
 Inserting `luaotfload.rewrite_fontname' at position 5 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.216 seconds
+luaotfload | main : initialization completed in 0.108 seconds
 (./inputs/header.tex
 (/home/lasse/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2019/02/01 v3.26b KOMA-Script document class (article)
@@ -1867,154 +1867,43 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 15.
 \tf@toc=\write4
 
 \openout4 = Abgabe.toc
- [2] (./chapters/Theorie.tex
-<pictures/prinzip.png, id=54, 799.98875pt x 651.43375pt>
-File: pictures/prinzip.png Graphic file (type png)
-<use pictures/prinzip.png>
-Package luatex.def Info: pictures/prinzip.png  used on input line 19.
-(luatex.def)             Requested size: 167.29967pt x 136.22859pt.
-<pictures/LJ.png, id=57, 534.99875pt x 876.27374pt>
-File: pictures/LJ.png Graphic file (type png)
-<use pictures/LJ.png>
-Package luatex.def Info: pictures/LJ.png  used on input line 34.
-(luatex.def)             Requested size: 224.69794pt x 368.03246pt.
-
-Underfull \hbox (badness 3049) in paragraph at lines 35--35
-\TU/lmr/m/n/10.95 schrei-bung ei-nes Lennard-Jones-
- []
-
-[3<./pictures/prinzip.png>]
-Underfull \hbox (badness 5475) in paragraph at lines 52--57
-\TU/lmr/m/n/10.95 Der at-trak-ti-ve Be-reich für Ab-
- []
-
-
-Underfull \hbox (badness 3312) in paragraph at lines 52--57
-\TU/lmr/m/n/10.95 säch-lich aus den \TU/lmr/m/it/10.95 Van-der-Waals-
- []
-
-
-Underfull \hbox (badness 3250) in paragraph at lines 52--57
-\TU/lmr/m/n/10.95 zie-hung zwei-er ei-gent-lich neu-tra-
- []
-
-
-Underfull \hbox (badness 1502) in paragraph at lines 52--57
-\TU/lmr/m/n/10.95 ste-hung von fluk-tu-ie-ren-den Di-po-
- []
-
-
-Underfull \hbox (badness 1478) in paragraph at lines 52--57
-\TU/lmr/m/n/10.95 len. Ent-steht in ei-nem Atom ei-
- []
-
-
-Underfull \hbox (badness 1077) in paragraph at lines 52--57
-\TU/lmr/m/n/10.95 ne spon-ta-ner Di-pol, wird im be-
- []
-
-
-Underfull \hbox (badness 2189) in paragraph at lines 52--57
-\TU/lmr/m/n/10.95 sel-wirkt nicht nur das vor-ders-te
- []
-
-
-Underfull \hbox (badness 1655) in paragraph at lines 52--57
-\TU/lmr/m/n/10.95 che, son-dern auch da-hin-ter-lie-gen-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--57
-
- []
-
-[4<./pictures/LJ.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 66--68
-
- []
-
-[5]
-<pictures/pot_contact.png, id=87, 427.5975pt x 856.19875pt>
-File: pictures/pot_contact.png Graphic file (type png)
-<use pictures/pot_contact.png>
-Package luatex.def Info: pictures/pot_contact.png  used on input line 77.
-(luatex.def)             Requested size: 192.41708pt x 385.28587pt.
-
-Underfull \hbox (badness 1221) in paragraph at lines 78--78
-[][]\TU/lmr/m/n/10.95 Mit ab-neh-men-der Di-stanz zwi-
- []
-
-[6<./pictures/pot_contact.png>]
-<pictures/forcedist.png, id=99, 691.58376pt x 452.69125pt>
-File: pictures/forcedist.png Graphic file (type png)
-<use pictures/forcedist.png>
-Package luatex.def Info: pictures/forcedist.png  used on input line 113.
-(luatex.def)             Requested size: 167.29967pt x 109.50464pt.
-<pictures/force_hard_soft.png, id=103, 809.0225pt x 301.125pt>
-File: pictures/force_hard_soft.png Graphic file (type png)
-<use pictures/force_hard_soft.png>
-Package luatex.def Info: pictures/force_hard_soft.png  used on input line 130.
-(luatex.def)             Requested size: 167.29967pt x 62.2686pt.
+ [2] (./chapters/Theorie.tex [3]
+<pictures/ML_phase_const.png, id=43, 509.905pt x 371.3875pt>
+File: pictures/ML_phase_const.png Graphic file (type png)
+<use pictures/ML_phase_const.png>
+Package luatex.def Info: pictures/ML_phase_const.png  used on input line 46.
+(luatex.def)             Requested size: 184.03346pt x 134.0394pt.
+<pictures/ML_phase_gleich.png, id=44, 502.87875pt x 363.3575pt>
+File: pictures/ML_phase_gleich.png Graphic file (type png)
+<use pictures/ML_phase_gleich.png>
+Package luatex.def Info: pictures/ML_phase_gleich.png  used on input line 47.
+(luatex.def)             Requested size: 184.03346pt x 132.9709pt.
+ [4<./pictures/ML_phase_const.png><./pictures/ML_phase_gleich.png>]
+<pictures/Laser.png, id=56, 1245.65375pt x 501.875pt>
+File: pictures/Laser.png Graphic file (type png)
+<use pictures/Laser.png>
+Package luatex.def Info: pictures/Laser.png  used on input line 63.
+(luatex.def)             Requested size: 376.42744pt x 151.65875pt.
+<pictures/Dispersion.png, id=59, 1568.86125pt x 840.13875pt>
+File: pictures/Dispersion.png Graphic file (type png)
+<use pictures/Dispersion.png>
+Package luatex.def Info: pictures/Dispersion.png  used on input line 80.
+(luatex.def)             Requested size: 376.42744pt x 201.57332pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7<./pictures/forcedist.png>]
-<pictures/defekte.png, id=118, 1067.99pt x 243.91125pt>
-File: pictures/defekte.png Graphic file (type png)
-<use pictures/defekte.png>
-Package luatex.def Info: pictures/defekte.png  used on input line 163.
-(luatex.def)             Requested size: 334.60571pt x 76.41933pt.
- [8<./pictures/force_hard_soft.png><./pictures/defekte.png>]
-<pictures/Cantilever_Spitze.png, id=131, 473.77pt x 327.2225pt>
-File: pictures/Cantilever_Spitze.png Graphic file (type png)
-<use pictures/Cantilever_Spitze.png>
-Package luatex.def Info: pictures/Cantilever_Spitze.png  used on input line 188.
-
-(luatex.def)             Requested size: 250.95587pt x 173.32722pt.
- [9<./pictures/Cantilever_Spitze.png>]
-<pictures/detektion.png, id=143, 1189.44376pt x 289.08pt>
-File: pictures/detektion.png Graphic file (type png)
-<use pictures/detektion.png>
-Package luatex.def Info: pictures/detektion.png  used on input line 221.
-(luatex.def)             Requested size: 167.29967pt x 40.65617pt.
- [10<./pictures/detektion.png>]
-<pictures/const_height_force.png, id=154, 792.9625pt x 770.88pt>
-File: pictures/const_height_force.png Graphic file (type png)
-<use pictures/const_height_force.png>
-Package luatex.def Info: pictures/const_height_force.png  used on input line 246
-.
-(luatex.def)             Requested size: 167.29967pt x 162.63062pt.
-[11<./pictures/const_height_force.png>] [12]
-<pictures/hysterese.png, id=171, 912.40875pt x 643.40375pt>
-File: pictures/hysterese.png Graphic file (type png)
-<use pictures/hysterese.png>
-Package luatex.def Info: pictures/hysterese.png  used on input line 286.
-(luatex.def)             Requested size: 250.95587pt x 176.96112pt.
- [13<./pictures/hysterese.png>])
-(./chapters/Durchfuehrung.tex [14]
-<pictures/Aufbau.png, id=186, 1052.93375pt x 673.51625pt>
-File: pictures/Aufbau.png Graphic file (type png)
-<use pictures/Aufbau.png>
-Package luatex.def Info: pictures/Aufbau.png  used on input line 14.
-(luatex.def)             Requested size: 250.95587pt x 160.52701pt.
- [15<./pictures/Aufbau.png>]
-<pictures/Mikrostruktur.png, id=197, 946.53625pt x 490.83376pt>
-File: pictures/Mikrostruktur.png Graphic file (type png)
-<use pictures/Mikrostruktur.png>
-Package luatex.def Info: pictures/Mikrostruktur.png  used on input line 29.
-(luatex.def)             Requested size: 250.95587pt x 130.13023pt.
-) [16<./pictures/Mikrostruktur.png>]
+[5<./pictures/Laser.png>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
- [17]
+ [6<./pictures/Dispersion.png>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
  (./build/Abgabe.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
 Package rerunfilecheck Info: File `Abgabe.aux' has not changed.
-(rerunfilecheck)             Checksum: B8C0ABA9F60D94C5FD8963207E39883E;18899.
+(rerunfilecheck)             Checksum: 7111BA9A72C7F21195A73AB32DF53F6E;5648.
 Package rerunfilecheck Info: File `Abgabe.toc' has not changed.
-(rerunfilecheck)             Checksum: 9F78C37A238130B8CC1B58D4030B0956;1550.
+(rerunfilecheck)             Checksum: 272C1B18D29F1DEC6DE2433DEC64E8A9;536.
 Package logreq Info: Writing requests to 'Abgabe.run.xml'.
 
 \openout1 = Abgabe.run.xml
@@ -2022,33 +1911,27 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 28.
 )
 
 Here is how much of LuaTeX's memory you used:
- 43511 strings out of 494291
- 195338,1977958 words of node,token memory allocated
- 161882 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 penalty, 21993 glyph, 3205 attrib
-ute, 81 glue_spec, 460 attribute_list, 1 write nodes
-   avail lists: 1:12,2:1402,3:123,4:49,5:213,6:38,7:1514,8:68,9:144,10:48,11:417
+ 43008 strings out of 494291
+ 100000,1977958 words of node,token memory allocated
+ 41371 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 1 dir, 2 glue, 4 kern, 1 penalty, 5617 glyph, 629 a
+ttribute, 80 glue_spec, 92 attribute_list, 1 write nodes
+   avail lists: 1:3,2:737,3:60,4:19,5:181,6:13,7:1815,8:28,9:85,10:13,11:345
+ 46139 multiletter control sequences out of 65536+600000
+ 102 fonts using 37352071 bytes
+ 56i,7n,109p,9142b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
+</home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-i
+talic.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/l
+mroman8-regular.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/p
+ublic/lm-math/latinmodern-math.otf></home/lasse/.local/texlive/2019/texmf-dist/f
+onts/opentype/public/lm-math/latinmodern-math.otf></home/lasse/.local/texlive/20
+19/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/lasse/.local
+/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/l
+asse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
+Output written on Abgabe.pdf (6 pages, 246737 bytes).
 
- 46437 multiletter control sequences out of 65536+600000
- 213 fonts using 80924463 bytes
- 56i,15n,109p,9142b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
-</home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmmono10-re
-gular.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/l
-mromancaps10-regular.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opent
-ype/public/lm-math/latinmodern-math.otf></home/lasse/.local/texlive/2019/texmf-d
-ist/fonts/opentype/public/lm/lmroman8-regular.otf></home/lasse/.local/texlive/20
-19/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/lasse/.l
-ocal/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf>
-</home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-b
-old.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmr
-oman10-italic.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/pub
-lic/lm/lmroman10-regular.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/o
-pentype/public/lm/lmroman12-regular.otf></home/lasse/.local/texlive/2019/texmf-d
-ist/fonts/opentype/public/lm/lmsans10-bold.otf>
-Output written on Abgabe.pdf (17 pages, 1402455 bytes).
-
-PDF statistics: 342 PDF objects out of 1000 (max. 8388607)
- 251 compressed objects within 3 object streams
- 56 named destinations out of 1000 (max. 131072)
- 129 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 140 PDF objects out of 1000 (max. 8388607)
+ 99 compressed objects within 1 object stream
+ 19 named destinations out of 1000 (max. 131072)
+ 41 words of extra memory for PDF output out of 10000 (max. 100000000)
 
