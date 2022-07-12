@@ -71,7 +71,18 @@
       werden und durch Übergang in den zweithöchsten Zustand anschließend ein strahlender Übergang stattfinden. Dieser emitiert bei einer zentralen Wellenlänge von \SI{1550}{\nano\metre} und besitzt eine 
       große Bandbreite, da die zugehörigen Zustände durch die Elektron-Phonon-Wechselwirkung des dotierten inneren Kerns mit dem undotierten Quarzglas der äußeren Schicht stark verbreitert sind.
       
-      Die so entstehende Strahlung befindet sich zunächst im Dauerstrichbetrieb und wird wie zuvor beschrieben über die Additiven Puls Modenkopplung in transformiert. Anschließend werden die 
+      Die so entstehende Strahlung befindet sich zunächst im Dauerstrichbetrieb und wird wie zuvor beschrieben über die Additiven Puls Modenkopplung in transformiert. Anschließend werden diese Pulse 
+      ausgekoppelt und durch eine Faser mit negativer GVD transmittiert. Die GVD steckt in der Taylorentwicklung der Dispersion um die zentrale Frequenz $\omega_0$
+      
+      \begin{equation}
+        \phi(\omega) = \phi_0 + \text{GD} \cdot \left(\omega-\omega_0\right) + \text{GVD} \cdot \left(\omega-\omega_0\right)^2 \,,
+      \end{equation}
+      
+      die die Abhängigkeit des Wellenvektors beziehungsweise der Phase $\phi$ von der instantanen Kreisfrequenz $\omega$ angibt. Die Gruppenverzögerung (GD) gibt an, wie lange Frequenzanteil eines Pulsed 
+      benötigt, um durch ein Medium zu propagieren. Die GVD wiederum beschreibt, wie die GD von der Frequenz des Lichts abhängt. Wie in Abbildung \ref{fig:Dispersion} dargestellt führt die Dispersion zu
+      einer Erhöhung der Pulsdauer. Bei normaler Dispersion laufen höhere Frequenzen schneller und bei anormaler Dispersion laufen niedrigere schneller. Dies führt wie in Abbildung \ref{fig:Dispersion} zu
+      erkennen zu einem sogennaten Chirp, der die Änderung der Frequenz eines Pulses entlang seiner Zeitskala beschreibt. Zusätzlich tritt in dieser Faser auch der nicht-lineare Effekt der 
+      Selbstphasenmodulation auf, der die Bandbreite des Pulses bei Propagation durch ein nicht lineares Medium wie Quarzglas erhöht.
   
 
       \FloatBarrier
@@ -82,3 +93,11 @@
         \label{fig:Dispersion}
       \end{figure}
       \FloatBarrier
+
+
+      Der nun bezüglich seiner Bandbreite und Dauer gestreckte Puls, wird in eine mit Er$^{3+}$-Ionen dotierte und gepumpte Faser eingekoppelt, deren GVD postiv ist. Die hier auftretende Dispersion 
+      kompensiert zum einen den zuvor entstandenen Chirp und kann zusätzlich den Puls auf nun noch kürzere Dauern komprimmieren, da die Limitierung durch die erhöhte Bandbreite gesenkt wird. Die
+      Kompression funktioniert über das Aufholen der in der undotierten Faser noch langsammeren Frequenzanteile auf die zuvor schnelleren aufgrund der umgekehrten GVD. Die so komprimmierten Pulse sind 
+      quasi chirpfrei und werden nach horizontaler Polarisierung durch eine Kombination eines $\lambda/2$- und $\lambda/4$-Plättchens noch durch zwei Silizium-Prismen bezüglich ihrer Pulsdauer und ihres 
+      Chirps feinjustiert. Letztendlich wird so ein gepulster Laserbetrieb bei einer zentralen Wellenlänge von \SI{1550}{\nano\metre}, einer Pulsdauer von circa \SI{100}{\femto\second} bei gaußförmiger 
+      Pulsform erreicht.  
