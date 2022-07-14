@@ -100,4 +100,99 @@
       Kompression funktioniert über das Aufholen der in der undotierten Faser noch langsammeren Frequenzanteile auf die zuvor schnelleren aufgrund der umgekehrten GVD. Die so komprimmierten Pulse sind 
       quasi chirpfrei und werden nach horizontaler Polarisierung durch eine Kombination eines $\lambda/2$- und $\lambda/4$-Plättchens noch durch zwei Silizium-Prismen bezüglich ihrer Pulsdauer und ihres 
       Chirps feinjustiert. Letztendlich wird so ein gepulster Laserbetrieb bei einer zentralen Wellenlänge von \SI{1550}{\nano\metre}, einer Pulsdauer von circa \SI{100}{\femto\second} bei gaußförmiger 
-      Pulsform erreicht.  
+      Pulsform erreicht.
+      
+    
+    \subsection{Vermessung ultrakurzer Pulse}
+      \subsubsection{Autokorrelation}
+        Bei der Autokorrelation wird, wie in der Einleitung beschrieben ein Laserpuls mit einer Kopie von sich selbst abgetastet, sodass ein zeitliches Intensitätsprofil dessen erstellt wird. Da der Abtastpuls
+        so immer in der Größenordnung des zu vermessenden Pulses liegt, können so auch ultrakurze Pulse vermessen werden. Um die Autokorrelation vermessen zu können, müssen die beiden Pulse räumlich und
+        zeitlich überlagert werden. Bei interferometrischen Autokorrelatoren kommt es dann zu Interferenz zwischen den einzelnen Pulsen, aus der Informationen über die Länge des Pulses und dessen Chirp 
+        gewonnen werden kann. Bei der in diesem Versuch genutzen Intensitätsautokorrelation werden die Pulse in einem nicht linearen Medium überlagert und der Effekt der Summenfrequenzerzeugung (SFG) genutzt, 
+        um Informationen über die Pulslänge aber nicht den Chirp zu erhalten.  
+
+
+      \subsubsection{Summenfrequenzerzeugung}
+
+        Beim Prozess der Summenfrequenzerzeugung (\textit{Sum Frequency Generation}, SFG) generieren zwei Photonen in einem nicht-linearen Kristall ein drittes Photon. In der Wellenbeschreibung des Lichts 
+        entspricht dies zwei elektrischen Feldern einfallender Strahlen, die einen dritten Strahl erzeugen, dessen elektrisches Feld mit der Summe der Frequenzen der ursprünglichen Felder schwingt. Zur 
+        Erklärung dieses Phänomens muss die durch Licht induzierte Polarisation eines Mediums betrachtet werden. Da die SFG ein nicht-linearer Effekt zweiter Ordnung ist, wird die Potenzreihe der Polarisation 
+        $P$ auf die ersten beiden Summanden beschränkt und skalar betrachtet
+        %
+        \begin{equation*}
+            P = \varepsilon_0 \left( \chi^{\left( 1 \right)}  E + \chi^{\left( 2 \right)}  E^2 \right) ,
+        \end{equation*}
+        %
+        sodass zwischen einem linearen und einem nicht-linearen Summanden unterschieden werden kann. Zusätzlich erfordert die quadratische Abhängigkeit von dem elektrischen Feld, dass das nicht-lineare Medium 
+        nicht zentrosymmetrisch ist, weil der quadratische Term dann keinen Beitrag liefern würde. Als Ansatz der elektrischen Felder der einfallenden Photonen mit den Amplituden $A_1$ und $A_2$ wird eine 
+        Summe gewählt
+        %
+        \begin{equation*}
+            E(t) = A_1  \cos\left(\omega_1 t - \vec{k}_1 \cdot \vec{r}\right) + A_2  \cos\left(\omega_2 t - \vec{k}_2 \cdot \vec{r}\right),
+        \end{equation*}
+        %
+        die aufgrund des Skalarprodukts zwischen dem Wellenvektor $\vec{k}_{\text{i}}$ und dem Ortsvektor $\vec{r}$ auch die Ausbreitungsrichtung der beiden Photonen berücksichtigt. Wird dieser Ansatz in die 
+        Polarisation eingesetzt, ergeben sich als lineare Reaktion der Polarisation zwei Schwingungen, die mit den Fundamentalfrequenzen $\omega_{1,2}$ schwingen. Aufgrund der quadratischen Antwort entsteht 
+        neben hier vernachlässigten Summanden ein Beitrag 
+        %
+        \begin{equation*}
+            P_{\text{SFG}} = \varepsilon_0  \chi^{(2)}  A_1 A_2  \cos\left( \left(\omega_1 + \omega_2\right) t - \left( \vec{k}_1 + \vec{k}_2 \right) \cdot \vec{r} \right) ,
+        \end{equation*}
+        %
+        der eine Schwingung mit der Frequenz $\omega_3 = \omega_1 + \omega_2$ beschreibt. Dies entspricht der der SFG zugrundeliegenden Polarisation 
+        $P_{\text{SFG}}$, deren Amplitude dem Produkt der fundamentalen Schwingungsamplituden entspricht. Aufgrund des proportionalen Zusammenhangs zwischen Polarisation und elektrischem Feld erzeugt 
+        $P_{\text{SFG}}$ eine zusätzliche elektrische Schwingung. Für den Fall zwei gleicher Pulser entspricht die SFG der SHG.
+
+      \subsubsection{Intensitätsautokorrelation}  
+        Bei der Intensitätsautokorrelation wird der zu vermessenden Laserpulses zunächst, wie in Abbildung \ref{fig:autokorrelator} dargestellt, über einen D-förmigen Strahlteiler in zwei Pulse aufgeteilt. 
+        Der optische Weg $\Delta x$ einer der Pulse kann um  verändert werden, da dieser an Spiegeln, die auf einer mechanischen Schiebeplattform befestigt sind, reflektiert wird. Auf diese Weise lässt sich 
+        ein zeitlicher Versatz $\tau=\frac{2\Delta x}{\text{c}}$ zwischen den beiden Pulsen erzeugen. Nachdem einer der Pulse die sogenannte Verzögerungsstrecke durchlaufen hat, werden beide Pulse in ein 
+        nicht-lineares Medium, hier ein 
+        $\beta$-Bariumborat(BBO)-Kristall, fokussiert, der zur Erzeugung von zweiten Harmonischen geeignet ist. Dabei interferieren die beiden Pulse und erzeugen zum einen jeweils ihre eigene zweite Harmonische 
+        (\textit{Second Harmonic Generation}, SHG) und bei zeitlichem sowie räumlichem Überlapp zusätzlich einen weiteren Puls, der aus der SFG der beiden Pulse entsteht. Da die beiden einfallenden Pulse nicht 
+        kollinear verlaufen, lassen sich die beiden zweiten Harmonischen durch Blenden unterdrücken und nur das SFG-Signal durch eine Photodiode detektieren. Photodioden sind Dioden, die in Sperrichtung und 
+        bei möglichst keiner Bias-Spannung betrieben werden. Auf diese Weise lässt sich ein zur einstrahlenden Intensität linearer Strom mit geringem Untergrund messen, sofern die Photonenenergie genügt, um
+        Elektronen des Diodenmaterials aus dem Valenz- in das Leitungsband anzuheben.  
+        %
+        \FloatBarrier
+        \begin{figure}[h]
+          \centering
+          \includegraphics[width = 0.9\textwidth]{pictures/autokorrelator.pdf}
+          \caption{Aufbau des Laser zur Erzeugung von ultrakurzen Pulsen. Entnommen aus \cite{tu_dortmund_versuchsanleitung_nodate}}
+          \label{fig:autokorrelator}
+        \end{figure}
+        \FloatBarrier
+        %
+        Das SFG-Signal $S_{\text{SFG}}$
+        %
+        \begin{equation}
+            S_{\text{SFG}} = \int_{-\infty}^{\infty} \left(E^2 (t)  E^2 (t-\tau)\right) \text{d}t ,
+            \label{eqn:autocor}
+        \end{equation}
+        %
+        das sich in Abhängigkeit des zeitlichen Versatzes $\tau$ zwischen den beiden Pulsen ändert, wird in der Autokorrelation gemessen. Es handelt sich dabei um die mathematische Faltung des Pulses $E(t)$ 
+        mit seinem zeitlich versetzten Abbild $E(t - \tau)$. Dies wird als Intensitätsautokorrelation bezeichnet. Die Änderung des optischen Weges durch die Verzögerungsstrecke erlaubt das Messens des Signals 
+        für unterschiedliche $\tau$. Dies entspricht dem Abtasten des Pulses mit sich selbst. Aus der resultierenden Halbwertsbreite der Intensitätsautokorrelation lässt sich über einen Faktor 
+        $C^{\text{Pulsform}}$, der für verschiedene Pulsformen variiert, mittels 
+        %
+        \begin{equation*}
+            \tau_{\text{FWHM}}^{\text{Pulsform}} = \frac{1}{C^{\text{Pulsform}}} \cdot \tau_{\text{FWHM}}^{\text{Autokorrelation}}
+        \end{equation*}
+        %
+        leicht die zeitliche Halbwertsbreite dieses Pulses bestimmen. Dieses Konzept gibt Rückschlüsse auf die zeitliche Pulsdauer. 
+        Für einen gauß´schen Puls der Dauer $\Delta \tau$ der Form
+
+        \begin{equation}
+          \text{I}(t) \propto \exp\left(-4\ln(2)\left(\frac{t}{\Delta \tau}\right)^2\right)
+        \end{equation}
+
+        ergibt das Einsetzen in Gleichung \ref{eqn:autocor} folgenden Zusammenhang zwischen der zeitlichen Halbwertsbreite der Autokorrelation gaußförmig ist und der Pulsdauer:
+
+        \begin{equation*}
+          \Delta\tau_{\text{FWHM}}^{\text{Pulsform}} = \frac{1}{\sqrt{2}} \cdot \Delta\tau_{\text{FWHM}}^{\text{Autokorrelation}}
+        \end{equation*}
+        
+        Um bei der Messung das Hintergrundrauschen zu unterdrücken, kann das 
+        einfallende Licht durch einen Chopper mit festgelegter Frequenz moduliert werden. Das Signal der Photodiode wird mit dem Signal des Choppers moduliert und über einen Lock-In-Filter integriert.
+
+

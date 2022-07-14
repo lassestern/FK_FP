@@ -344,6 +344,9 @@ INPUT ./pictures/Laser.png
 INPUT ./pictures/Dispersion.png
 INPUT ./pictures/Dispersion.png
 INPUT ./pictures/Dispersion.png
+INPUT ./pictures/autokorrelator.pdf
+INPUT ./pictures/autokorrelator.pdf
+INPUT ./pictures/autokorrelator.pdf
 INPUT build/Abgabe.aux
 INPUT build/Abgabe.run.xml
 OUTPUT build/Abgabe.run.xml

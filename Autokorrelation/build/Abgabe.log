@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  12 JUL 2022 23:48
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  14 JUL 2022 15:03
  restricted system commands enabled.
 **Abgabe.tex
 (./Abgabe.tex
@@ -55,7 +55,7 @@ Lua module: luaotfload-multiscript 2019-09-13 3.00 luaotfload submodule / multis
 cript
 Inserting `luaotfload.rewrite_fontname' at position 5 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.108 seconds
+luaotfload | main : initialization completed in 0.111 seconds
 (./inputs/header.tex
 (/home/lasse/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2019/02/01 v3.26b KOMA-Script document class (article)
@@ -1868,42 +1868,46 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 15.
 
 \openout4 = Abgabe.toc
  [2] (./chapters/Theorie.tex [3]
-<pictures/ML_phase_const.png, id=43, 509.905pt x 371.3875pt>
+<pictures/ML_phase_const.png, id=51, 509.905pt x 371.3875pt>
 File: pictures/ML_phase_const.png Graphic file (type png)
 <use pictures/ML_phase_const.png>
 Package luatex.def Info: pictures/ML_phase_const.png  used on input line 46.
 (luatex.def)             Requested size: 184.03346pt x 134.0394pt.
-<pictures/ML_phase_gleich.png, id=44, 502.87875pt x 363.3575pt>
+<pictures/ML_phase_gleich.png, id=52, 502.87875pt x 363.3575pt>
 File: pictures/ML_phase_gleich.png Graphic file (type png)
 <use pictures/ML_phase_gleich.png>
 Package luatex.def Info: pictures/ML_phase_gleich.png  used on input line 47.
 (luatex.def)             Requested size: 184.03346pt x 132.9709pt.
  [4<./pictures/ML_phase_const.png><./pictures/ML_phase_gleich.png>]
-<pictures/Laser.png, id=56, 1245.65375pt x 501.875pt>
+<pictures/Laser.png, id=64, 1245.65375pt x 501.875pt>
 File: pictures/Laser.png Graphic file (type png)
 <use pictures/Laser.png>
 Package luatex.def Info: pictures/Laser.png  used on input line 63.
 (luatex.def)             Requested size: 376.42744pt x 151.65875pt.
-<pictures/Dispersion.png, id=59, 1568.86125pt x 840.13875pt>
+ [5<./pictures/Laser.png>]
+<pictures/Dispersion.png, id=77, 1568.86125pt x 840.13875pt>
 File: pictures/Dispersion.png Graphic file (type png)
 <use pictures/Dispersion.png>
-Package luatex.def Info: pictures/Dispersion.png  used on input line 80.
+Package luatex.def Info: pictures/Dispersion.png  used on input line 91.
 (luatex.def)             Requested size: 376.42744pt x 201.57332pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[5<./pictures/Laser.png>])
+ [6<./pictures/Dispersion.png>] [7]
+<pictures/autokorrelator.pdf, id=93, 394.26984pt x 170.65964pt>
+File: pictures/autokorrelator.pdf Graphic file (type pdf)
+<use pictures/autokorrelator.pdf>
+Package luatex.def Info: pictures/autokorrelator.pdf  used on input line 160.
+(luatex.def)             Requested size: 376.42744pt x 162.94339pt.
+ [8<./pictures/autokorrelator.pdf>]) [9]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
- [6<./pictures/Dispersion.png>]
+ [10]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
- (./build/Abgabe.aux)
+
+(./build/Abgabe.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
 Package rerunfilecheck Info: File `Abgabe.aux' has not changed.
-(rerunfilecheck)             Checksum: 7111BA9A72C7F21195A73AB32DF53F6E;5648.
+(rerunfilecheck)             Checksum: 326450D3345A0E5797BD044ACD070F50;8412.
 Package rerunfilecheck Info: File `Abgabe.toc' has not changed.
-(rerunfilecheck)             Checksum: 272C1B18D29F1DEC6DE2433DEC64E8A9;536.
+(rerunfilecheck)             Checksum: 784FFF7C6FD24C943DE2365793717697;927.
 Package logreq Info: Writing requests to 'Abgabe.run.xml'.
 
 \openout1 = Abgabe.run.xml
@@ -1911,14 +1915,14 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 28.
 )
 
 Here is how much of LuaTeX's memory you used:
- 43008 strings out of 494291
- 100000,1977958 words of node,token memory allocated
- 41371 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 1 dir, 2 glue, 4 kern, 1 penalty, 5617 glyph, 629 a
-ttribute, 80 glue_spec, 92 attribute_list, 1 write nodes
-   avail lists: 1:3,2:737,3:60,4:19,5:181,6:13,7:1815,8:28,9:85,10:13,11:345
- 46139 multiletter control sequences out of 65536+600000
- 102 fonts using 37352071 bytes
+ 43036 strings out of 494291
+ 125007,1977958 words of node,token memory allocated
+ 93363 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 1 dir, 2 glue, 4 kern, 1 penalty, 12713 glyph, 1644
+ attribute, 80 glue_spec, 237 attribute_list, 1 write nodes
+   avail lists: 1:6,2:688,3:81,4:49,5:247,6:20,7:1657,8:50,9:132,10:28,11:410
+ 46149 multiletter control sequences out of 65536+600000
+ 102 fonts using 37352527 bytes
  56i,7n,109p,9142b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-i
 talic.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/l
@@ -1928,10 +1932,10 @@ onts/opentype/public/lm-math/latinmodern-math.otf></home/lasse/.local/texlive/20
 19/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/lasse/.local
 /texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/l
 asse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
-Output written on Abgabe.pdf (6 pages, 246737 bytes).
+Output written on Abgabe.pdf (10 pages, 290337 bytes).
 
-PDF statistics: 140 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
- 19 named destinations out of 1000 (max. 131072)
- 41 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 204 PDF objects out of 1000 (max. 8388607)
+ 150 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 131072)
+ 73 words of extra memory for PDF output out of 10000 (max. 100000000)
 
