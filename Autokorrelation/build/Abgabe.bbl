@@ -19,6 +19,46 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{hooker_laser_2010}{book}{}
+      \name{author}{2}{}{%
+        {{hash=56e7af45d10ff320587e6c7aeea99e1e}{%
+           family={Hooker},
+           familyi={H\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=fc8381d20a5415d723d14c18f4699cf8}{%
+           family={Webb},
+           familyi={W\bibinitperiod},
+           given={Colin\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Oxford ; New York}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{626e109164fb2946e65a349465133b74}
+      \strng{fullhash}{626e109164fb2946e65a349465133b74}
+      \strng{bibnamehash}{626e109164fb2946e65a349465133b74}
+      \strng{authorbibnamehash}{626e109164fb2946e65a349465133b74}
+      \strng{authornamehash}{626e109164fb2946e65a349465133b74}
+      \strng{authorfullhash}{626e109164fb2946e65a349465133b74}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The interaction of radiation and matter, and the principles of laser operation are treated at a level suitable for fourth-year undergraduate courses or introductory graduate courses in physics, chemistry, or engineering. The factors which determine efficiency, wavelength coverage, output power, and beam quality of the different classes of laser are treated both in terms of fundamental theory and practical construction aspects. Details of established types of solid-state, semiconductor, and gas lasers are examined together with the techniques that enable their output to be converted widely across the spectrum. The latest advances in high poser fibre lasers, femtosecond lasers, and X-ray lasers are explained. The test is liberally illustrated with more than 300 diagrams. An extensive bibliography is provided, together with numerical problems in each chapter}
+      \field{isbn}{978-0-19-850692-8 978-0-19-850691-1}
+      \field{note}{{OCLC}: ocn631744417}
+      \field{number}{9}
+      \field{pagetotal}{586}
+      \field{series}{Oxford master series in physics. Atomic, optical, and laser physics}
+      \field{title}{Laser physics}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \keyw{Lasers,Light,Optics}
+    \endentry
     \entry{tu_dortmund_versuchsanleitung_nodate}{misc}{}
       \name{author}{1}{}{%
         {{hash=f75df706eccca2d56ed63592858b16fb}{%
@@ -33,8 +73,8 @@
       \strng{authorbibnamehash}{f75df706eccca2d56ed63592858b16fb}
       \strng{authornamehash}{f75df706eccca2d56ed63592858b16fb}
       \strng{authorfullhash}{f75df706eccca2d56ed63592858b16fb}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Versuchsanleitung Rasterkraftmikroskopie}
@@ -42,6 +82,91 @@
       \field{urlmonth}{5}
       \field{urlyear}{2022}
       \field{urldateera}{ce}
+    \endentry
+    \entry{jostmeier_koharente_2012}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=e529f2ab4ff5cd13bf045b98e1cdcee0}{%
+           family={Jostmeier},
+           familyi={J\bibinitperiod},
+           given={Thorben},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{TU} Dortmund}%
+      }
+      \strng{namehash}{e529f2ab4ff5cd13bf045b98e1cdcee0}
+      \strng{fullhash}{e529f2ab4ff5cd13bf045b98e1cdcee0}
+      \strng{bibnamehash}{e529f2ab4ff5cd13bf045b98e1cdcee0}
+      \strng{authorbibnamehash}{e529f2ab4ff5cd13bf045b98e1cdcee0}
+      \strng{authornamehash}{e529f2ab4ff5cd13bf045b98e1cdcee0}
+      \strng{authorfullhash}{e529f2ab4ff5cd13bf045b98e1cdcee0}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Kohärente Kontrolle elektrischer Ströme in Galliumarsenid: Si- gnaturen jenseits des störungstheoretischen χ(3)-Limits. Masterarbeit}
+      \field{year}{2012}
+      \field{dateera}{ce}
+    \endentry
+    \entry{delong_frequency-resolved_1994}{article}{}
+      \name{author}{4}{}{%
+        {{hash=72fd5ed3d06d47f885b5f795540a323e}{%
+           family={{DeLong}},
+           familyi={D\bibinitperiod},
+           given={K.\bibnamedelimi W.},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=0f842c063baa31b455ba34216fad6909}{%
+           family={Trebino},
+           familyi={T\bibinitperiod},
+           given={Rick},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7655091468f2a1bd6d8836769625b025}{%
+           family={Hunter},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1ac682e29ec7759d0900414405c26883}{%
+           family={White},
+           familyi={W\bibinitperiod},
+           given={W.\bibnamedelimi E.},
+           giveni={W\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{336afe7cf11a4452b63f1337660fcb3f}
+      \strng{fullhash}{3e2beefdf0d204075ddc012489bf31a9}
+      \strng{bibnamehash}{336afe7cf11a4452b63f1337660fcb3f}
+      \strng{authorbibnamehash}{336afe7cf11a4452b63f1337660fcb3f}
+      \strng{authornamehash}{336afe7cf11a4452b63f1337660fcb3f}
+      \strng{authorfullhash}{3e2beefdf0d204075ddc012489bf31a9}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{issn}{0740-3224, 1520-8540}
+      \field{journaltitle}{Journal of the Optical Society of America B}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{11}
+      \field{shortjournal}{J. Opt. Soc. Am. B}
+      \field{title}{Frequency-resolved optical gating with the use of second-harmonic generation}
+      \field{urlday}{16}
+      \field{urlmonth}{7}
+      \field{urlyear}{2021}
+      \field{volume}{11}
+      \field{year}{1994}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2206}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1364/JOSAB.11.002206
+      \endverb
+      \verb{urlraw}
+      \verb https://www.osapublishing.org/abstract.cfm?URI=josab-11-11-2206
+      \endverb
+      \verb{url}
+      \verb https://www.osapublishing.org/abstract.cfm?URI=josab-11-11-2206
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

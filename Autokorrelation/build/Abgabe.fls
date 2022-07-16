@@ -347,6 +347,7 @@ INPUT ./pictures/Dispersion.png
 INPUT ./pictures/autokorrelator.pdf
 INPUT ./pictures/autokorrelator.pdf
 INPUT ./pictures/autokorrelator.pdf
+INPUT /home/lasse/.local/texlive/2019/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc
 INPUT build/Abgabe.aux
 INPUT build/Abgabe.run.xml
 OUTPUT build/Abgabe.run.xml
