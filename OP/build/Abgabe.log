@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  20 JUL 2022 15:50
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  21 JUL 2022 21:21
  restricted system commands enabled.
 **Abgabe.tex
 (./Abgabe.tex
@@ -55,7 +55,7 @@ Lua module: luaotfload-multiscript 2019-09-13 3.00 luaotfload submodule / multis
 cript
 Inserting `luaotfload.rewrite_fontname' at position 5 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.166 seconds
+luaotfload | main : initialization completed in 0.215 seconds
 (./inputs/header.tex
 (/home/lasse/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2019/02/01 v3.26b KOMA-Script document class (article)
@@ -1873,129 +1873,130 @@ File: pictures/cal_cam.png Graphic file (type png)
 <use pictures/cal_cam.png>
 Package luatex.def Info: pictures/cal_cam.png  used on input line 17.
 (luatex.def)             Requested size: 313.69167pt x 236.09445pt.
-<OP_Sternikov/Pos_Cal_50mA.png, id=39, 547.2947pt x 415.5525pt>
+ [3<./pictures/cal_cam.png>]
+<OP_Sternikov/Pos_Cal_50mA.png, id=47, 547.2947pt x 415.5525pt>
 File: OP_Sternikov/Pos_Cal_50mA.png Graphic file (type png)
 <use OP_Sternikov/Pos_Cal_50mA.png>
 Package luatex.def Info: OP_Sternikov/Pos_Cal_50mA.png  used on input line 33.
-(luatex.def)             Requested size: 313.69167pt x 238.18626pt.
- [3<./pictures/cal_cam.png>]
-<Konversion.pdf, id=50, 462.528pt x 346.896pt>
+(luatex.def)             Requested size: 376.42744pt x 285.81845pt.
+ [4<./OP_Sternikov/Pos_Cal_50mA.png>]
+<Konversion.pdf, id=56, 462.528pt x 346.896pt>
 File: Konversion.pdf Graphic file (type pdf)
 <use Konversion.pdf>
-Package luatex.def Info: Konversion.pdf  used on input line 42.
-(luatex.def)             Requested size: 313.69167pt x 235.27744pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[4<./OP_Sternikov/Pos_Cal_50mA.png>]
-<Diodensumme.pdf, id=57, 462.528pt x 346.896pt>
+Package luatex.def Info: Konversion.pdf  used on input line 49.
+(luatex.def)             Requested size: 376.42744pt x 282.33397pt.
+ [5<./Konversion.pdf>]
+<Diodensumme.pdf, id=111, 462.528pt x 346.896pt>
 File: Diodensumme.pdf Graphic file (type pdf)
 <use Diodensumme.pdf>
-Package luatex.def Info: Diodensumme.pdf  used on input line 53.
+Package luatex.def Info: Diodensumme.pdf  used on input line 61.
 (luatex.def)             Requested size: 313.69167pt x 235.27744pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[5<./Konversion.pdf>]
-<OP_Sternikov/k_noForce_150mA.png, id=113, 563.85657pt x 433.62pt>
+ [6<./Diodensumme.pdf>]
+<OP_Sternikov/k_noForce_150mA.png, id=161, 563.85657pt x 433.62pt>
 File: OP_Sternikov/k_noForce_150mA.png Graphic file (type png)
 <use OP_Sternikov/k_noForce_150mA.png>
-Package luatex.def Info: OP_Sternikov/k_noForce_150mA.png  used on input line 70
+Package luatex.def Info: OP_Sternikov/k_noForce_150mA.png  used on input line 78
 .
 (luatex.def)             Requested size: 313.69167pt x 241.23758pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[6<./Diodensumme.pdf>]
-<freq_x.pdf, id=165, 1011.78pt x 433.62pt>
+ [7<./OP_Sternikov/k_noForce_150mA.png>]
+<freq_x.pdf, id=174, 1011.78pt x 433.62pt>
 File: freq_x.pdf Graphic file (type pdf)
 <use freq_x.pdf>
-Package luatex.def Info: freq_x.pdf  used on input line 92.
+Package luatex.def Info: freq_x.pdf  used on input line 100.
 (luatex.def)             Requested size: 292.7776pt x 125.4753pt.
-<freq_y.pdf, id=166, 1011.78pt x 433.62pt>
+<freq_y.pdf, id=175, 1011.78pt x 433.62pt>
 File: freq_y.pdf Graphic file (type pdf)
 <use freq_y.pdf>
-Package luatex.def Info: freq_y.pdf  used on input line 93.
+Package luatex.def Info: freq_y.pdf  used on input line 101.
 (luatex.def)             Requested size: 292.7776pt x 125.4753pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7<./OP_Sternikov/k_noForce_150mA.png>]
-<k_noForce.pdf, id=177, 1011.78pt x 433.62pt>
+<k_noForce.pdf, id=176, 1011.78pt x 433.62pt>
 File: k_noForce.pdf Graphic file (type pdf)
 <use k_noForce.pdf>
-Package luatex.def Info: k_noForce.pdf  used on input line 102.
+Package luatex.def Info: k_noForce.pdf  used on input line 110.
 (luatex.def)             Requested size: 313.69167pt x 134.44066pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8<./freq_x.pdf><./freq_y.pdf><./k_noForce.pdf>]
-<force_x.pdf, id=319, 1011.78pt x 433.62pt>
+[8<./freq_x.pdf><./freq_y.pdf>]
+<force_x.pdf, id=284, 1011.78pt x 433.62pt>
 File: force_x.pdf Graphic file (type pdf)
 <use force_x.pdf>
-Package luatex.def Info: force_x.pdf  used on input line 132.
+Package luatex.def Info: force_x.pdf  used on input line 140.
 (luatex.def)             Requested size: 292.7776pt x 125.4753pt.
-<force_y.pdf, id=320, 1011.78pt x 433.62pt>
+<force_y.pdf, id=285, 1011.78pt x 433.62pt>
 File: force_y.pdf Graphic file (type pdf)
 <use force_y.pdf>
-Package luatex.def Info: force_y.pdf  used on input line 133.
+Package luatex.def Info: force_y.pdf  used on input line 141.
 (luatex.def)             Requested size: 292.7776pt x 125.4753pt.
- [9
 
-<./force_x.pdf><./force_y.pdf>]
-<pictures/vesikel_size_1.png, id=391, 1027.84pt x 770.88pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9<./k_noForce.pdf>]
+<k_xForce.pdf, id=340, 462.528pt x 346.896pt>
+File: k_xForce.pdf Graphic file (type pdf)
+<use k_xForce.pdf>
+Package luatex.def Info: k_xForce.pdf  used on input line 167.
+(luatex.def)             Requested size: 313.69167pt x 235.27744pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10<./force_x.pdf><./force_y.pdf>] [11<./k_xForce.pdf>]
+<k_vortex.pdf, id=449, 1011.78pt x 433.62pt>
+File: k_vortex.pdf Graphic file (type pdf)
+<use k_vortex.pdf>
+Package luatex.def Info: k_vortex.pdf  used on input line 197.
+(luatex.def)             Requested size: 313.69167pt x 134.44066pt.
+ [12<./k_vortex.pdf>]
+<pictures/vesikel_size_1.png, id=498, 1027.84pt x 770.88pt>
 File: pictures/vesikel_size_1.png Graphic file (type png)
 <use pictures/vesikel_size_1.png>
-Package luatex.def Info: pictures/vesikel_size_1.png  used on input line 167.
+Package luatex.def Info: pictures/vesikel_size_1.png  used on input line 247.
 (luatex.def)             Requested size: 167.29967pt x 125.47235pt.
-<pictures/vesikel_size_2.png, id=392, 1027.84pt x 770.88pt>
+<pictures/vesikel_size_2.png, id=499, 1027.84pt x 770.88pt>
 File: pictures/vesikel_size_2.png Graphic file (type png)
 <use pictures/vesikel_size_2.png>
-Package luatex.def Info: pictures/vesikel_size_2.png  used on input line 168.
+Package luatex.def Info: pictures/vesikel_size_2.png  used on input line 248.
 (luatex.def)             Requested size: 167.29967pt x 125.47235pt.
- [10<./pictures/vesikel_size_1.png><./pictures/vesikel_size_2.png>]
-<v_vesikel.pdf, id=403, 1011.78pt x 433.62pt>
+
+[13<./pictures/vesikel_size_1.png><./pictures/vesikel_size_2.png>]
+<v_vesikel.pdf, id=510, 1011.78pt x 433.62pt>
 File: v_vesikel.pdf Graphic file (type pdf)
 <use v_vesikel.pdf>
-Package luatex.def Info: v_vesikel.pdf  used on input line 189.
+Package luatex.def Info: v_vesikel.pdf  used on input line 269.
 (luatex.def)             Requested size: 334.60571pt x 143.406pt.
- [11<./v_vesikel.pdf>]
-<pictures/vesikel_abstand.png, id=442, 1027.84pt x 770.88pt>
+ [14<./v_vesikel.pdf>]
+<pictures/vesikel_abstand.png, id=548, 1027.84pt x 770.88pt>
 File: pictures/vesikel_abstand.png Graphic file (type png)
 <use pictures/vesikel_abstand.png>
-Package luatex.def Info: pictures/vesikel_abstand.png  used on input line 206.
+Package luatex.def Info: pictures/vesikel_abstand.png  used on input line 286.
 (luatex.def)             Requested size: 167.29967pt x 125.47235pt.
-<pictures/vesikel_overlap.png, id=444, 1027.84pt x 770.88pt>
+<pictures/vesikel_overlap.png, id=550, 1027.84pt x 770.88pt>
 File: pictures/vesikel_overlap.png Graphic file (type png)
 <use pictures/vesikel_overlap.png>
-Package luatex.def Info: pictures/vesikel_overlap.png  used on input line 221.
+Package luatex.def Info: pictures/vesikel_overlap.png  used on input line 301.
 (luatex.def)             Requested size: 167.29967pt x 125.47235pt.
- [12<./pictures/vesikel_abstand.png><./pictures/vesikel_overlap.png>]
-<pictures/vesikel_transport.png, id=454, 1027.84pt x 770.88pt>
+ [15<./pictures/vesikel_abstand.png><./pictures/vesikel_overlap.png>]
+<pictures/vesikel_transport.png, id=560, 1027.84pt x 770.88pt>
 File: pictures/vesikel_transport.png Graphic file (type png)
 <use pictures/vesikel_transport.png>
-Package luatex.def Info: pictures/vesikel_transport.png  used on input line 236.
+Package luatex.def Info: pictures/vesikel_transport.png  used on input line 316.
 
 (luatex.def)             Requested size: 167.29967pt x 125.47235pt.
-) (./chapters/Diskussion.tex [13<./pictures/vesikel_transport.png>])
-[14]
-
-LaTeX Warning: Empty bibliography on input line 26.
-
+) (./chapters/Diskussion.tex [16<./pictures/vesikel_transport.png>]) [17]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
+
+[18]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
-(./build/Abgabe.aux)
+ (./build/Abgabe.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
 Package rerunfilecheck Info: File `Abgabe.aux' has not changed.
-(rerunfilecheck)             Checksum: A9C34F0DCF2AC7C6D603D543D039E406;11003.
+(rerunfilecheck)             Checksum: C2DB8CA5D721D9984066D6A16F6D48D6;13805.
 Package rerunfilecheck Info: File `Abgabe.toc' has not changed.
-(rerunfilecheck)             Checksum: 240B5C7023A5BA42D08D0E62E2964441;785.
+(rerunfilecheck)             Checksum: 7BA94D6097DB65831C5537B1372589A6;785.
 Package logreq Info: Writing requests to 'Abgabe.run.xml'.
 
 \openout1 = Abgabe.run.xml
@@ -2003,26 +2004,27 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 28.
 )
 
 Here is how much of LuaTeX's memory you used:
- 43298 strings out of 494291
- 125007,1977958 words of node,token memory allocated
- 81936 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 penalty, 9898 glyph, 5270 attribu
-te, 79 glue_spec, 755 attribute_list, 1 write nodes
-   avail lists: 1:4,2:1555,3:101,4:49,5:144,6:15,7:1363,8:71,9:241,10:18,11:199
- 46233 multiletter control sequences out of 65536+600000
- 212 fonts using 80794591 bytes
+ 43527 strings out of 494291
+ 156265,1977958 words of node,token memory allocated
+ 123640 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 penalty, 14383 glyph, 9778 attrib
+ute, 80 glue_spec, 1399 attribute_list, 1 write nodes
+   avail lists: 1:7,2:1510,3:133,4:95,5:213,6:15,7:2822,8:74,9:263,10:18,11:382
+ 46444 multiletter control sequences out of 65536+600000
+ 212 fonts using 80794943 bytes
  56i,21n,109p,9142b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
-</home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman8-re
-gular.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-m
+</home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-i
+talic.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-m
 ath/latinmodern-math.otf></home/lasse/.local/texlive/2019/texmf-dist/fonts/opent
-ype/public/lm-math/latinmodern-math.otf></home/lasse/.local/texlive/2019/texmf-d
-ist/fonts/opentype/public/lm/lmroman10-regular.otf></home/lasse/.local/texlive/2
-019/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/lasse/.loca
-l/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
-Output written on Abgabe.pdf (14 pages, 10273429 bytes).
+ype/public/lm/lmroman8-regular.otf></home/lasse/.local/texlive/2019/texmf-dist/f
+onts/opentype/public/lm-math/latinmodern-math.otf></home/lasse/.local/texlive/20
+19/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/lasse/.local
+/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/l
+asse/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
+Output written on Abgabe.pdf (18 pages, 10304451 bytes).
 
-PDF statistics: 531 PDF objects out of 1000 (max. 8388607)
- 258 compressed objects within 3 object streams
- 40 named destinations out of 1000 (max. 131072)
+PDF statistics: 652 PDF objects out of 1000 (max. 8388607)
+ 314 compressed objects within 4 object streams
+ 50 named destinations out of 1000 (max. 131072)
  57 words of extra memory for PDF output out of 10000 (max. 100000000)
 

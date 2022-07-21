@@ -15,50 +15,58 @@
             \begin{figure}[h]
             \centering
             \includegraphics[width = 0.75\textwidth]{pictures/cal_cam.png}
-            \caption{Abbildung der vier vermessenden Vesikel, die rot hervorgehoben und deren Größe in Pixeln angegeben sind.}
+            \caption{Abbildung eines in der optischen Falle (gelber Kreis) eingefangene Quarzkügelchens (roter Kreis).}
             \label{fig:cal_cam}
             \end{figure}
             \FloatBarrier
             %
 
-
+        \newpage
         \subsubsection{Kalibrierung der Photodiode}
             Die zur Kalibrierung der Photodiode aufgenommenen S-Kurven sind exemplarisch für eine Laserleistung von \SI{4.83}{\milli\watt} in einem Screenshot des Programms \ref{fig:pos_cal} für die x- und 
             y-Achse dargestellt. In diesem Screenshot sind auch die per Programm berechneten und in Grafik \ref{fig:Konversion} gegen die Laserleistung aufgetragenen Konversionsfaktoren der beiden Achsen 
-            eingetragen. Dabei ergibt sich ein linearer Abfall der Konversionsfaktoren, die zur Berechnung der Position eines eingefangenen Objekts durch die von der Vier-Segment-Diode gemessenen Spannung 
-            benötigt wird.
+            eingetragen.
+            \FloatBarrier
             %
             \begin{figure}[h]
             \centering
-            \includegraphics[width = 0.75\textwidth]{OP_Sternikov/Pos_Cal_50mA.png}
-            \caption{Abbildung der vier vermessenden Vesikel, die rot hervorgehoben und deren Größe in Pixeln angegeben sind.}
+            \includegraphics[width = 0.9\textwidth]{OP_Sternikov/Pos_Cal_50mA.png}
+            \caption{Abbildung einer aufgenommenen S-Kurve bei einer Laserleistung von \SI{4.83}{\milli\watt} zur Kalibrierung der Konversionsfaktoren.}
             \label{fig:pos_cal}
             \end{figure}
             \FloatBarrier
             %         
+            \newpage
+            Daraus ergeben sich die Mittelwerte der Konversionsfaktoren
+            \begin{equation*}
+                \overline{K_{\text{x}}} = \SI{0.41}{\volt\per\micro\metre} \qquad\qquad \overline{K_{\text{y}}} = \SI{0.27}{\volt\per\micro\metre} \,,
+            \end{equation*}
+            die zur Berechnung der Position eines eingefangenen Objekts durch die von der Vier-Segment-Diode gemessenen Spannung benötigt werden.
+
             %
             \begin{figure}[h]
             \centering
-            \includegraphics[width = 0.75\textwidth]{Konversion.pdf}
-            \caption{Abbildung der vier vermessenden Vesikel, die rot hervorgehoben und deren Größe in Pixeln angegeben sind.}
+            \includegraphics[width = 0.9\textwidth]{Konversion.pdf}
+            \caption{Die für beide Achsen gemessenen Konversionsfaktoren bei unterschiedlichen Laserleistungen.}
             \label{fig:Konversion}
             \end{figure}
             \FloatBarrier
             %
+            \newpage
             Das in Abhängigkeit des z-Piezo-Werts aufgenommene Diodensummensignal bei einem festen Quarzkügelchen ist in Abbildung \ref{fig:Diodensumme} aufgetragen. Der Verlauf der Kurve entspricht dem
             nach Abbildung REF ZU THEORIE zu erwartenden Anstiegt in der Umgebung des Streumaximus und bestätigt, dass ein festes Quarzkügelchen vermessen wurde.
             %
             \begin{figure}[h]
             \centering
             \includegraphics[width = 0.75\textwidth]{Diodensumme.pdf}
-            \caption{Abbildung der vier vermessenden Vesikel, die rot hervorgehoben und deren Größe in Pixeln angegeben sind.}
+            \caption{Das gemessenen Diodensummensignal gegen die z-Position der optischen Falle im Bereich um das Streumaximums hier bei circa \SI{100}{\micro\metre}.}
             \label{fig:Diodensumme}
             \end{figure}
             \FloatBarrier
             %
 
 
-            
+        \newpage
         \subsubsection{Kalibrierung der Fallensteifigkeit}
             Der letzte Schritt der Kalibrierung, umfasst die Bestimmung der Fallensteifigkeiten $k_x$ und $k_y$ für beide Achsen.
             
@@ -68,7 +76,7 @@
             \begin{figure}[h]
             \centering
             \includegraphics[width = 0.75\textwidth]{OP_Sternikov/k_noForce_150mA.png}
-            \caption{Abbildung der vier vermessenden Vesikel, die rot hervorgehoben und deren Größe in Pixeln angegeben sind.}
+            \caption{Bildschirmaufnahme des Programms zur Messung der Fallensteifigkeit mit Abbildungen im Frequennzraum und den vom Programm berechneten Fallensteifigkeiten für beide Achsen.}
             \label{fig:PSD}
             \end{figure}
             \FloatBarrier
@@ -83,15 +91,15 @@
             Kalibrierung der Fallensteifigkeit in Abhängigkeit des Pumpstrom gelegt. Dies ergibt folgende Kalibrierung in Abhängigkeit der Laserleistung in \si{\milli\watt} für den Bereich 
             von \SI{93.3}{\milli\watt} bis \SI{153.1}{\milli\watt}:
             \begin{align}
-                k_x(\text{P}) &= 1.34\cdot10^{-8}\si{\newton\per\metre\milli\watt} - 7.71\cdot10^{-7}\si{\newton\per\metre} \\
-                k_y(\text{P}) &= 2.14\cdot10^{-8}\si{\newton\per\metre\milli\watt} - 1.46\cdot10^{-6}\si{\newton\per\metre}
+                k_x(\text{P}) &= 1.34\cdot10^{-8}\si{\newton\per\metre\milli\watt} \cdot \text{P} - 7.71\cdot10^{-7}\si{\newton\per\metre} \\
+                k_y(\text{P}) &= 2.14\cdot10^{-8}\si{\newton\per\metre\milli\watt} \cdot \text{P} - 1.46\cdot10^{-6}\si{\newton\per\metre}
             \end{align}
             %
             \begin{figure}[h]
             \centering
             \includegraphics[width = 0.7\textwidth]{freq_x.pdf}
             \includegraphics[width = 0.7\textwidth]{freq_y.pdf}
-            \caption{Die spektrale Leistungsdichte gegen die Frequenz aufgetragen sowie eine theoretische Anpassungen, die auf den Werten im markierten Bereich beruht.}
+            \caption{Die spektrale Leistungsdichte oben für die x-Achse und unten für die y-Achse gegen die Frequenz aufgetragen sowie eine theoretische Anpassungen, die auf den Werten im markierten Bereich beruht.}
             \label{fig:freq_noForce}
             \end{figure}
             \FloatBarrier
@@ -111,17 +119,17 @@
             %
             \begin{table}[h]
                 \centering
-                \caption{Die Durchmesser der 4 vermessenen Vesikel in der Einheit von Pixeln und im Realraum}
+                \caption{Die Fallensteifigkeiten in x- und y-Richtung sowie die daraus berechneten Werte für die Boltzmankonstante bei verschiedenen Laserleistung und keiner externen Krafteinwirkung.}
                 \label{tab:noForce}
                 \begin{tabular}{c c c c c}
                 \toprule
                 {P[mW]} &   {$k_\text{x}$ [N/m]} & {$k_\text{B,x}$ [J/K]} &{$k_\text{y}$ [N/m]} & {$k_\text{B,y}$ [J/K]}  \\
                 \midrule
-                \num{63.4}     &   \num{4.74e-6}	 &  \num{2.42e-24}   &  \num{6.57e-6}    &  \num{1.34e-24}  \\
-                \num{93.3}     &   \num{1.94e-6}	 &  \num{1.31e-24}   &  \num{2.61e-6}    &  \num{1.10e-24}  \\
-                \num{123.2}    &   \num{2.49e-6}	 &  \num{1.32e-24}   &  \num{4.33e-6}    &  \num{1.35e-24}  \\
-                \num{153.1}    &   \num{3.28e-6}	 &  \num{1.40e-24}   &  \num{4.75e-6}    &  \num{1.22e-24}  \\
-                \num{182.0}    &   \num{1.37e-6}	 &  \num{1.13e-24}   &  \num{2.96e-6}    &  \num{7.53e-25}  \\
+                \num{63.4}     &   \num{4.74e-6}	 &  \num{1.43e-23}   &  \num{6.57e-6}    &  \num{1.91e-23}  \\
+                \num{93.3}     &   \num{1.94e-6}	 &  \num{7.75e-24}   &  \num{2.61e-6}    &  \num{1.56e-23}  \\
+                \num{123.2}    &   \num{2.49e-6}	 &  \num{7.82e-24}   &  \num{4.33e-6}    &  \num{1.92e-23}  \\
+                \num{153.1}    &   \num{3.28e-6}	 &  \num{8.25e-24}   &  \num{4.75e-6}    &  \num{1.73e-23}  \\
+                \num{182.0}    &   \num{1.37e-6}	 &  \num{6.69e-24}   &  \num{2.96e-6}    &  \num{1.07e-23}  \\
                 \bottomrule
                 \end{tabular}
             \end{table}
@@ -138,18 +146,78 @@
             % 
 
             
-            Bei Anregung mit einer externen Kraft kann die Bewegung des Quarzkügelchens als sinusförmige Schwingung
-            \begin{equation*}
-                x(t) = \text{A} \sin\left(2\pift\right)
-            \end{equation*}
-            mit der Amplitude A und der Frequenz $f$ beschrieben werden. So lässt sich die wirkende Kraft mit Hilfe der Fallensteifigkeit $k_{x/y}$ berechnen. Wenn das Quarzkügelchens die optische Pinzette 
-            aufgrund der externen Kraft verlässt, kann die dort wirkende Kraft mit dem zuvor beschriebenen Weg zur Kraftberechnung gleichgesetzt werden. Es ergibt sich folgende Gleichung
-            \begin{equation*}
-                da
-            \end{equation*} 
-            
+            % Bei Anregung mit einer externen Kraft kann die Bewegung des Quarzkügelchens als sinusförmige Schwingung
+            % \begin{equation*}
+            %     x(t) = \text{A} \sin\left(2\pift\right)
+            % \end{equation*}
+            % mit der Amplitude A und der Frequenz $f$ beschrieben werden. So lässt sich die wirkende Kraft mit Hilfe der Fallensteifigkeit $k_{x/y}$ berechnen. Wenn das Quarzkügelchens die optische Pinzette 
+            % aufgrund der externen Kraft verlässt, kann die dort wirkende Kraft mit dem zuvor beschriebenen Weg zur Kraftberechnung gleichgesetzt werden. Es ergibt sich folgende Gleichung
+            % \begin{equation*}
+            %     da
+            % \end{equation*} 
 
-
+            Bei der Messung mit externer Krafteinwirkung durch Piezoelemente und der Messung mit externer Krafteinwirkung sowie eingesetztem Vortex-Retarder werden die Messungen nicht wie zuvor händisch
+            ausgewertet. Mit der vom Programm gespeicherten Kalibrierung der S-Kurven, kann dieses die Fallensteifigkeiten eigenständig bestimmen und auslesen lassen. Diese Werte sind für die Messung mit
+            externer Krafteinwirkung in x-Richtung in Grafik \ref{fig:k_xForce} gegen die Laserleistung aufgetragen. Da kein Zusammenhang zwischen den Werten der Fallensteifigkeiten zu erkennen ist, wird 
+            auf eine lineare Anpassung verzichtet. Äquivalent zur Messung ohne externe Krafteinwirkung wird die Boltzmankonstante über das Äquipartitionstheorem berechnet und mit den Fallensteifigkeiten
+            in Tabelle \ref{tab:xForce} aufgelistet. 
+            %
+            \begin{figure}[h]
+            \centering
+            \includegraphics[width = 0.75\textwidth]{k_xForce.pdf}
+            \caption{Vom Programm aus den PSD bestimmte Fallensteifigkeiten aufgetragen gegen die Laserleistung bei externer Krafteinwirkung in x-Richtung.}
+            \label{fig:k_xForce}
+            \end{figure}
+            \FloatBarrier
+            %
+            %
+            \begin{table}[h]
+                \centering
+                \caption{Die Fallensteifigkeiten in x- und y-Richtung sowie die daraus berechneten Werte für die Boltzmankonstante bei verschiedenen Laserleistung und externe Krafteinwirkung in x-Richtung.}
+                \label{tab:xForce}
+                \begin{tabular}{c c c c c}
+                \toprule
+                {P[mW]} &   {$k_\text{x}$ [N/m]} & {$k_\text{B,x}$ [J/K]} &{$k_\text{y}$ [N/m]} & {$k_\text{B,y}$ [J/K]}  \\
+                \midrule
+                \num{63.4}     &   \num{2.64e-6}	 &  \num{1.42e-23}   &  \num{3.12e-6}    &  \num{1.48e-23}  \\
+                \num{93.3}     &   \num{3.11e-6}	 &  \num{1.13e-23}   &  \num{5.12e-6}    &  \num{1.74e-23}  \\
+                \num{123.2}    &   \num{2.06e-6}	 &  \num{1.04e-23}   &  \num{2.47e-6}    &  \num{1.15e-23}  \\
+                \num{153.1}    &   \num{1.71e-6}	 &  \num{6.65e-24}   &  \num{4.18e-6}    &  \num{1.90e-23}  \\
+                \num{182.0}    &   \num{1.47e-6}	 &  \num{6.98e-24}   &  \num{3.60e-6}    &  \num{1.38e-23}  \\
+                \bottomrule
+                \end{tabular}
+            \end{table}
+            %
+            \newpage
+            Die Fallensteifigkeiten bei externer Krafteinwirkung in x-Richtung sowie eingesetztem Vortex-Retarder sind in Abbildung \ref{fig:k_vortex} gegen die Laserleistung aufgetragen und mitsamt der über
+            sie berechneten Werte der Boltzmankonstante in Tabelle \ref{tab:vortex} aufgetragen.
+            %
+            \begin{figure}[h]
+            \centering
+            \includegraphics[width = 0.75\textwidth]{k_vortex.pdf}
+            \caption{Vom Programm berechnete Fallensteifigkeiten aufgetragen gegen die Laserleistung bei eingesetztem Vortex-Retarder und externer Krafteinwirkung in x-Richtung.}
+            \label{fig:k_vortex}
+            \end{figure}
+            \FloatBarrier
+            %
+            %
+            \begin{table}[h]
+                \centering
+                \caption{Die Fallensteifigkeiten in x- und y-Richtung sowie die daraus berechneten Werte für die Boltzmankonstante bei verschiedenen Laserleistung, eingesetztem Vortex-Retarder und externen Krafteinwirkung in x-Richtung.}
+                \label{tab:vortex}
+                \begin{tabular}{c c c c c}
+                \toprule
+                {P[mW]} &   {$k_\text{x}$ [N/m]} & {$k_\text{B,x}$ [J/K]} &{$k_\text{y}$ [N/m]} & {$k_\text{B,y}$ [J/K]}  \\
+                \midrule
+                \num{63.4}     &   \num{4.23e-7}	 &  \num{3.93e-24}   &  \num{1.97e-6}    &  \num{8.64e-25}  \\
+                \num{93.3}     &   \num{2.47e-6}	 &  \num{8.95e-24}   &  \num{1.08e-5}    &  \num{1.83e-24}  \\
+                \num{123.2}    &   \num{2.40e-6}	 &  \num{8.73e-24}   &  \num{3.61e-6}    &  \num{8.31e-26}  \\
+                \num{153.1}    &   \num{1.07e-6}	 &  \num{5.32e-24}   &  \num{2.39e-5}    &  \num{3.62e-25}  \\
+                \num{182.0}    &   \num{4.78e-6}	 &  \num{1.28e-23}   &  \num{7.20e-5}    &  \num{1.19e-24}  \\
+                \bottomrule
+                \end{tabular}
+            \end{table}
+            %
 
     \newpage
     \subsection{Untersuchung des Vesikeltransports in Zwiebeln}
@@ -224,7 +292,7 @@
         %
         Da die Verbindung der Myosin-Motoren nicht gebrochen werden kann, war es auch nicht möglich Vesikel von einer Straße durch Bereiche ohne Straße auf eine andere zu transferieren. Dies ist in Abbildung
         \ref{fig:vesikel_overlap} zu sehen. Ein Vesikel wird von der Straße am rechten Ende der roten Linie abgefangen und direkt über der blauen Straße platziert. Beim Deaktivieren der optischen Falle geht das 
-        Vesikel auf seine Ausgangsposition auf der ehemaligen Straße zurück. 
+        Vesikel auf seine Ausgangsposition auf der ehemaligen Straße zurück.
         %
         \FloatBarrier
         %
@@ -252,5 +320,5 @@
         %
         \FloatBarrier 
         %
-        Durch Platzierung der optischen Pinzette über einer Actin-Straße und sukzessivem Erhöhen der Laserleistung ist ein Stopp des Vesikeltransports bei einer Laserleistung von \SI{63}{\milli\watt} zu 
-        beobachten. Dies entspricht einer aufgrund der schlechten Kalibrierungsmessungen nur abzuschätzenden Fallensteifigkeit von einigen wenigen \SI{10e-6}{\newton\per\metre}. 
+        Durch Platzierung der optischen Pinzette über einer Actin-Straße und sukzessivem Erhöhen der Laserleistung ist ein Stopp des Vesikeltransports bei einer Laserleistung von \SI{99.28}{\milli\watt} zu 
+        beobachten. Dies entspricht einer über die Kalibrierungsmessungen abzuschätzenden Fallensteifigkeit von \SI{2.54e-6}{\newton\per\metre}. 

@@ -87,8 +87,18 @@ slope_x = unp.uarray([noms(slope_x_50), noms(slope_x_100), noms(slope_x_150), no
 slope_y = unp.uarray([noms(slope_y_50), noms(slope_y_100), noms(slope_y_150), noms(slope_y_200), noms(slope_y_250)], [stds(slope_y_50), stds(slope_y_100), stds(slope_y_150), stds(slope_y_200), stds(slope_y_250)])
 # slope_y = unp.uarray([slope_y_50, slope_y_100, slope_y_150, slope_y_200, slope_y_250])
 
-# plt.plot(P, noms(slope_x), "x--", label=r'x-Konversionsfaktor')
-# plt.plot(P, noms(slope_y), "x--", label=r'y-Konversionsfaktor')
+slope_x_mean = np.mean(noms(slope_x))
+slope_y_mean = np.mean(noms(slope_y))
+
+print(f"""
+Konversionsfaktoren
+x: {slope_x_mean}
+y: {slope_y_mean}
+""")
+
+
+# plt.plot(P, noms(slope_x), "x", label=r'x-Konversionsfaktor')
+# plt.plot(P, noms(slope_y), "x", label=r'y-Konversionsfaktor')
 # plt.xlabel(r'P [mW]')
 # plt.ylabel(r'K [V/$\mu$m]')
 # #plt.xlim(-30,30)
@@ -117,7 +127,7 @@ z_fit = np.linspace(2, 10, 1000) *10**(3)
 print(I_z_params)
 
 
-# plt.plot(z*10**(-3), U/U.max(), "x--", label=r'Messung')
+# plt.plot(z*10, U/U.max(), "x--", label=r'Messung')
 # # plt.plot(z_fit, I_z(z_fit, z_0), "-", label=r'y-Theorie')
 # # plt.plot(z_fit, I_z(z_fit, *I_z_params), "-", label=r'y-Theorie')
 # plt.ylabel(r'I$_z$/I($Z$) [a.U.]')
@@ -146,21 +156,6 @@ def var(x):
 
 def sin(t, A, w, b, t0):
     return A*np.sin(w*(t-t0)) + b
-
-
-#Test der Daten
-# t, x, y, egal = np.genfromtxt("OP_Sternikov/k_xForce_150mA.TDdat", unpack=True)
-# t, x, y, egal = np.genfromtxt("OP_Sternikov/k_xForce_150mA.TDdat", unpack=True)
-# t, x, y, egal = np.genfromtxt("OP_Sternikov/k_xForce_150mA.TDdat", unpack=True)
-# t, x, y, egal = np.genfromtxt("OP_Sternikov/k_xForce_150mA.TDdat", unpack=True)
-# plt.plot(t, savgol_filter(y, 3001, 3), "-", linewidth=0.8, label=r'y')
-# plt.plot(t, savgol_filter(x, 99, 6), "-", linewidth=0.8, label=r'x')
-# plt.plot(t, savgol_filter(smooth(x, 5000), 51, 3), "-", label=r'x')
-# plt.ylabel(r'x [$\mu$m]')
-# plt.xlabel(r't [s]')
-# plt.legend(loc='best')
-# plt.savefig('force.pdf')
-# plt.clf()
 
 
 
@@ -259,32 +254,28 @@ t_300, x_300, y_300, egal = np.genfromtxt("OP_Sternikov/k_noForce_300mA.TDdat", 
 t_350, x_350, y_350, egal = np.genfromtxt("OP_Sternikov/k_noForce_350mA.TDdat", unpack=True)
 
 
-k_B_x_150 = k_x_150 * var(x_150*10**(-6))/(25+273.15)
-k_B_y_150 = k_y_150 * var(y_150*10**(-6))/(25+273.15)
-
-k_B_x_200 = k_x_200 * var(x_200*10**(-6))/(25+273.15)
-k_B_y_200 = k_y_200 * var(y_200*10**(-6))/(25+273.15)
-
-k_B_x_250 = k_x_250 * var(x_250*10**(-6))/(25+273.15)
-k_B_y_250 = k_y_250 * var(y_250*10**(-6))/(25+273.15)
-
-k_B_x_300 = k_x_300 * var(x_300*10**(-6))/(25+273.15)
-k_B_y_300 = k_y_300 * var(y_300*10**(-6))/(25+273.15)
-
-k_B_x_350 = k_x_350 * var(x_350*10**(-6))/(25+273.15)
-k_B_y_350 = k_y_350 * var(y_350*10**(-6))/(25+273.15)
+k_B_x_150 = k_x_150 * var(x_150*10**(-6)/slope_x_mean)/(25+273.15)
+k_B_y_150 = k_y_150 * var(y_150*10**(-6)/slope_y_mean)/(25+273.15)
+k_B_x_200 = k_x_200 * var(x_200*10**(-6)/slope_x_mean)/(25+273.15)
+k_B_y_200 = k_y_200 * var(y_200*10**(-6)/slope_y_mean)/(25+273.15)
+k_B_x_250 = k_x_250 * var(x_250*10**(-6)/slope_x_mean)/(25+273.15)
+k_B_y_250 = k_y_250 * var(y_250*10**(-6)/slope_y_mean)/(25+273.15)
+k_B_x_300 = k_x_300 * var(x_300*10**(-6)/slope_x_mean)/(25+273.15)
+k_B_y_300 = k_y_300 * var(y_300*10**(-6)/slope_y_mean)/(25+273.15)
+k_B_x_350 = k_x_350 * var(x_350*10**(-6)/slope_x_mean)/(25+273.15)
+k_B_y_350 = k_y_350 * var(y_350*10**(-6)/slope_y_mean)/(25+273.15)
 
 
 
 print(f"""
 Ohne Krafteinwirkung
 
-Laserleistung[mW]          k_x                   k_y                       Boltzmann_x         Boltzmann_y
-{I_to_P(150)} |||        {k_x_150}                 {k_y_150}                     {k_B_x_150}         |||  {k_B_y_150}
-{I_to_P(200)} |||        {k_x_200}                 {k_y_200}                     {k_B_x_200}         |||  {k_B_y_200}
-{I_to_P(250)} |||        {k_x_250}                 {k_y_250}                     {k_B_x_250}         |||  {k_B_y_250}
-{I_to_P(300)} |||        {k_x_300}                 {k_y_300}                     {k_B_x_300}         |||  {k_B_y_300}
-{I_to_P(350)} |||        {k_x_350}                 {k_y_350}                     {k_B_x_350}         |||  {k_B_y_350}
+Laserleistung[mW]          k_x                   k_y                       Boltzmann_x         Boltzmann_y                      Abweichung x                        Abweichung y
+{I_to_P(150)} |||        {k_x_150}                 {k_y_150}                     {k_B_x_150}         |||  {k_B_y_150}       {(k_B_x_150-const.k)/const.k}       {(k_B_y_150-const.k)/const.k}
+{I_to_P(200)} |||        {k_x_200}                 {k_y_200}                     {k_B_x_200}         |||  {k_B_y_200}       {(k_B_x_200-const.k)/const.k}       {(k_B_y_200-const.k)/const.k}
+{I_to_P(250)} |||        {k_x_250}                 {k_y_250}                     {k_B_x_250}         |||  {k_B_y_250}       {(k_B_x_250-const.k)/const.k}       {(k_B_y_250-const.k)/const.k}
+{I_to_P(300)} |||        {k_x_300}                 {k_y_300}                     {k_B_x_300}         |||  {k_B_y_300}       {(k_B_x_300-const.k)/const.k}       {(k_B_y_300-const.k)/const.k}
+{I_to_P(350)} |||        {k_x_350}                 {k_y_350}                     {k_B_x_350}         |||  {k_B_y_350}       {(k_B_x_350-const.k)/const.k}       {(k_B_y_350-const.k)/const.k}
 """)
 
 
@@ -294,10 +285,10 @@ plt.rcParams["figure.figsize"] = (14,6)
 
 plt.plot(f_150, PSD_x_150, "-", label=r'Messung')
 plt.plot(f_150, PSD(f_150, *PSD_x_150_params), "-", label=r'Anpassung')
-plt.axvspan(f_150[5], f_150[53000], alpha=0.3, color="grey")
+plt.axvspan(f_150[5], f_150[53000], alpha=0.3, color="grey", label=r'Anpassungsbereich')
 plt.xscale("log")
 plt.yscale("log")
-plt.ylabel(r'PSD [$\mu$m\,s]')
+plt.ylabel(r'PSD [$\mu$m$\sqrt{s}$]')
 plt.xlabel(r'f [Hz]')
 plt.legend(loc='best')
 plt.savefig('freq_y.pdf')
@@ -305,10 +296,10 @@ plt.clf()
 
 plt.plot(f_150, PSD_y_150, "-", label=r'Messung')
 plt.plot(f_150, PSD(f_150, *PSD_y_150_params), "-", label=r'Anpassung')
-plt.axvspan(f_150[5], f_150[53000], alpha=0.3, color="grey")
+plt.axvspan(f_150[5], f_150[53000], alpha=0.3, color="grey", label=r'Anpassungsbereich')
 plt.xscale("log")
 plt.yscale("log")
-plt.ylabel(r'PSD [$\mu$m\,s]')
+plt.ylabel(r'PSD [$\mu$m$\sqrt{s}$]')
 plt.xlabel(r'f [Hz]')
 plt.legend(loc='best')
 plt.savefig('freq_x.pdf')
@@ -316,7 +307,7 @@ plt.clf()
 
 # plt.plot(t, savgol_filter(y, 3001, 3), "-", linewidth=0.8, label=r'y')
 # plt.plot(t, savgol_filter(x, 99, 6), "-", linewidth=0.8, label=r'x')
-plt.plot(t_150, savgol_filter(smooth(x_150, 5000), 51, 3), "-")
+plt.plot(t_150, savgol_filter(smooth(x_150/slope_x_mean, 5000), 51, 3), "-")
 plt.ylabel(r'x [$\mu$m]')
 plt.xlabel(r't [s]')
 # plt.legend(loc='best')
@@ -325,7 +316,7 @@ plt.clf()
 
 # plt.plot(t, savgol_filter(y, 3001, 3), "-", linewidth=0.8, label=r'y')
 # plt.plot(t, savgol_filter(x, 99, 6), "-", linewidth=0.8, label=r'x')
-plt.plot(t_150, savgol_filter(smooth(y_150, 5000), 51, 3), "-")
+plt.plot(t_150, savgol_filter(smooth(y_150/slope_y_mean, 5000), 51, 3), "-")
 plt.ylabel(r'x [$\mu$m]')
 plt.xlabel(r't [s]')
 # plt.legend(loc='best')
@@ -361,28 +352,28 @@ k_F_x = np.array([k_F_x_150, k_F_x_200, k_F_x_250, k_F_x_300, k_F_x_350])
 k_F_y = np.array([k_F_y_150, k_F_y_200, k_F_y_250, k_F_y_300, k_F_y_350])
 
 
-k_B_F_x_150 = k_F_x_150 * var(x_F_150*10**(-6))/(25+273.15)
-k_B_F_y_150 = k_F_y_150 * var(y_F_150*10**(-6))/(25+273.15)
-k_B_F_x_200 = k_F_x_200 * var(x_F_200*10**(-6))/(25+273.15)
-k_B_F_y_200 = k_F_y_200 * var(y_F_200*10**(-6))/(25+273.15)
-k_B_F_x_250 = k_F_x_250 * var(x_F_250*10**(-6))/(25+273.15)
-k_B_F_y_250 = k_F_y_250 * var(y_F_250*10**(-6))/(25+273.15)
-k_B_F_x_300 = k_F_x_300 * var(x_F_300*10**(-6))/(25+273.15)
-k_B_F_y_300 = k_F_y_300 * var(y_F_300*10**(-6))/(25+273.15)
-k_B_F_x_350 = k_F_x_350 * var(x_F_350*10**(-6))/(25+273.15)
-k_B_F_y_350 = k_F_y_350 * var(y_F_350*10**(-6))/(25+273.15)
+k_B_F_x_150 = k_F_x_150 * var(x_F_150*10**(-6)/slope_x_mean)/(25+273.15)
+k_B_F_y_150 = k_F_y_150 * var(y_F_150*10**(-6)/slope_y_mean)/(25+273.15)
+k_B_F_x_200 = k_F_x_200 * var(x_F_200*10**(-6)/slope_x_mean)/(25+273.15)
+k_B_F_y_200 = k_F_y_200 * var(y_F_200*10**(-6)/slope_y_mean)/(25+273.15)
+k_B_F_x_250 = k_F_x_250 * var(x_F_250*10**(-6)/slope_x_mean)/(25+273.15)
+k_B_F_y_250 = k_F_y_250 * var(y_F_250*10**(-6)/slope_y_mean)/(25+273.15)
+k_B_F_x_300 = k_F_x_300 * var(x_F_300*10**(-6)/slope_x_mean)/(25+273.15)
+k_B_F_y_300 = k_F_y_300 * var(y_F_300*10**(-6)/slope_y_mean)/(25+273.15)
+k_B_F_x_350 = k_F_x_350 * var(x_F_350*10**(-6)/slope_x_mean)/(25+273.15)
+k_B_F_y_350 = k_F_y_350 * var(y_F_350*10**(-6)/slope_y_mean)/(25+273.15)
 
 
 
 print(f"""
 Mit ext. Krafteinwirkung in x-Richtung
 
-Laserleistung[mW]          k_x                   k_y                       Boltzmann_x         Boltzmann_y
-{I_to_P(150)} |||        {k_F_x_150}                 {k_F_y_150}                     {k_B_F_x_150}         |||  {k_B_F_y_150}
-{I_to_P(200)} |||        {k_F_x_200}                 {k_F_y_200}                     {k_B_F_x_200}         |||  {k_B_F_y_200}
-{I_to_P(250)} |||        {k_F_x_250}                 {k_F_y_250}                     {k_B_F_x_250}         |||  {k_B_F_y_250}
-{I_to_P(300)} |||        {k_F_x_300}                 {k_F_y_300}                     {k_B_F_x_300}         |||  {k_B_F_y_300}
-{I_to_P(350)} |||        {k_F_x_350}                 {k_F_y_350}                     {k_B_F_x_350}         |||  {k_B_F_y_350}
+Laserleistung[mW]          k_x                   k_y                       Boltzmann_x         Boltzmann_y                      Abweichung x                        Abweichung y
+{I_to_P(150)} |||        {k_F_x_150}                 {k_F_y_150}                     {k_B_F_x_150}         |||  {k_B_F_y_150}       {(k_B_F_x_150-const.k)/const.k}       {(k_B_F_y_150-const.k)/const.k}
+{I_to_P(200)} |||        {k_F_x_200}                 {k_F_y_200}                     {k_B_F_x_200}         |||  {k_B_F_y_200}       {(k_B_F_x_200-const.k)/const.k}       {(k_B_F_y_200-const.k)/const.k}
+{I_to_P(250)} |||        {k_F_x_250}                 {k_F_y_250}                     {k_B_F_x_250}         |||  {k_B_F_y_250}       {(k_B_F_x_250-const.k)/const.k}       {(k_B_F_y_250-const.k)/const.k}
+{I_to_P(300)} |||        {k_F_x_300}                 {k_F_y_300}                     {k_B_F_x_300}         |||  {k_B_F_y_300}       {(k_B_F_x_300-const.k)/const.k}       {(k_B_F_y_300-const.k)/const.k}
+{I_to_P(350)} |||        {k_F_x_350}                 {k_F_y_350}                     {k_B_F_x_350}         |||  {k_B_F_y_350}       {(k_B_F_x_350-const.k)/const.k}       {(k_B_F_y_350-const.k)/const.k}
 """)
 
 
@@ -400,15 +391,15 @@ Laserleistung[mW]          k_x                   k_y                       Boltz
 
 
 
-plt.plot(P_k, k_F_x*10**(6), "x", label=r'x-Fallensteifigkeit')
-plt.plot(P_k, k_F_y*10**(6), "x", label=r'y-Fallensteifigkeit')
-plt.xlabel(r'P [mW]')
-plt.ylabel(r'k [N/m$\cdot 10^{-6}$]')
-#plt.xlim(-30,30)
-#plt.ylim(-30,30)
-plt.legend(loc='best')
-plt.savefig('k_xForce.pdf')
-plt.clf()
+# plt.plot(P_k, k_F_x*10**(6), "x--", label=r'$k_x$')
+# plt.plot(P_k, k_F_y*10**(6), "x--", label=r'$k_y$')
+# plt.xlabel(r'P [mW]')
+# plt.ylabel(r'k [N/m$\cdot 10^{-6}$]')
+# #plt.xlim(-30,30)
+# #plt.ylim(-30,30)
+# plt.legend(loc='best')
+# plt.savefig('k_xForce.pdf')
+# plt.clf()
 
 
 # with open("OP_Sternikov/k_xForce_150mA.FDdat", 'rb') as f:
@@ -485,16 +476,16 @@ k_vortex_y = np.array([k_vortex_y_150, k_vortex_y_200, k_vortex_y_250, k_vortex_
 
 
 
-k_B_vortex_x_150 = k_vortex_x_150 * var(x_vortex_150*10**(-6))/(25+273.15)
-k_B_vortex_y_150 = k_vortex_y_150 * var(y_vortex_150*10**(-6))/(25+273.15)
-k_B_vortex_x_200 = k_vortex_x_200 * var(x_vortex_200*10**(-6))/(25+273.15)
-k_B_vortex_y_200 = k_vortex_y_200 * var(y_vortex_200*10**(-6))/(25+273.15)
-k_B_vortex_x_250 = k_vortex_x_250 * var(x_vortex_250*10**(-6))/(25+273.15)
-k_B_vortex_y_250 = k_vortex_y_250 * var(y_vortex_250*10**(-6))/(25+273.15)
-k_B_vortex_x_300 = k_vortex_x_300 * var(x_vortex_300*10**(-6))/(25+273.15)
-k_B_vortex_y_300 = k_vortex_y_300 * var(y_vortex_300*10**(-6))/(25+273.15)
-k_B_vortex_x_350 = k_vortex_x_350 * var(x_vortex_350*10**(-6))/(25+273.15)
-k_B_vortex_y_350 = k_vortex_y_350 * var(y_vortex_350*10**(-6))/(25+273.15)
+k_B_vortex_x_150 = k_vortex_x_150 * var(x_vortex_150*10**(-6)/slope_x_mean)/(25+273.15)
+k_B_vortex_y_150 = k_vortex_y_150 * var(y_vortex_150*10**(-6)/slope_y_mean)/(25+273.15)
+k_B_vortex_x_200 = k_vortex_x_200 * var(x_vortex_200*10**(-6)/slope_x_mean)/(25+273.15)
+k_B_vortex_y_200 = k_vortex_y_200 * var(y_vortex_200*10**(-6)/slope_y_mean)/(25+273.15)
+k_B_vortex_x_250 = k_vortex_x_250 * var(x_vortex_250*10**(-6)/slope_x_mean)/(25+273.15)
+k_B_vortex_y_250 = k_vortex_y_250 * var(y_vortex_250*10**(-6)/slope_y_mean)/(25+273.15)
+k_B_vortex_x_300 = k_vortex_x_300 * var(x_vortex_300*10**(-6)/slope_x_mean)/(25+273.15)
+k_B_vortex_y_300 = k_vortex_y_300 * var(y_vortex_300*10**(-6)/slope_y_mean)/(25+273.15)
+k_B_vortex_x_350 = k_vortex_x_350 * var(x_vortex_350*10**(-6)/slope_x_mean)/(25+273.15)
+k_B_vortex_y_350 = k_vortex_y_350 * var(y_vortex_350*10**(-6)/slope_y_mean)/(25+273.15)
 
 
 
@@ -505,12 +496,12 @@ k_B_vortex_y_350 = k_vortex_y_350 * var(y_vortex_350*10**(-6))/(25+273.15)
 print(f"""
 Mit ext. Krafteinwirkung in x-Richtung und Vortex-Retarder
 
-Laserleistung[mW]          k_x                             k_y                       Boltzmann_x                Boltzmann_y
-{I_to_P(150)} |||        {k_vortex_x_150}                 {k_vortex_y_150}                     {k_B_vortex_x_150}         |||  {k_B_vortex_y_150}
-{I_to_P(200)} |||        {k_vortex_x_200}                 {k_vortex_y_200}                     {k_B_vortex_x_200}         |||  {k_B_vortex_y_200}
-{I_to_P(250)} |||        {k_vortex_x_250}                 {k_vortex_y_250}                     {k_B_vortex_x_250}         |||  {k_B_vortex_y_250}
-{I_to_P(300)} |||        {k_vortex_x_300}                 {k_vortex_y_300}                     {k_B_vortex_x_300}         |||  {k_B_vortex_y_300}
-{I_to_P(350)} |||        {k_vortex_x_350}                 {k_vortex_y_350}                     {k_B_vortex_x_350}         |||  {k_B_vortex_y_350}
+Laserleistung[mW]          k_x                             k_y                       Boltzmann_x                Boltzmann_y                      Abweichung x                        Abweichung y
+{I_to_P(150)} |||        {k_vortex_x_150}                 {k_vortex_y_150}                     {k_B_vortex_x_150}         |||  {k_B_vortex_y_150}      |||  {(k_B_vortex_x_150-const.k)/const.k}|||  {(k_B_vortex_y_150-const.k)/const.k}
+{I_to_P(200)} |||        {k_vortex_x_200}                 {k_vortex_y_200}                     {k_B_vortex_x_200}         |||  {k_B_vortex_y_200}      |||  {(k_B_vortex_x_200-const.k)/const.k}|||  {(k_B_vortex_y_200-const.k)/const.k}
+{I_to_P(250)} |||        {k_vortex_x_250}                 {k_vortex_y_250}                     {k_B_vortex_x_250}         |||  {k_B_vortex_y_250}      |||  {(k_B_vortex_x_250-const.k)/const.k}|||  {(k_B_vortex_y_250-const.k)/const.k}
+{I_to_P(300)} |||        {k_vortex_x_300}                 {k_vortex_y_300}                     {k_B_vortex_x_300}         |||  {k_B_vortex_y_300}      |||  {(k_B_vortex_x_300-const.k)/const.k}|||  {(k_B_vortex_y_300-const.k)/const.k}
+{I_to_P(350)} |||        {k_vortex_x_350}                 {k_vortex_y_350}                     {k_B_vortex_x_350}         |||  {k_B_vortex_y_350}      |||  {(k_B_vortex_x_350-const.k)/const.k}|||  {(k_B_vortex_y_350-const.k)/const.k}
 """)
 
 
@@ -529,8 +520,8 @@ Laserleistung[mW]          k_x                             k_y                  
 
 
 
-plt.plot(P_k, k_vortex_x*10**(6), "x", label=r'x-Fallensteifigkeit')
-plt.plot(P_k, k_vortex_y*10**(6), "x", label=r'y-Fallensteifigkeit')
+plt.plot(P_k, k_vortex_x*10**(6), "x--", label=r'$k_x$')
+plt.plot(P_k, k_vortex_y*10**(6), "x--", label=r'$k_y$')
 plt.xlabel(r'P [mW]')
 plt.ylabel(r'k [N/m$\cdot 10^{-6}$]')
 #plt.xlim(-30,30)
@@ -599,6 +590,8 @@ Vesikelgeschwindigkeit {ves_speed*10**(6)} micrometer/s
 {19*px_size*10**(6)}
 {21*px_size*10**(6)}
 {28*px_size*10**(6)}
+Stopp bei P={I_to_P(210)}
+Stopp bei k={(k_y_fit[0]+k_x_fit[0])/2 * I_to_P(210) + (k_y_fit[1]+k_x_fit[1])/2}
 """)
 
 
