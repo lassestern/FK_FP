@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.10.23)  21 JUL 2022 15:42
+||||||| dd5b16d
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.23)  14 JUL 2022 15:19
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.23)  16 JUL 2022 19:19
+>>>>>>> 9d39829e5291da489829753ccd095e1fa9a113a5
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.

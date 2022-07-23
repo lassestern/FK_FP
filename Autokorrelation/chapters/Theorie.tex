@@ -1,13 +1,13 @@
 \section{Ziel}
   Heutzutage ist es mit modernen Lasersystemen möglich ultrakurze Pulse im Bereich von wenigen Femtosekunden zu erzeugen und mit Hilfe dieser Prozesse mit Zeitskalen in der gleichen Größenordnung zu 
-  untersuchen. Problematisch stellt sich dabei das Messen dieser ultrakurzen Pulsedar, weil die Messelektronik zu langsam arbeitet und nur Pulse bis zum niedrigen Nanosekundenbereich vermessen kann. In
+  untersuchen. Problematisch stellt sich dabei das Messen dieser ultrakurzen Pulse dar, weil die Messelektronik zu langsam arbeitet und nur Pulse bis zum niedrigen Nanosekundenbereich vermessen kann. In
   der Methode der Autokorrelation wird diese Limitierung umgangen, indem der fs-Puls mit sich selbst abgetastet wird und die Intensität bei jedem Abtastschritt über längere Zeit mit der vorhandenen 
   Elektronik gemessen werden kann. Solch ein Autokorrelator soll in diesem Versuch genutzt werden, um fs-Pulse sowie deren Verhalten beim Transmittieren durch Medien, wie Glas oder Silizium zu untersuchen.
     
 \section{Theoretische Grundlagen}
 
   \subsection{Erzeugung ultrakurzer Pulse}
-    Um Pulse mit Pulsdauern von wenigen Femtosekunden zu erzeugen werden Laser, die Licht mit einer besonders großen Bandbreite erzeugen, mit der Technik des Mode-Locking kombiniert. Die große Bandbreite
+    Um Pulse mit Pulsdauern von wenigen Femtosekunden zu erzeugen, werden Laser, die Licht mit einer besonders großen Bandbreite erzeugen, mit der Technik des Mode-Locking kombiniert. Die große Bandbreite
     $\Delta\nu$ ist dabei notwendig, da die zeitliche Dauer des Pulses $\Delta\tau$ durch die Heisenberg'sche Unschärferelation in Form des Zeit-Bandbreite-Produkts 
     
     \begin{equation}
@@ -22,7 +22,7 @@
       einzelnen Moden eine feste Phasenbeziehung zu erreichen, sodass es zu Interferenz zwischen den stehenden Wellen kommen kann. Dies führt, wie in Abbildung \ref{fig:Modelocking} a) zu sehen, zu einer 
       periodischen Wiederholung der Intensität mit der Durchlaufzeit durch den Resonator $T_C$. Zur Optimierung der Interferenz wird versucht die Phase aller Moden anzugleichen, sodass, wie in 
       Abbildung \ref{fig:Modelocking} b) dargestellt, letztendlich nur noch ein einzelnes ultrakurzes Wellenpaket durch den Resonator wandert und ausgekoppelt werden kann. Das Wellenpaket setzt sich also
-      aus den stehenden Wellen der verschiedenen Frequenzen und kann als Fouriertransformation des Frequenzspektrums gesehen werden. Dies erklärt, dass die Menge der Moden und dementsprechend die 
+      aus den stehenden Wellen der verschiedenen Frequenzen zusammen und kann als Fouriertransformation des Frequenzspektrums gesehen werden. Dies erklärt, dass die Menge der Moden und dementsprechend die 
       Bandbreite $\Delta\nu$ die minimal mögliche Pulsdauer $\Delta\tau_{\text{ML}}$ nach
 
       \begin{equation*}
@@ -38,14 +38,14 @@
       $\lambda/2$-Plättchen, das den Puls um einen Winkel dreht. Dieser Winkel ergibt für die Pulse maximaler Intensität einen Polarisationswinkel, sodass der Anteil maximaler Amplitude durch einen 
       Polarized Beam-Splitter Cube (PBSC) transmittiert wird. Für Pulsanteile geringerer Intensität ist der finale Winkel nicht optimal, sodass diese Anteile unterdrückt und effektiv abgeschnitten werden. Nach
       Transmission durch den PBSC wird der Puls erneut aus einer Kombination von einem $\lambda/2$- und $\lambda/4$-Plättchen elliptisch polarisiert. Die so erreichbaren Pulsdauern liegen im Bereich von 
-      \SI{100}{\femto\second}, sofern der Strahlungsübergang des Lasers eine genügend große Linienbreite und somit viele Lasefähige Moden besitzt. 
+      \SI{100}{\femto\second}, sofern der Strahlungsübergang des Lasers eine genügend große Linienbreite und somit viele lasefähige Moden besitzt. 
 
       \FloatBarrier
       \begin{figure}[h]
         \centering
         \includegraphics[width = 0.44\textwidth]{pictures/ML_phase_const.png}
         \includegraphics[width = 0.44\textwidth]{pictures/ML_phase_gleich.png}
-        \caption{a) Zeitlicher Verlauf der Intensität des Laser bei Überlagerung der Moden mit fester Phasenbeziehung. b)Zeitlicher Verlauf der Intensität, wenn die Moden alle die gleiche Phase besitzen. Entnommen aus \cite{tu_dortmund_versuchsanleitung_nodate}}
+        \caption{a) Zeitlicher Verlauf der Intensität des Laser bei Überlagerung der Moden mit fester Phasenbeziehung. b)Zeitlicher Verlauf der Intensität, wenn die Moden alle die gleiche Phase besitzen. Entnommen aus \cite{hooker_laser_2010}}
         \label{fig:Modelocking}
       \end{figure}
       \FloatBarrier
@@ -67,20 +67,27 @@
       \FloatBarrier
 
       Zur Erzeugung der primären Strahlung wird eine Quarzglas-Glasfaser genutzt, deren innerer Kern mit Er$^{3+}$-Ionen dotiert ist und als aktives Medium fungiert. Ein infraroter Laser mit einer Wellenlänge von 
-      \SI{980}{\nano\metre} regt die Er$^{3+}$-Ionen in den höchsten Zustand eines Drei-Niveau-Systems an, dessen Übergang in den Grundzustand dipolverboten ist. Daher kann schnell eine Besetzungs erreicht 
-      werden und durch Übergang in den zweithöchsten Zustand anschließend ein strahlender Übergang stattfinden. Dieser emitiert bei einer zentralen Wellenlänge von \SI{1550}{\nano\metre} und besitzt eine 
-      große Bandbreite, da die zugehörigen Zustände durch die Elektron-Phonon-Wechselwirkung des dotierten inneren Kerns mit dem undotierten Quarzglas der äußeren Schicht stark verbreitert sind.
+      \SI{980}{\nano\metre} regt die Er$^{3+}$-Ionen in den höchsten Zustand eines Drei-Niveau-Systems an, dessen Übergang in den Grundzustand dipolverboten ist. Daher kann schnell eine Besetzungsinversion
+      erreicht werden und durch Übergang in den zweithöchsten Zustand anschließend ein strahlender Übergang stattfinden. Dieser emittiert bei einer zentralen Wellenlänge von \SI{1550}{\nano\metre} und besitzt 
+      eine große Bandbreite, da die zugehörigen Zustände durch die Elektron-Phonon-Wechselwirkung des dotierten inneren Kerns mit dem undotierten Quarzglas der äußeren Schicht stark verbreitert sind.
       
-      Die so entstehende Strahlung befindet sich zunächst im Dauerstrichbetrieb und wird wie zuvor beschrieben über die Additiven Puls Modenkopplung in transformiert. Anschließend werden diese Pulse 
-      ausgekoppelt und durch eine Faser mit negativer GVD transmittiert. Die GVD steckt in der Taylorentwicklung der Dispersion um die zentrale Frequenz $\omega_0$
+      Die so entstehende Strahlung befindet sich zunächst im Dauerstrichbetrieb und wird wie zuvor beschrieben über die Additiven Puls Modenkopplung im Ringresonator transformiert. Anschließend werden diese 
+      Pulse ausgekoppelt und durch eine Faser mit negativer GVD transmittiert. Die GVD steckt in der Taylorentwicklung der Dispersion um die zentrale Frequenz $\omega_0$
       
       \begin{equation}
-        \phi(\omega) = \phi_0 + \text{GD} \cdot \left(\omega-\omega_0\right) + \text{GVD} \cdot \left(\omega-\omega_0\right)^2 \,,
+        \phi(\omega) = \phi_0 + \text{GD} \cdot \left(\omega-\omega_0\right) + \frac{1}{2} \text{GVD} \cdot \left(\omega-\omega_0\right)^2 \,,
       \end{equation}
       
-      die die Abhängigkeit des Wellenvektors beziehungsweise der Phase $\phi$ von der instantanen Kreisfrequenz $\omega$ angibt. Die Gruppenverzögerung (GD) gibt an, wie lange Frequenzanteil eines Pulsed 
-      benötigt, um durch ein Medium zu propagieren. Die GVD wiederum beschreibt, wie die GD von der Frequenz des Lichts abhängt. Wie in Abbildung \ref{fig:Dispersion} dargestellt führt die Dispersion zu
-      einer Erhöhung der Pulsdauer. Bei normaler Dispersion laufen höhere Frequenzen schneller und bei anormaler Dispersion laufen niedrigere schneller. Dies führt wie in Abbildung \ref{fig:Dispersion} zu
+      die die Abhängigkeit des Wellenvektors beziehungsweise der Phase $\phi$ von der instantanen Kreisfrequenz $\omega$ angibt. Die Gruppenverzögerung (GD) gibt an, wie lange Frequenzanteile eines Pulses
+      benötigen, um durch ein Medium zu propagieren. Die GVD wiederum beschreibt, wie die GD von der Frequenz des Lichts abhängt. Wie in Abbildung \ref{fig:Dispersion} dargestellt, führt die Dispersion zu
+      einer Erhöhung der Pulsdauer
+
+      \begin{equation}
+        \Delta\tau_{\text{neu}} = \sqrt{1 + \left(\frac{4\ln\left(2\right)\cdot \text{GVD}}{\Delta\tau_{\text{alt}}^2}\right)^2} \, ,
+      \end{equation}
+      
+      die für hohe GVD und kurze Pulsdauern $\Delta\tau_{\text{alt}}$ maximal wird.
+      Bei normaler Dispersion laufen höhere Frequenzen schneller und bei anormaler Dispersion laufen niedrigere schneller. Dies führt wie in Abbildung \ref{fig:Dispersion} zu
       erkennen zu einem sogennaten Chirp, der die Änderung der Frequenz eines Pulses entlang seiner Zeitskala beschreibt. Zusätzlich tritt in dieser Faser auch der nicht-lineare Effekt der 
       Selbstphasenmodulation auf, der die Bandbreite des Pulses bei Propagation durch ein nicht lineares Medium wie Quarzglas erhöht.
   
@@ -88,18 +95,18 @@
       \FloatBarrier
       \begin{figure}[h]
         \centering
-        \includegraphics[width = 0.9\textwidth]{pictures/Dispersion.png}
-        \caption{Aufbau des Laser zur Erzeugung von ultrakurzen Pulsen. Entnommen aus \cite{tu_dortmund_versuchsanleitung_nodate}}
+        \includegraphics[width = 0.77\textwidth]{pictures/Dispersion.png}
+        \caption{Aufbau des Laser zur Erzeugung von ultrakurzen Pulsen. Entnommen aus \cite{jostmeier_koharente_2012}}
         \label{fig:Dispersion}
       \end{figure}
       \FloatBarrier
 
 
       Der nun bezüglich seiner Bandbreite und Dauer gestreckte Puls, wird in eine mit Er$^{3+}$-Ionen dotierte und gepumpte Faser eingekoppelt, deren GVD postiv ist. Die hier auftretende Dispersion 
-      kompensiert zum einen den zuvor entstandenen Chirp und kann zusätzlich den Puls auf nun noch kürzere Dauern komprimmieren, da die Limitierung durch die erhöhte Bandbreite gesenkt wird. Die
-      Kompression funktioniert über das Aufholen der in der undotierten Faser noch langsammeren Frequenzanteile auf die zuvor schnelleren aufgrund der umgekehrten GVD. Die so komprimmierten Pulse sind 
+      kompensiert zum einen den zuvor entstandenen Chirp und kann zusätzlich den Puls auf nun noch kürzere Dauern komprimieren, da die Limitierung durch die erhöhte Bandbreite gesenkt wird. Die
+      Kompression funktioniert über das Aufholen der in der undotierten Faser noch langsammeren Frequenzanteile auf die zuvor schnelleren aufgrund der umgekehrten GVD. Die so komprimierten Pulse sind 
       quasi chirpfrei und werden nach horizontaler Polarisierung durch eine Kombination eines $\lambda/2$- und $\lambda/4$-Plättchens noch durch zwei Silizium-Prismen bezüglich ihrer Pulsdauer und ihres 
-      Chirps feinjustiert. Letztendlich wird so ein gepulster Laserbetrieb bei einer zentralen Wellenlänge von \SI{1550}{\nano\metre}, einer Pulsdauer von circa \SI{100}{\femto\second} bei gaußförmiger 
+      Chirps feinjustiert. Letztendlich wird so ein gepulster Laserbetrieb bei einer zentralen Wellenlänge von \SI{1550}{\nano\metre} und einer Pulsdauer von circa \SI{100}{\femto\second} bei gaußförmiger 
       Pulsform erreicht.
       
     
@@ -108,7 +115,7 @@
         Bei der Autokorrelation wird, wie in der Einleitung beschrieben ein Laserpuls mit einer Kopie von sich selbst abgetastet, sodass ein zeitliches Intensitätsprofil dessen erstellt wird. Da der Abtastpuls
         so immer in der Größenordnung des zu vermessenden Pulses liegt, können so auch ultrakurze Pulse vermessen werden. Um die Autokorrelation vermessen zu können, müssen die beiden Pulse räumlich und
         zeitlich überlagert werden. Bei interferometrischen Autokorrelatoren kommt es dann zu Interferenz zwischen den einzelnen Pulsen, aus der Informationen über die Länge des Pulses und dessen Chirp 
-        gewonnen werden kann. Bei der in diesem Versuch genutzen Intensitätsautokorrelation werden die Pulse in einem nicht linearen Medium überlagert und der Effekt der Summenfrequenzerzeugung (SFG) genutzt, 
+        gewonnen werden kann. Bei der in diesem Versuch genutzen Intensitätsautokorrelation werden die Pulse in einem nicht linearen Medium überlagert und der Effekt der Summenfrequenzerzeugung genutzt, 
         um Informationen über die Pulslänge aber nicht den Chirp zu erhalten.  
 
 
@@ -141,11 +148,11 @@
         %
         der eine Schwingung mit der Frequenz $\omega_3 = \omega_1 + \omega_2$ beschreibt. Dies entspricht der der SFG zugrundeliegenden Polarisation 
         $P_{\text{SFG}}$, deren Amplitude dem Produkt der fundamentalen Schwingungsamplituden entspricht. Aufgrund des proportionalen Zusammenhangs zwischen Polarisation und elektrischem Feld erzeugt 
-        $P_{\text{SFG}}$ eine zusätzliche elektrische Schwingung. Für den Fall zwei gleicher Pulser entspricht die SFG der SHG.
+        $P_{\text{SFG}}$ eine zusätzliche elektrische Schwingung. Für den Fall zwei gleicher Pulser entspricht die SFG der Erzeugung der zweiten Harmonischen.
 
       \subsubsection{Intensitätsautokorrelation}  
-        Bei der Intensitätsautokorrelation wird der zu vermessenden Laserpulses zunächst, wie in Abbildung \ref{fig:autokorrelator} dargestellt, über einen D-förmigen Strahlteiler in zwei Pulse aufgeteilt. 
-        Der optische Weg $\Delta x$ einer der Pulse kann um  verändert werden, da dieser an Spiegeln, die auf einer mechanischen Schiebeplattform befestigt sind, reflektiert wird. Auf diese Weise lässt sich 
+        Bei der Intensitätsautokorrelation wird der zu vermessenden Laserpulses zunächst, wie in Abbildung \ref{fig:autokorrelator} dargestellt, über einen Strahlteiler in zwei Pulse aufgeteilt. 
+        Der optische Weg $\Delta x$ einer der Pulse kann verändert werden, da dieser an Spiegeln, die auf einer mechanischen Schiebeplattform befestigt sind, reflektiert wird. Auf diese Weise lässt sich 
         ein zeitlicher Versatz $\tau=\frac{2\Delta x}{\text{c}}$ zwischen den beiden Pulsen erzeugen. Nachdem einer der Pulse die sogenannte Verzögerungsstrecke durchlaufen hat, werden beide Pulse in ein 
         nicht-lineares Medium, hier ein 
         $\beta$-Bariumborat(BBO)-Kristall, fokussiert, der zur Erzeugung von zweiten Harmonischen geeignet ist. Dabei interferieren die beiden Pulse und erzeugen zum einen jeweils ihre eigene zweite Harmonische 
@@ -158,7 +165,7 @@
         \begin{figure}[h]
           \centering
           \includegraphics[width = 0.9\textwidth]{pictures/autokorrelator.pdf}
-          \caption{Aufbau des Laser zur Erzeugung von ultrakurzen Pulsen. Entnommen aus \cite{tu_dortmund_versuchsanleitung_nodate}}
+          \caption{Aufbau des Laser zur Erzeugung von ultrakurzen Pulsen. Bearbeitet aus \cite{delong_frequency-resolved_1994}}
           \label{fig:autokorrelator}
         \end{figure}
         \FloatBarrier
@@ -186,7 +193,7 @@
           \text{I}(t) \propto \exp\left(-4\ln(2)\left(\frac{t}{\Delta \tau}\right)^2\right)
         \end{equation}
 
-        ergibt das Einsetzen in Gleichung \ref{eqn:autocor} folgenden Zusammenhang zwischen der zeitlichen Halbwertsbreite der Autokorrelation gaußförmig ist und der Pulsdauer:
+        ergibt das Einsetzen in Gleichung \ref{eqn:autocor} folgenden Zusammenhang zwischen der zeitlichen Halbwertsbreite der Autokorrelation und der Pulsdauer:
 
         \begin{equation*}
           \Delta\tau_{\text{FWHM}}^{\text{Pulsform}} = \frac{1}{\sqrt{2}} \cdot \Delta\tau_{\text{FWHM}}^{\text{Autokorrelation}}
