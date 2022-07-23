@@ -1,19 +1,74 @@
 \section{Diskussion}    
-    Die besonders großen Abweichungen beim ersten Würfel, können darauf zurückzuführen sein,
-    dass es sich bei dem Material um keines der uns gegeben Materialien handelt,
-    sondern um eines mit einem noch geringeren Absorptionskoeffizienten, wie z.B. Holz.
-    Das würde die Vielzahl an Lösungen erklären mit einem $\mu<0.1\,\text{cm}^{-1}$.
+    \subsection{Topografie einer Mikrostruktur}
+        Wie schon in Abbildung \ref{fig:Mikrostruktur} gezeigt ist die Mikrostruktur aufgeteilt in zwei verschiedene Bereiche. Die Kreis- und Streifenstrukturen haben laut Datenblatt eine $5\,\mu\text{m}$-Periodizität und die Quadratstruktur eine $10\,\mu\text{m}$-Periodizität. In Tabelle \ref{tab:MikroLit} sind die die bereits in Kapitel \ref{sec:Mikro} berechneten Strukturperiodizitäten und die Abweichungen von den im Datenblatt gegebenen Größen aufgetragen.
+        \begin{center}
+            \captionof{table}{Periodizitäten der drei Bereiche der zu untersuchenden Probe einschließlich Abweichungen von den erwarteten Werten.}
+            \label{tab:MikroLit}
+            \begin{tabular}{c c c c}
+                \toprule
+                Mikrostruktur & Periodizität (exp.) / $\mu\text{m}$ & Periodizität (lit.) / $\mu\text{m}$ & Abweichung\\
+                \midrule
+                Kreis (X)   & $4.737$  & $5$ & $5.26\%$ \\
+                Kreis (Y)   & $5.080$  & $5$ & $1.60\%$ \\
+                Quadrat (X) & $9.437$  & $10$& $5.63\%$ \\
+                Quadrat (Y) & $10.155$ & $10$& $1.55\%$ \\
+                Streifen (X)& $4.740$  & $5$ & $5.20\%$ \\
+                \bottomrule
+            \end{tabular}
+        \end{center}
+        Die Abweichungen sind klein genug um sagen zu können, dass die Mikrostruktur erfolgreich vermessen wurden konnte. Außerdem ähneln sich die Abweichungen in x- bzw. y-Richtung untereinander, weshalb die vorliegende Abweichung auf einen systematischen Fehler zurückzuführen werden kann, wie zum Beispiel einnn Fehler in den x- bzw. y-Piezos oder eine minimale Rotation außerhalb der x-y-Ebene.
+        \FloatBarrier
+    \subsection{Topografie einer CD, DVD und Blu-Ray}
+        Die gemessenen Größen der CD sind in Tabelle \ref{tab:CDlit} mit Literaturwerten und der resultierenden Abweichung dargestellt. Der Wert für die erwartete Pittiefe resultiert daraus, dass diese einem Viertel der Wellenlänge des auftreffenden Lichts entsprechen sollte. Der zum Lesen einer CD verwendete Laser hat normalerweise eine Wellenlänge von $\lambda=\SI{780}{\nano\metre}$. Das entspricht, aufgrund des Brechungsindex der Polycarbonatbeschichtung von $n_{PC}=1.58$, einer effektiven Wellenlänge von $\lambda=\SI{493.67}{\nano\metre}$ und damit einer erwarteten Pittiefe von $\SI{123.42}{\nano\metre}$.
+        \begin{center}
+            \captionof{table}{Vergleich der gemessenen Größen der CD mit den erwarteten Größen aus der Literatur. \cite{CD}}
+            \label{tab:CDlit}
+            \begin{tabular}{c c c c}
+                \toprule
+                CD & gemessen & erwartet & Abweichung \\
+                \midrule
+                Spurbreite / $\mu\text{m}$    & ($0.424\pm 0.024$) & $0.5$   & $15.2\,\%$ \\
+                Spurabstand / $\mu\text{m}$   & ($1.123\pm 0.032$) & $1.1$   & $2.09\,\%$ \\
+                min. Pitlänge / $\mu\text{m}$ & ($0.684\pm 0.013$) & $0.833$ & $17.89\,\%$ \\
+                max. Pitlänge / $\mu\text{m}$ & ($1.715\pm 0.035$) & $3.054$ & $43.84˜,\%$ \\
+                Pittiefe / $\text{nm}$         & ($22.141\pm 0.448$)& $123.42$& $82.06\,\%$ \\
+                \bottomrule
+            \end{tabular}
+        \end{center}
+        Die größere Abweichung bei der maximalen Pitlänge lässt sich dadurch rechtfertigen, dass nicht davon ausgegangen werden kann, dass der lämgste mögliche Pit mit dem $10\times 10\,\mu\text{m}$ Fenster erfasst wurde. Die Abweichung bei der Pittiefe hat höchstwahrscheinlich einen systematischen Hintergrund, da die gemessene Höhe bei der Mikrostruktur stark vom Datenblatt abgewichen ist.
+        Die ermittelte maximale Speicherkapazität hat ebenfalls eine starke Abweichung von einem Faktor $\approx 4$ und kann möglicherweise aus einer falsch verwendeten Formel stammen.
 
-    Bei der Messung beim zweiten Würfel konnte mit einer Messzeit von $300\,\text{s}$ nicht auf eine Intensität von über 10000 Counts gestoßen werden.
-    Deswegen weißt diese Messung eine deutlich schlechtere Statistik auf als die Messung davor.
-    Dennoch liegen die Messwerte erstaunlich nahe beieinander und die Abweichung zum Absorptionskoeffizienten von Blei ist nicht allzu hoch.
+        Die Abweichungen der Messungen zu den Literaturwerten für die DVD und BluRay Proben sind in Tabelle \ref{tab:DVDlit} und \ref{tab:BRlit} wie für die CD erklärt dargestellt.
+        \begin{center}
+            \captionof{table}{Vergleich der gemessenen Größen der DVD mit den erwarteten Größen aus der Literatur. \cite{DVD1} \cite{DVD2}}
+            \label{tab:DVDlit}
+            \begin{tabular}{c c c c}
+                \toprule
+                DVD & gemessen & erwartet & Abweichung \\
+                \midrule
+                Spurperiodizität / $\mu\text{m}$   & ($0.841\pm 0.053$) & $0.74$ & $13.65\,\%$ \\
+                min. Pitlänge / $\mu\text{m}$ & ($0.283\pm 0.022$) & $0.4$ & $29.25\,\%$ \\
+                max. Pitlänge / $\mu\text{m}$ & ($0.990\pm 0.001$) & $1.87$ & $47.06\,\%$ \\
+                Pittiefe / $\text{nm}$        & ($11.753\pm 0.265$)& $102.8$& $82.06\,\%$ \\
+                \bottomrule
+            \end{tabular}
+        \end{center}
+        \begin{center}
+            \captionof{table}{Vergleich der gemessenen Größen der BluRay mit den erwarteten Größen aus der Literatur. \cite{BluRay}}
+            \label{tab:BRlit}
+            \begin{tabular}{c c c c}
+                \toprule
+                BluRay & gemessen & erwartet & Abweichung \\
+                \midrule
+                Spurperiodizität / $\mu\text{m}$   & ($0.308\pm 0.008$) & $0.32$   & $3.75\,\%$ \\
+                min. Pitlänge / $\mu\text{m}$ & ($0.183\pm 0.010$) & $0.149$ & $22.82\,\%$ \\
+                max. Pitlänge / $\mu\text{m}$ & ($0.576\pm 0.003$) & $0.695$ & $17.21\,\%$ \\
+                Pittiefe / $\text{nm}$        & ($8.210\pm 0.211$) & $123.42$& $82.06\,\%$ \\
+                \bottomrule
+            \end{tabular}
+        \end{center}
+        \FloatBarrier
+    \subsection{Adhäsionskraft und Elastizitätsmodul}
+        Die berechneten Adhäsionskräfte liegen alle bei ca. $\SI{100}{\nano\metre}$, wobei bei Edelstahl die größte Kraft aufgewendet werden muss, um die Spitze von den Probe zu lösen.
 
-    Beim zusammengesetzten Würfel ist erkenntlich, dass dieser aus zwei verschiedenen Materialien zusammengebaut ist.
-    Die Teilwürfel 4,5,6 und 3,9 bestehen jeweils aus dem selben Material und
-    diese passen in etwa mit den Materialien der homogenen Würfel zusammen.
-    Die teilweise negativen Absorptionskoeffizienten lassen auf Leerstellen im letzten Würfel zurückführen.
-    % Ein weiterer Grund könnte der Messwert der dritten Orientierung sein, welcher sehr stark von den anderen abweicht und ein
-    % Indiz für fälschliches Ablesen der Messwerte sein kann.
-
-    Im Allgemeinen konnte der Strahlengang lediglich per Augenmaß justiert werden und die Position des Würfels in dem
-    Strahlengangkonnte dementsprechend nicht exakt eingestellt werden, was zu systematischen Abweichungen führen konnte.
+        Das bestimmte Elastizitätsmodul $E = \SI{20.8580}{\mega\pascal}$ von Teflon weist eine starke Abweichung vom Literaturwert des "Young-Moduls"  $E_Y = \SI{575}{\mega\pascal}$ auf. Es ist daher möglich, dass dieser Wert eine andere Materialkonstante angibt. $E$ ähnelt viel mehr der Kompressionsstärke von Teflon, welche bei $\SI{23.5}{\mega\pascal}$ \cite{Teflon}.
