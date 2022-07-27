@@ -12,6 +12,7 @@
     
     \begin{equation}
       \Delta\tau \cdot \Delta\nu = \text{const},
+      \label{eqn:Heisenberg}
     \end{equation}
     
     das eine von der Pulsform abhängige Konstante besitzt, nach unten limitiert ist.    
@@ -61,7 +62,7 @@
       \begin{figure}[h]
         \centering
         \includegraphics[width = 0.9\textwidth]{pictures/Laser.png}
-        \caption{Aufbau des Laser zur Erzeugung von ultrakurzen Pulsen. Entnommen aus \cite{tu_dortmund_versuchsanleitung_nodate}}
+        \caption{Aufbau des Laser zur Erzeugung von ultrakurzen Pulsen. Entnommen aus \cite{toptica}}
         \label{fig:Laser}
       \end{figure}
       \FloatBarrier
@@ -151,6 +152,7 @@
         $P_{\text{SFG}}$ eine zusätzliche elektrische Schwingung. Für den Fall zwei gleicher Pulser entspricht die SFG der Erzeugung der zweiten Harmonischen.
 
       \subsubsection{Intensitätsautokorrelation}  
+      \label{sec:AK47}
         Bei der Intensitätsautokorrelation wird der zu vermessenden Laserpulses zunächst, wie in Abbildung \ref{fig:autokorrelator} dargestellt, über einen Strahlteiler in zwei Pulse aufgeteilt. 
         Der optische Weg $\Delta x$ einer der Pulse kann verändert werden, da dieser an Spiegeln, die auf einer mechanischen Schiebeplattform befestigt sind, reflektiert wird. Auf diese Weise lässt sich 
         ein zeitlicher Versatz $\tau=\frac{2\Delta x}{\text{c}}$ zwischen den beiden Pulsen erzeugen. Nachdem einer der Pulse die sogenannte Verzögerungsstrecke durchlaufen hat, werden beide Pulse in ein 
@@ -165,7 +167,7 @@
         \begin{figure}[h]
           \centering
           \includegraphics[width = 0.9\textwidth]{pictures/autokorrelator.pdf}
-          \caption{Aufbau des Laser zur Erzeugung von ultrakurzen Pulsen. Bearbeitet aus \cite{delong_frequency-resolved_1994}}
+          \caption{Typischer Aufbau zur Vermessung ultrakurzen Pulsen mittels Intensitätsautokorrelation.}
           \label{fig:autokorrelator}
         \end{figure}
         \FloatBarrier
@@ -191,12 +193,14 @@
 
         \begin{equation}
           \text{I}(t) \propto \exp\left(-4\ln(2)\left(\frac{t}{\Delta \tau}\right)^2\right)
+          \label{eqn:IntGauss}
         \end{equation}
 
         ergibt das Einsetzen in Gleichung \ref{eqn:autocor} folgenden Zusammenhang zwischen der zeitlichen Halbwertsbreite der Autokorrelation und der Pulsdauer:
 
         \begin{equation*}
           \Delta\tau_{\text{FWHM}}^{\text{Pulsform}} = \frac{1}{\sqrt{2}} \cdot \Delta\tau_{\text{FWHM}}^{\text{Autokorrelation}}
+          \label{eqn:tautau}
         \end{equation*}
         
         Um bei der Messung das Hintergrundrauschen zu unterdrücken, kann das 

@@ -1,127 +1,83 @@
 \newpage
 \section{Auswertung}
-Die im Folgenden genannten Intensitäten ergeben sich aus dem Flächeninhalt des Peaks bei einer Energie von $661,7\,\text{eV}$
-im Absorptionsspektrum, da es sich dabei um die Energie der verwendeten Cs-Lampe handelt \cite{gilmore_practical_2008}.
+    Das gemessene Autokorrelationssignal des unmodulierten Lasers ist zusammen mit dem vermessenen Spektrum in Abbildung \ref{fig:normal} zu sehen. Das Spektrum weist ein Hauptmaximum bei $\sim \SI{1550}{\nano\metre}$ auf, wie vom Lasersystem zu erwarten, und weitere kleinere Peaks bei Wellenlängen von $\pm \SI{50}{\nano\metre}$ auf.
+    \begin{figure}
+        \centering
+        \includegraphics[width = 0.45\textwidth]{pictures/Puls_normal.pdf}
+        \includegraphics[width = 0.45\textwidth]{pictures/Spektrum_normal.pdf}
+        \caption{\textit{Links:} Autokorrelationsspur des Lasers (rot). Die durchgezogene Linie zeigt den Bereich an, an dem der Gauß-Fit (blau) durchgeführt wurde. \textit{Rechts:} Spektrum des Lasers.}
+        \label{fig:normal}    
+    \end{figure}
+    Obwohl der Puls als gaußförmig angenommen wird, weißt die Autokorrelationsspur neben einem Peak in der Mitte zwei Schultern auf. Diese werden Satelliten zugewiesen und werden in der Folgenden Brechnung ausgeschlossen. An dem gaußförmig Bereich der Spur wird, wie in Formel \ref{eqn:IntGauss} beschrieben, ein Gauß-Fit der Form
+    \begin{equation}
+        I(x) = A \cdot \exp\left(-4\ln(2)\left(\frac{\tau}{\Delta \tau_{AK}}\right)^2\right)
+    \end{equation}
+    durchgeführt. Dieser ist ebenfalls in Abbildung \ref{fig:normal} dargestellt und liefert nach Formel \ref{eqn:tautau} eine Pulsdauer von
+    \begin{equation}
+        \Delta \tau^{\text{Laser}} = (80.41\pm 0.92)\,\text{fs}
+    \end{equation}
+    Die Diskussion der Ergebnisse und der Vergleich mit den erwarteten Werten erfolgt in Kapitel \ref{sec:Dis}.
+    \subsection{Pulsdauer mit Bandpassfilter}
+        Auch hier wird das Spektrum und die Autokorrelationsspur betrachtet. In Abbildung \ref{fig:30} sind diese für den $\SI{30}{\nano\metre}$-Filter zu sehen.
+        \begin{figure}
+            \centering
+            \includegraphics[width = 0.45\textwidth]{pictures/Puls_30.pdf}
+            \includegraphics[width = 0.45\textwidth]{pictures/Spektrum_30.pdf}
+            \caption{\textit{Links:} Autokorrelationsspur des Lasers mit $\SI{30}{\nano\metre}$-Bandpassfilter (rot) und Gauß-Fit (blau). \textit{Rechts:} Spektrum des Passieren des Filters.}
+            \label{fig:30}    
+        \end{figure}
+        Im Spektrum gibt es, wie zu erwarten, nur noch Beiträge unmittelbar um die zentrale Wellenlänge, da nur die Wellenlängen in einem Bereich von $\pm \SI{30}{\nano\metre}$ durch den Filter transmittiert werden. Auch hier wird wieder ein Gauß-Fit an den 'satelliten-freien' Teil des Autokorrelationssignals gelegt (siehe \ref{fig:30}) und aus dem Fit-Parameter und mit Hilfe von Formel \ref{eqn:tautau} die Pulslänge bestimmt. Diese ergibt sich für den $\SI{30}{\nano\metre}$-Filter als
+        \begin{equation}
+            \Delta \tau^{\text{30nm}} = (171.33\pm 1.76)\,\text{fs} \, .
+        \end{equation}
 
-Die gemessenen Intensitäten für die vier ausgemessenen Würfel sind in Tabelle \ref{tab:Werte} aufgetragen.
-Dabei beschreiben die Intensitäten für den ersten Würfel, also nur die Aluminium-Hülle, die Grundintensität $I_0$.
-\begin{center}
-    \captionof{table}{Messwerte der Absorptionsmessungen für eine Messzeit von jeweils $\Delta t=300\,\text{s}$.
-                        $i$ beschriebt die in Abbildung \ref{fig:Richtungen} gezeigten Bestrahlungsrichtungen.}
-    \label{tab:Werte}
-    \begin{tabular}{c c c c c}
-        \toprule
-        $i$ & $I_0$ (Al-Hülle) & $I_i$ (Würfel 2) & $I_i$ (Würfel 3) & $I_i$ (Würfel 4) \\
-        \midrule
-        1  & (56088$\pm$279) & (47413$\pm$251) & (1800$\pm$21) & (46723$\pm$254) \\
-        2  & (55842$\pm$282) & (47567$\pm$265) & (1033$\pm$51) & (184$\pm$31) \\
-        3  & (56650$\pm$292) & (47079$\pm$268) & (1346$\pm$60) & (44259$\pm$264) \\
-        4  & (55866$\pm$290) & (47204$\pm$266) & (2670$\pm$70) & (12147$\pm$130) \\
-        5  & (55383$\pm$284) & (44569$\pm$252) & (612$\pm$13)  & (9232$\pm$116) \\
-        6  & (54930$\pm$275) & (46910$\pm$253) & (2257$\pm$60) & (11316$\pm$129) \\
-        7  &  &  &  & (11028$\pm$158) \\
-        8  &  &  &  & (15401$\pm$148) \\
-        9  &  &  &  & (15514$\pm$150) \\
-        10 &  &  &  & (12527$\pm$135) \\
-        11 &  &  &  & (8965$\pm$120) \\
-        12 &  &  &  & (10907$\pm$127) \\
-        \bottomrule
-    \end{tabular}
-\end{center}
+        Für den $\SI{12}{\nano\metre}$-Bandpassfilter ergibt sich im Spektrum ein noch schmalerer Bereich mit einem Beitrag. Für die Pulsdauer in diesem Fall ergibt sich
+        \begin{equation}
+            \Delta \tau^{\text{12nm}} = (287.27\pm 1.51)\,\text{fs} \, .
+        \end{equation}
+        nach dem selben Analyseverfahren für zuvor. Der Gauß-Fit ist zusammen mit dem Spektrum in Abbildung \ref{fig:12} gezeigt.
+        \begin{figure}
+            \centering
+            \includegraphics[width = 0.45\textwidth]{pictures/Puls_12.pdf}
+            \includegraphics[width = 0.45\textwidth]{pictures/Spektrum_12.pdf}
+            \caption{\textit{Links:} Autokorrelationsspur des Lasers mit $\SI{12}{\nano\metre}$-Bandpassfilter (rot) und Gauß-Fit (blau). \textit{Rechts:} Spektrum des Passieren des Filters.}
+            \label{fig:12}    
+        \end{figure}
+        Auch hier werden die Ergebnisse in Kapitel \ref{sec:Dis} besprochen.
+    \subsection{Pulsdauer mit dispersiven Medien}
+        Das gemessene Autokorrelationssignal für den Laser nach Durchlaufen des $\SI{12}{\milli\metre}$ langen Silizium-Blocks ist in Abbildung \ref{fig:Si} aufgetragen.
+        \begin{figure}
+            \centering
+            \includegraphics[width = 0.8\textwidth]{pictures/Puls_Si.pdf}
+            \caption{Autokorrelationsspur des Lasers nach Propagation durch Silizium (rot) und Gauß-Fit zur Bestimmung der Pulsdauer (blau).}
+            \label{fig:Si}    
+        \end{figure}        
+        Die gefittete Gauß-Funktion ist ebenfalls dargestellt und führt zu einer Pulsdauer von
+        \begin{equation}
+            \Delta \tau^{Si} = (578.45\pm 4.35)\,\text{fs} \, .
+        \end{equation}
+        
+        Die Pulsbreite wird als nächstes für die 5 unterschiedlichen Glassblöcke bestimmt. Der Übersichtlichkeit halber sind in Abbildung \ref{fig:Glass} lediglich die Gauß-Fits für die verschiedenen Dicken aufgetragen.
+        \begin{figure}
+            \centering
+            \includegraphics[width = 0.8\textwidth]{pictures/Puls_Glass.pdf}
+            \caption{Gefittete Gauß-Funktionen zur Bestimmung der Pulsdauer für die unterschiedlichen Glassblock-Dicken.}
+            \label{fig:Glass}    
+        \end{figure}        
+        Diese werden wie zuvor beschrieben aus den gemessenen Autokorrelationsspuren ermittelt. Es ist eine leichte Verbreiterung des Gauß-Fits mit zunehmender Dicke der Glassblöcke zu erkennen. Die daraus bestimmten Pulsdauern sind in Tabelle \ref{tab:Dauer} aufgelistet.
+        \begin{center}
+            \captionof{table}{Pulsdauern des Lasers nach Propagation durch die unterschiedlichen Glassblock-Dicken.}
+            \label{tab:Dauer}
+            \begin{tabular}{c c}
+                \toprule
+                Dicke / mm & Pulsdauer $\Delta\tau$ / fs \\
+                \midrule
+                $13.51$ & $(86.34 \pm 0.75)$ \\
+                $17.64$ & $(87.63 \pm 1.14)$ \\
+                $23.85$ & $(87.71 \pm 1.25)$ \\
+                $29.83$ & $(90.10 \pm 0.48)$ \\
+                $53.68$ & $(97.06 \pm 0.86)$ \\
+                \bottomrule
+            \end{tabular}
+        \end{center}
 
-Um die Absoptionskoeffizienten der verschiedenen Würfelmaterialien bestimmen zu können, muss für die drei Messreihen der Intensität $I_i$
-das Gleichungssystem \ref{unsere_matrix} gelöst werden.
-Dabei handelt es sich in der Regel um ein nicht-quadratisches lineares Gleichungssystem.
-Dieses wird mit der Methode kleinster Quadrate auf eine quadratische Form angenähert und dann nach den Absorptionskoeffizienten $\mu_j$ gelöst.
-
-Das Ergebnis dieses Verfahrens für die beiden homogen gefüllten Würfel ist in Tabelle \ref{tab:Erg} zu sehen.
-Da es sich dabei eben um homogene Würfel handelt und diese lediglich mit den Projektionen $i=1,...,6$ vermessen wurden (siehe Tabelle \ref{tab:Werte}),
-wird die Geometriematrix aus Gleichung \ref{unsere_matrix} in diesem Fall wie folgt vereinfacht.
-\begin{equation}
-    \begin{pmatrix}
-        1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
-        0 & 0 & 0 & 1 & 1 & 1 & 0 & 0 & 0 \\
-        0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 \\
-        0 & \sqrt{2} & 0 & 0 & 0 & \sqrt{2} & 0 & 0 & 0 \\
-        \sqrt{2} & 0 & 0 & 0 & \sqrt{2} & 0 & 0 & 0 & \sqrt{2} \\
-        0 & 0 & 0 & \sqrt{2} & 0 & 0 & 0 & \sqrt{2} & 0 \\
-        0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 1 \\
-        0 & 1 & 0 & 0 & 1 & 0 & 0 & 1 & 0 \\
-        1 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 \\
-        0 & 0 & 0 & 0 & 0 & \sqrt{2} & 0 & \sqrt{2} & 0 \\
-        0 & 0 & \sqrt{2} & 0 & \sqrt{2} & 0 & \sqrt{2} & 0 & 0 \\
-        0 & \sqrt{2} & 0 & \sqrt{2} & 0 & 0 & 0 & 0 & 0 
-      \end{pmatrix}
-      \qquad \Longrightarrow \qquad
-      \begin{pmatrix}
-        3 \\
-        3 \\
-        3 \\
-        2\sqrt{2} \\
-        3\sqrt{2} \\
-        2\sqrt{2} \\
-      \end{pmatrix}
-\end{equation}
-% \newpage
-\begin{center}
-    \captionof{table}{Berechnete Absorptionskoeffizienten für die neun Teilwürfel der zwei homogonen Würfel.}
-    \label{tab:Erg}
-    \begin{tabular}{c c c c c}
-        \toprule
-        $\mu$ / $\text{cm}^{-1}$ (Würfel 2) & Abw. / \% (Delrin) & $\mu$ / $\text{cm}^{-1}$ (Würfel 3) & Abw. / \% (Blei) \\
-        \midrule
-        (0,055$\pm$0.003) & 52,16 & (1.152$\pm$0.010) & 7,85 \\
-        \bottomrule
-    \end{tabular}
-\end{center}
-Von den uns gegebenen möglichen Materialien, ähnelt Würfel 2 vom Absorptionskoeffizienten her Delrin ($\mu_{Delrin}=0.116\,\text{cm}^{-1}$)
-und Würfel 3 dem von Blei ($\mu_{Blei}=1.2497\,\text{cm}^{-1}$). Die Abweichungen der Absorptionskoeffizienten sind ebenfalls in der Tabelle ablesbar.
-
-Da im Falle des letzten Würfels in in allen 12 Orientierungen gemessen wurde ($i=1,...,12$),
-die Grundintensität $I_0$ jedoch lediglich in 6 Richtungen ($i=1,...,6$) (siehe Tabelle \ref{tab:Werte}) gemessen wurde,
-wurden die Messwerte für die fehlenden 6 Orientierungen ($i=6,...,12$) beim leeren Würfel von den ersten 6 übernommen.
-Diese Einzelmessungen sind daher nicht mehr unabhängig voneinander.
-Unter Beachtung der Korrelation dieser Einzelmessungen, wurde die Lösung für die Absorptionskoeffizienten
-mittels der Methode kleinster Quadrate gefunden und ist in Tabelle \ref{tab:Erg2} aufgetragen.
-% \begin{center}
-%     \captionof{table}{Berechnete Absorptionskoeffizienten für den inhomogen gefüllten Würfel.}
-%     \label{tab:Erg2}
-%     \begin{tabular}{c c c c}
-%         \toprule
-%         $j$ & $\mu_j$ / $\text{cm}^{-1}$ (Würfel 4) & Material & Abweichung / \% \\
-%         \midrule
-%         1 & (-0.1711$\pm$0.0088) & / & / \\
-%         2 & (-0.2806$\pm$0.0172) & / & / \\
-%         3 & (0.0360$\pm$0.0062)  & Delrin & 68,97$\,$\% \\
-%         4 & (1.6296$\pm$0.0374)  & Blei & 30,40$\,$\% \\
-%         5 & (1.6441$\pm$0.0396)  & Blei & 31,56$\,$\% \\
-%         6 & (1.5675$\pm$0.0370)  & Blei & 25,43$\,$\% \\
-%         7 & (-0.1167$\pm$0.0082) & / & / \\
-%         8 & (-0.3045$\pm$0.0172) & / & / \\
-%         9 & (0.0697$\pm$0.0062)  & Delrin & 39,91$\,$\% \\
-%         \bottomrule
-%     \end{tabular}
-% \end{center}
-\newpage
-\begin{center}
-    \captionof{table}{Berechnete Absorptionskoeffizienten für den inhomogen gefüllten Würfel.}
-    \label{tab:Erg2}
-    \begin{tabular}{c c c c}
-        \toprule
-        $j$ & $\mu_j$ / $\text{cm}^{-1}$ (Würfel 4) & Material & Abweichung / \% \\
-        \midrule
-        1 & (-0,17$\pm$0,08) & / & / \\
-        2 & (-0,28$\pm$0,08) & / & / \\
-        3 & (0,04$\pm$0,08)  & Delrin & 68,97 \\
-        4 & (1,63$\pm$0,10)  & Blei & 30,40 \\
-        5 & (1,64$\pm$0,11)  & Blei & 31,56 \\
-        6 & (1,57$\pm$0,10)  & Blei & 25,43 \\
-        7 & (-0,12$\pm$0,08) & / & / \\
-        8 & (-0,30$\pm$0,08) & / & / \\
-        9 & (0,07$\pm$0,08)  & Delrin & 39,91 \\
-        \bottomrule
-    \end{tabular}
-\end{center}
-Den negativen Lösungen für die Absoptionskoeffizienten werden keine Materialien zugeordnet.
-Auf mögliche Gründe dafür wird in der Diskussion eingegangen.
-Die Materialien und die Abweichungen für die restlichen Absoptionskoeffizienten sind in Tabelle \ref{tab:Erg2} eingetragen.

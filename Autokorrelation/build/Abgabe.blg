@@ -1,19 +1,17 @@
-[0] Config.pm:304> INFO - This is Biber 2.13
-[0] Config.pm:307> INFO - Logfile is 'build/Abgabe.blg'
-[26] biber:315> INFO - === Sat Jul 16, 2022, 18:53:19
-[41] Biber.pm:375> INFO - Reading 'build/Abgabe.bcf'
-[112] Biber.pm:905> INFO - Found 4 citekeys in bib section 0
-[126] Biber.pm:4196> INFO - Processing section 0
-[127] Utils.pm:75> INFO - Globbing data source 'references.bib'
-[127] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
-[136] Biber.pm:4373> INFO - Looking for bibtex format file 'references.bib' for section 0
-[139] bibtex.pm:1462> INFO - LaTeX decoding ...
-[203] bibtex.pm:1281> INFO - Found BibTeX data source 'references.bib'
-[226] Utils.pm:300> WARN - ISBN '978-0-19-850692-8 978-0-19-850691-1' in entry 'hooker_laser_2010' is invalid - run biber with '--validate_datamodel' for details.
-[257] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[257] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[258] Biber.pm:4024> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
-[258] Biber.pm:4030> INFO - No sort tailoring available for locale 'de-DE'
-[271] bbl.pm:648> INFO - Writing 'build/Abgabe.bbl' with encoding 'UTF-8'
-[276] bbl.pm:751> INFO - Output to build/Abgabe.bbl
-[276] Biber.pm:110> INFO - WARNINGS: 1
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'build/Abgabe.blg'
+[60] biber-darwin:340> INFO - === Mi Jul 27, 2022, 11:29:26
+[74] Biber.pm:415> INFO - Reading 'build/Abgabe.bcf'
+[153] Biber.pm:952> INFO - Found 3 citekeys in bib section 0
+[165] Biber.pm:4340> INFO - Processing section 0
+[174] Biber.pm:4531> INFO - Looking for bibtex format file 'references.bib' for section 0
+[176] bibtex.pm:1689> INFO - LaTeX decoding ...
+[217] bibtex.pm:1494> INFO - Found BibTeX data source 'references.bib'
+[234] Utils.pm:395> WARN - ISBN '978-0-19-850692-8 978-0-19-850691-1' in entry 'hooker_laser_2010' is invalid - run biber with '--validate_datamodel' for details.
+[268] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[268] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[268] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
+[268] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
+[270] bbl.pm:654> INFO - Writing 'build/Abgabe.bbl' with encoding 'UTF-8'
+[273] bbl.pm:757> INFO - Output to build/Abgabe.bbl
+[274] Biber.pm:128> INFO - WARNINGS: 1
