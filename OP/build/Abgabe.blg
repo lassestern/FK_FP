@@ -1,17 +1,5 @@
-[0] Config.pm:304> INFO - This is Biber 2.13
-[0] Config.pm:307> INFO - Logfile is 'build/Abgabe.blg'
-[28] biber:315> INFO - === Thu Jul 21, 2022, 20:38:42
-[43] Biber.pm:375> INFO - Reading 'build/Abgabe.bcf'
-[112] Biber.pm:905> INFO - Found 1 citekeys in bib section 0
-[130] Biber.pm:4196> INFO - Processing section 0
-[131] Utils.pm:75> INFO - Globbing data source 'references.bib'
-[131] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
-[147] Biber.pm:4373> INFO - Looking for bibtex format file 'references.bib' for section 0
-[154] bibtex.pm:1462> INFO - LaTeX decoding ...
-[225] bibtex.pm:1281> INFO - Found BibTeX data source 'references.bib'
-[242] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[242] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[243] Biber.pm:4024> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
-[243] Biber.pm:4030> INFO - No sort tailoring available for locale 'de-DE'
-[251] bbl.pm:648> INFO - Writing 'build/Abgabe.bbl' with encoding 'UTF-8'
-[254] bbl.pm:751> INFO - Output to build/Abgabe.bbl
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'build/Abgabe.blg'
+[70] biber-darwin:340> INFO - === So Jul 31, 2022, 18:50:06
+[85] Utils.pm:411> ERROR - build/Abgabe.bcf is malformed, last biblatex run probably failed. Deleted build/Abgabe.bbl
+[86] Biber.pm:132> INFO - ERRORS: 1

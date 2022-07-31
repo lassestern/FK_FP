@@ -3,6 +3,7 @@
 
     \subsection{Untersuchung von Quarzkügelchen}
         \subsubsection{Kamerakalibrierung}
+        \label{sec:Pixel}
             Das in Abbildung \ref{fig:cal_cam} per optischer Pinzette eingefangene Quarzkügelchen wird genutzt, um das Zentrum der optischen Falle (gelber Kreis) in der Kamersoftware zu markieren. Über den
             rot eingezeichneten Durchmesser von 65 Pixeln wird mithilfe des mittleren Durchmessers $\overline{\text{d}}$ eines Quarzkügelchens von \SI{2.06}{\micro\metre} eine Pixelgröße im Realraum von 
             %
@@ -53,8 +54,7 @@
             \FloatBarrier
             %
             \newpage
-            Das in Abhängigkeit des z-Piezo-Werts aufgenommene Diodensummensignal bei einem festen Quarzkügelchen ist in Abbildung \ref{fig:Diodensumme} aufgetragen. Der Verlauf der Kurve entspricht dem
-            nach Abbildung REF ZU THEORIE zu erwartenden Anstiegt in der Umgebung des Streumaximus und bestätigt, dass ein festes Quarzkügelchen vermessen wurde.
+            Das in Abhängigkeit des z-Piezo-Werts aufgenommene Diodensummensignal bei einem festen Quarzkügelchen ist in Abbildung \ref{fig:Diodensumme} aufgetragen. Der Verlauf der Kurve entspricht dem zu erwartenden Anstieg in der Umgebung des Streumaximus und bestätigt, dass ein festes Quarzkügelchen vermessen wurde.
             %
             \begin{figure}[h]
             \centering
@@ -85,8 +85,8 @@
             \begin{equation*}
                 \text{PSD}(f) = \text{const} \cdot \frac{1}{f^2+f_0^2} \, ,
             \end{equation*}
-            die die Frequenz $f$ sowie die sogenannte Roll-Off-Frequenz $f_0$ beinhaltet und die Eigenschaften der spektralen Leistungsdichte REF ZUR THEORIE wiedergibt. Aus diesen in Grafik 
-            \ref{fig:freq_noForce} exemplarisch für eine Laserleistung von \SI{63.4}{\milli\ampere} dargestellten Anpassungen, werden die Fallensteifigkeiten über Formel REF ZUR THEORIE ausgerechnet und in Tabelle
+            die die Frequenz $f$ sowie die sogenannte Roll-Off-Frequenz $f_0$ beinhaltet und die Eigenschaften der spektralen Leistungsdichte \ref{eqn:Leistung} wiedergibt. Aus diesen in Grafik 
+            \ref{fig:freq_noForce} exemplarisch für eine Laserleistung von \SI{63.4}{\milli\ampere} dargestellten Anpassungen, werden die Fallensteifigkeiten über Formel \ref{eqn:Roll} ausgerechnet und in Tabelle
             \ref{tab:noForce} aufgetragen. Da der erste und letzte Wert deutlich vom zu erwartenden ansteigenden Trend der drei mittleren Werte abweichen, wird nur durch diese drei mittleren Werte eine Ausgleichsgerade zur 
             Kalibrierung der Fallensteifigkeit in Abhängigkeit des Pumpstrom gelegt. Dies ergibt folgende Kalibrierung in Abhängigkeit der Laserleistung in \si{\milli\watt} für den Bereich 
             von \SI{93.3}{\milli\watt} bis \SI{153.1}{\milli\watt}:
@@ -223,7 +223,7 @@
     \subsection{Untersuchung des Vesikeltransports in Zwiebeln}
         \FloatBarrier
         Zur Charakterisierung der Vesikel werden zunächst die Größen der vier in Abbildung \ref{fig:vesikel_size} rot hervorgehobenen Vesikel bestimmt. Dazu wird der Durchmesser der Vesikel über eine 
-        Bildbearbeitungssoftware in der Einheit pixel bestimmt und anschließend über die in Abschnitt REF berechnete Größe eines Pixels im Realraum zu den in Tabelle \ref{tab:d_vesikel} aufgelisteten Werten 
+        Bildbearbeitungssoftware in der Einheit pixel bestimmt und anschließend über die in Abschnitt \ref{sec:Pixel} berechnete Größe eines Pixels im Realraum zu den in Tabelle \ref{tab:d_vesikel} aufgelisteten Werten 
         umgerechnet. Im Mittel ergibt sich so ein Vesikeldurchmesser d$_\text{Vesikel}$ von \SI{0.705}{\micro\metre}.
         %
         \begin{table}[h]
