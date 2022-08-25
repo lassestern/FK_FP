@@ -2344,7 +2344,9 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">tu_dortmund_versuchsanleitung_OptischePinzette</bcf:citekey>
+    <bcf:citekey order="1">ashkin</bcf:citekey>
     <bcf:citekey order="2">tu_dortmund_versuchsanleitung_OptischePinzette</bcf:citekey>
     <bcf:citekey order="3">tu_dortmund_versuchsanleitung_OptischePinzette</bcf:citekey>
-    <bcf:citekey order="4">tu_dortmund_versuchsanleitung_OptischePinzette</bcf:citekey>
+    <bcf:citekey order="4">neumann</bcf:citekey>
+    <bcf:citekey order="5">tu_dortmund_versuchsanleitung_OptischePinzette</bcf:citekey>
+    <bcf:citekey order="6">tu_dortmund_versuchsanleitung_OptischePinzette</bcf:citekey>

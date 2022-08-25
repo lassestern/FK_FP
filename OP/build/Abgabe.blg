@@ -1,5 +1,0 @@
-[0] Config.pm:311> INFO - This is Biber 2.16
-[0] Config.pm:314> INFO - Logfile is 'build/Abgabe.blg'
-[70] biber-darwin:340> INFO - === So Jul 31, 2022, 18:50:06
-[85] Utils.pm:411> ERROR - build/Abgabe.bcf is malformed, last biblatex run probably failed. Deleted build/Abgabe.bbl
-[86] Biber.pm:132> INFO - ERRORS: 1

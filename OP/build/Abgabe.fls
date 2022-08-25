@@ -444,9 +444,6 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msb.cfg
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT build/Abgabe.toc
-INPUT build/Abgabe.toc
-INPUT build/Abgabe.toc
 OUTPUT build/Abgabe.toc
 INPUT ./chapters/Theorie.tex
 INPUT ./chapters/Theorie.tex

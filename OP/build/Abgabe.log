@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.10.23)  31 JUL 2022 18:50
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.10.23)  25 AUG 2022 17:51
  restricted system commands enabled.
 **Abgabe.tex
 (./Abgabe.tex
@@ -1598,18 +1598,22 @@ Package microtype Info: Loading generic protrusion settings for font family
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Package tocbasic Info: character protrusion at toc deactivated on input line 15
 .
-
-(./build/Abgabe.toc)
 \tf@toc=\write4
 
 \openout4 = Abgabe.toc
- [2] (./chapters/Theorie.tex
-<pictures/Falle.png, id=21, 734.745pt x 484.81125pt>
+ [2]
+(./chapters/Theorie.tex
+
+LaTeX Warning: Citation 'ashkin' on page 3 undefined on input line 5.
+
+
+LaTeX Warning: Reference `fig:Falle' on page 3 undefined on input line 7.
+
+<pictures/Falle.png, id=20, 734.745pt x 484.81125pt>
 File: pictures/Falle.png Graphic file (type png)
 <use pictures/Falle.png>
 Package luatex.def Info: pictures/Falle.png  used on input line 10.
 (luatex.def)             Requested size: 334.60571pt x 220.7892pt.
-
 
 LaTeX Warning: Citation 'tu_dortmund_versuchsanleitung_OptischePinzette' on pag
 e 3 undefined on input line 11.
@@ -1626,21 +1630,18 @@ Underfull \hbox (badness 3323) in paragraph at lines 11--11
 
 [3<./pictures/Falle.png>]
 
-LaTeX Warning: Command \k invalid in math mode on input line 24.
+LaTeX Warning: Citation 'neumann' on page 4 undefined on input line 16.
 
-Missing character: There is no ̨ (U+0328) in font cmmi7!
-
-LaTeX Warning: Command \k invalid in math mode on input line 26.
-
-Missing character: There is no ̨ (U+0328) in font cmmi7!
 [4]
-<pictures/Motor.png, id=46, 827.09pt x 341.275pt>
+
+LaTeX Warning: Reference `fig:Motor' on page 5 undefined on input line 48.
+
+<pictures/Motor.png, id=43, 827.09pt x 341.275pt>
 File: pictures/Motor.png Graphic file (type png)
 <use pictures/Motor.png>
 Package luatex.def Info: pictures/Motor.png  used on input line 51.
 (luatex.def)             Requested size: 334.60571pt x 138.06459pt.
 
-
 LaTeX Warning: Citation 'tu_dortmund_versuchsanleitung_OptischePinzette' on pag
 e 5 undefined on input line 52.
 
@@ -1650,21 +1651,24 @@ e 5 undefined on input line 52.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 52--52
-[][][]\TU/lmr/m/n/10.95 Be-we-gung ei-nes Ves-ik-els ”durchÄktin-Kanäle mit
+[][][]\TU/lmr/m/n/10.95 Be-we-gung ei-nes Ves-ik-els ’durch’ Aktin-Kanäle
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 52--52
-\TU/lmr/m/n/10.95 Hil-fe von Myosin-Motoren. Ent-nom-men aus
+\TU/lmr/m/n/10.95 mit Hil-fe von Myosin-Motoren. Ent-nom-men aus
  []
 
 ) (./chapters/Auswertung.tex [5<./pictures/Motor.png>]
-<pictures/cal_cam.png, id=58, 922.19531pt x 694.09312pt>
+
+LaTeX Warning: Reference `fig:cal_cam' on page 6 undefined on input line 7.
+
+<pictures/cal_cam.png, id=53, 922.19531pt x 694.09312pt>
 File: pictures/cal_cam.png Graphic file (type png)
 <use pictures/cal_cam.png>
 Package luatex.def Info: pictures/cal_cam.png  used on input line 18.
 (luatex.def)             Requested size: 313.69167pt x 236.09445pt.
- [6<./pictures/cal_cam.png>]
+[6<./pictures/cal_cam.png>]
 
 LaTeX Warning: Reference `fig:pos_cal' on page 7 undefined on input line 27.
 
@@ -1688,14 +1692,14 @@ l.34 ....9\textwidth]{OP_Sternikov/Pos_Cal_50mA.png}
                                                   
 
 Here is how much of LuaTeX's memory you used:
- 36411 strings out of 478092
+ 36399 strings out of 478092
  100000,1977958 words of node,token memory allocated
  5466 words of node memory still in use:
    19 hlist, 1 vlist, 3 rule, 56 disc, 3 local_par, 3 dir, 4 math, 67 glue, 25 k
 ern, 7 penalty, 3 margin_kern, 394 glyph, 291 attribute, 84 glue_spec, 43 attrib
 ute_list, 3 temp, 7 if_stack, 1 write, 1 pdf_dest, 3 pdf_colorstack nodes
-   avail lists: 1:6,2:787,3:101,4:54,5:433,6:17,7:4995,8:42,9:247,10:9,11:501
- 55631 multiletter control sequences out of 65536+600000
- 91 fonts using 34531047 bytes
+   avail lists: 1:5,2:819,3:101,4:56,5:429,6:17,7:5019,8:41,9:249,10:11,11:501
+ 55624 multiletter control sequences out of 65536+600000
+ 91 fonts using 34530903 bytes
  113i,8n,117p,10658b,2933s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

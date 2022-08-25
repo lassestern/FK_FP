@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber build/Abgabe"] 1659286205 "build/Abgabe.bcf" "build/Abgabe.bbl" "build/Abgabe" 1659286205
-  "build/Abgabe.bcf" 1659286197 105713 c3ff5197f5733c4769c2b020ff04a6ee "lualatex"
+["biber build/Abgabe"] 0 "build/Abgabe.bcf" "build/Abgabe.bbl" "build/Abgabe" 0
+  "build/Abgabe.bcf" 0 -1 0 "lualatex"
   (generated)
-  "build/Abgabe.blg"
   "build/Abgabe.bbl"
-["lualatex"] 1659286206 "Abgabe.tex" "build/Abgabe.pdf" "Abgabe" 1659286206
+  "build/Abgabe.blg"
+["lualatex"] 1661442713 "Abgabe.tex" "build/Abgabe.pdf" "Abgabe" 1661442713
   "/Users/michaelgutnikov/Library/texlive/2021/texmf-var/luatex-cache/generic/fonts/otl/latinmodern-math.luc" 1637225370 544970 88adcc23fa016aecf59bf8e4460c6311 ""
   "/Users/michaelgutnikov/Library/texlive/2021/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc" 1637225368 124231 5220ef58fbc72f945aade0dc8a11acde ""
   "/Users/michaelgutnikov/Library/texlive/2021/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc" 1637225372 132153 32ac2cf6362527715db851225380f658 ""
@@ -216,19 +216,18 @@
   "/usr/local/texlive/2021/texmf-var/web2c/luahbtex/lualatex.fmt" 1635026334 3365237 d13e2ede0d8ddccea5ec63ecd2dc794e ""
   "Abgabe.tex" 1659216566 585 36bdb69576d322cc804aa15fe8f78e69 ""
   "OP_Sternikov/Pos_Cal_50mA.png" 0 -1 0 ""
-  "build/Abgabe.aux" 1659286197 9653 cb072af6682ccd94c83db27c070bac4b "lualatex"
+  "build/Abgabe.aux" 1661442713 32 3985256e7290058c681f74d7a3565a19 "lualatex"
   "build/Abgabe.bbl" 0 -1 0 "biber build/Abgabe"
-  "build/Abgabe.toc" 1659286196 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
   "build/OP_Sternikov/Pos_Cal_50mA.png" 0 -1 0 ""
   "chapters/Auswertung.tex" 1659286203 19869 ee55228c93181b208597937cd8f2474e ""
-  "chapters/Theorie.tex" 1659283930 5481 b26cac7d748a1c97cc491c53f3707bd4 ""
+  "chapters/Theorie.tex" 1661442100 5494 be9feb8a5c4ae5d4b7f4b523936382a7 ""
   "inputs/header.tex" 1657976788 2647 28caf8864445e42731fb03e527c07500 ""
   "pictures/Falle.png" 1659132197 969856 98c967bd043e28503914e138cccdf4b2 ""
   "pictures/Motor.png" 1659215961 883657 b9d065c5c4ec51199bd37afa776c5bf6 ""
   "pictures/cal_cam.png" 1658595947 1449279 e4ba4cda9d17db3bc6d82cc900d845ea ""
   (generated)
-  "build/Abgabe.aux"
-  "build/Abgabe.log"
-  "build/Abgabe.toc"
-  "build/Abgabe.pdf"
   "build/Abgabe.bcf"
+  "build/Abgabe.log"
+  "build/Abgabe.aux"
+  "build/Abgabe.pdf"
+  "build/Abgabe.toc"
