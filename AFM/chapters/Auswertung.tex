@@ -11,8 +11,8 @@
             \caption{AFM-Aufnahme der Kreisstruktur ohne (links) und mit (rechts) Strain-Gauge-Nachregelung.}
             \label{fig:Strain}    
         \end{figure}
-        Die Aufnahme ohne Nachregelung weist eine starke Verzerrung der Kreisstruktur aus, welche bei aktivierter Nachregelung verschwindet.
-        Alle im Folgenden gezeigten AFM-Aufnahmen werden aus den Rohaufnahmen gewonnen, indem die Originalbilder invertiert werden, eine Ebenensubstraktion als auch eine Zeilenkorrektur durchgeführt wird und zum Schluss das Bild koloriert wird. Diese Schritte werden mit dem Programm $\textit{Gwiddion}$ \cite{Gwyddion} ausgeführt und der "vorher-nachher Vergleich" ist in Abbildung \ref{fig:VorNach} beispielhaft anhand der Kreisstruktur gezeigt.
+        Die Aufnahme ohne Nachregelung weist eine starke Verzerrung der Kreisstruktur auf, welche bei aktivierter Nachregelung größtenteils verschwindet.
+        Alle im Folgenden gezeigten AFM-Aufnahmen werden aus den Rohaufnahmen gewonnen, indem die Originalbilder invertiert werden, eine Ebenensubstraktion als auch eine Zeilenkorrektur durchgeführt wird und zum Schluss das Bild koloriert wird. Diese Schritte werden mit dem Programm $\textit{Gwiddion}$ \cite{Gwyddion} ausgeführt und der 'vorher-nachher Vergleich' ist in Abbildung \ref{fig:VorNach} beispielhaft anhand der Kreisstruktur gezeigt.
         \begin{figure}
             \centering
             \includegraphics[width = 0.40\textwidth]{pictures/Raw.png}
@@ -20,7 +20,7 @@
             \caption{AFM-Aufnahme der Kreisstruktur vor (links) und nach (rechts) der Bildbearbeitung.}
             \label{fig:VorNach}
         \end{figure}
-        Die kolorierten, bearbeiteten Aufnahmen für die Kreis-, Quadrat- und Linienstrukturen sind in Abbildung \ref{fig:2D3D} sowohl zwei- als auch dreidimensional aufgetragen. Da die Aufnahmen vorwärts und rückwärts gemessen ununterscheidbar sind, wird für die Auswertung lediglich eine Messrichtung betrachtet.
+        Die kolorierten, bearbeiteten Aufnahmen für die Kreis-, Quadrat- und Linienstrukturen sind in Abbildung \ref{fig:2D3D} sowohl zwei- als auch dreidimensional aufgetragen. Da die Aufnahmen vorwärts und rückwärts gemessen ununterscheidbar sind, wird für die Auswertung lediglich die Vorwärtsrichtung betrachtet.
         \begin{figure}
             \centering
             \includegraphics[width = 0.40\textwidth]{pictures/Kreis.png}
@@ -69,7 +69,8 @@
             \caption{AFM-Aufnahmen der CD (oben), DVD (mitte) und Blu-ray (unten) Proben als 2D- und 3D-Aufnahmen.}
             \label{fig:CDB}    
         \end{figure}
-        Auch hier wirde die Profilfunktion benutzt um die Proben zu vermessen. Es werden so die Spurbreite, der Spurabstand, die minimale und maximale sichtbare Pitlänge und die Pittiefe bestimmt. Dazu wird über mehrere Linienprofile und mehrere Pits gemittelt und das Ergebnis der Messungen und Tabelle \ref{tab:Pits} aufgetragen.
+        Auch hier wird die Profilfunktion benutzt um die Proben zu vermessen. Es werden so die Spurbreite, der Spurabstand, die minimale und maximale sichtbare Pitlänge und die Pittiefe bestimmt. Dazu wird über mehrere Linienprofile und mehrere Pits gemittelt und das Ergebnis der Messungen und Tabelle \ref{tab:Pits} aufgetragen.
+        Dazu wird wieder lediglich die Vorwärtsrichtung betrachtet, da sich die vermessenen Strukturen abhängig von der Messrichtung nicht verändern. Das wurde wie in Abschnitt \ref{sec:Mikro} gezeigt und wird aus platzsparenden Gründen hier nicht wieder aufgeführt.
         \begin{center}
             \captionof{table}{Gemessene Abmaße der drei untersuchten optischen Datenträger.}
             \label{tab:Pits}
@@ -93,15 +94,15 @@
         \begin{equation}
             L = \sum_{i=0}^{n} 2\pi\left(R_I+i\cdot d\right) = (5876.63 \pm 0.71) \, \text{m} \, .
         \end{equation}
-        Wie in der Versuchsanleitung beschrieben, beschreibt der kleinstmögliche Pit die Abfolge"1001" und entspricht 4 Bit. Die minimale gemessene Pitlänge beträgt $p_{min}=0.684\pm 0.013\,\mu\text{m}$. Daraus ergibt sich für die Speicherkapazität der CD
+        Wie in der Versuchsanleitung beschrieben, beschreibt der kleinstmögliche Pit die Abfolge '1001' und entspricht 4 Bit. Die minimale gemessene Pitlänge beträgt $p_{min}=(0.684\pm 0.013)\,\mu\text{m}$. Daraus ergibt sich für die Speicherkapazität der CD
         \begin{equation}
             C_{Speicher} = \frac{L}{p_{min}}\cdot 4\,\text{Bits} \cdot \frac{1\,\text{B}}{8\,\text{Bit}} = (4295.79\pm 81.65)\,\text{MB}
         \end{equation}
         \FloatBarrier
     \subsection{Adhäsionskraft und Elastizitätsmodul}
         In Abbildung \ref{fig:KA} sind die Kraft-Abstands-Kurven für die Edelstahl-, Teflon- und DLC-Probe zu sehen. Da bekannt ist, dass das z-Piezo-Element bei einer
-        Maximalspannung von \SI{75}{\volt} um \SI{20}{\micro\metre} ausgelenkt ist, kann die z-Piezo-Spannung in einen Abstand umgerechnet werden, welche auf der x-Achse aufgetragen ist. Der Ursprung dieses Abstandes ist dabei beliebig gesetzt und hängt von der anfänglichen Position der Probe ab. Da im Folgenden nur auf eine Abstandsdifferenz eingegangen wird, spielt das aber keine Rolle. Auf der y-Achse ist gemessene Spannung am Cantilever-Piezo aufgetragen, gibt also ein Maß für die Auslenkung des Cantilevers an.
-        Wie in Kapitel \ref{sec:KraftAbstand} beschrieben sind bei einer Annäherung der Probe und Spitze der Snap-In mit anschließender steigender Flanke beobachtbar. Beim Zurückziehen der Probe fällt die Piezospannung am Cantilever wieder ab und sinkt unter die Ruhepoition ab, was auf die Adhäsionskraft zwischen der Spitze und der Probe zurückzuführen ist. Wird diese durch die rücktreibende Kraft des Cantilevers ausgeglichen, kommt es zum Pull-Off und der Cantilever bewegt sich wieder in seine Ruhepostion zurück. (siehe Abbildung \ref{fig:KA})
+        Maximalspannung von \SI{75}{\volt} um \SI{20}{\micro\metre} ausgelenkt ist, kann die z-Piezo-Spannung in einen Abstand umgerechnet werden, welche auf der x-Achse aufgetragen ist. Der Ursprung dieses Abstandes ist dabei beliebig gesetzt und hängt von der anfänglichen Position der Probe ab. Da im Folgenden nur auf eine Abstandsdifferenz eingegangen wird, spielt das aber keine Rolle. Auf der y-Achse ist die Spannung der lateralen Auslenkung aufgetragen. Diese gibt also ein Maß für die Auslenkung des Cantilevers an.
+        Wie in Kapitel \ref{sec:KraftAbstand} beschrieben sind bei einer Annäherung der Probe und Spitze der Snap-In mit anschließender steigender Flanke beobachtbar. Beim Zurückziehen der Probe fällt die Piezospannung am Cantilever wieder ab und sinkt unter die Ruhepoition ab, was auf die Adhäsionskraft zwischen der Spitze und der Probe zurückzuführen ist. Wird diese durch die rücktreibende Kraft des Cantilevers ausgeglichen, kommt es zum Pull-Off und der Cantilever bewegt sich wieder in seine Ruhepostion zurück (siehe Abbildung \ref{fig:KA}).
         \begin{figure}
             \centering
             \includegraphics[width = 0.60\textwidth]{pictures/Edelstahl.pdf}
@@ -112,17 +113,13 @@
         \end{figure}
         Der größere Pull-Off beim Edelstahl ist dabei die Folge einer größeren Adhäsionskraft und die, im Vergleich zu den anderen Proben, flachere Flanke der Teflon-Probe ein Zeichen für eine höhere Elastizität, wie im Folgenden beschrieben ist.
 
-        Die Adhäsionskraft $F_A$ ist die Kraft, die überwunden werden muss, um den Kontakt zwischen Spitze und Probe aufzulösen. Diese kann aus der Abstandsdifferenz $\Delta_{SP}$ zwischen Snap-In und Pull-Off berechnet werden. Es gilt
-        \begin{equation}
-            F_A = k\cdot\Delta_{SP} \, ,
-        \end{equation}
-        für die maximale Adhäsionskraft mit der Ferderkonstante $k=\SI{0.2}{\newton\per\metre}$ des Cantilevers. Die Abstandsdifferenzen und die daraus berechneten Adhäsionskräfte für die drei untersuchten Proben sind in Tabelle \ref{tab:AK} aufgelistet.
+        Über Formel \ref{eqn:Addi} werden mit der Ferderkonstanten $k=\SI{0.2}{\newton\per\metre}$ des Cantilevers die maximale Adhäsionskräfte aus der Abstandsdifferenz  zwischen Snap-In und Pull-Off berechnet. Die Ergebnisse für die drei untersuchten Proben sind in Tabelle \ref{tab:AK} aufgelistet.
         \begin{center}
             \captionof{table}{Differenz zwischen Snap-In und Pull-Off und die resultierende Adhäsionskraft der Proben.}
             \label{tab:AK}
             \begin{tabular}{c c c}
                 \toprule
-                Probe & Diferenz zw. Snap-In und Pull-Off / $\mu\text{m}$ & Adhäsionskraft / $\text{nN}$ \\
+                Probe & Differenz zw. Snap-In und Pull-Off / $\mu\text{m}$ & Adhäsionskraft / $\text{nN}$ \\
                 \midrule
                 Edelstahl & $0.5749$ & $114.99$\\
                 Teflon    & $0.4501$ & $90.03$ \\
@@ -130,14 +127,9 @@
                 \bottomrule
             \end{tabular}
         \end{center}
-        Als nächstes wird das Elastizitätsmodul von Teflon bestimmt. Dazu wird folgende Formel \cite{Elastic} betrachtet:
+        Als nächstes wird der Elastizitätsmodul von Teflon bestimmt. Nach Umstellen von Formel \ref{eqn:FFF} ergibt sich
         \begin{equation}
-            F_K = \frac{E}{1-\nu^2}\,\frac{2\,\tan(\alpha)}{\pi}\,\delta^2 \qquad
-            \label{eqn:FFF}
-        \end{equation}
-        Diese beschreibt die Kraft $F_K$, welche durch eine kegelförmige Spitze mit Öffnungswinkel $2\alpha$ auf eine Probe mit dem \textit{Young Elastizitätsmodul} $E$ wirkt. $\nu$ ist dabei die materialabhängige \textit{Poisson-Zahl} und $\delta$ beschreibt die Eindringtiefe der Spitze in die Probe. Für die die Elastizität ergibt sich nach umstellen von Formel \ref{eqn:FFF}
-        \begin{equation}
-            E = \frac{\pi}{2}\left(1-\nu^2\right)\,\frac{1}{\tan(\alpha)}\,\frac{1}{\delta^2}\cdot F_K
+            E = \frac{\pi}{2}\left(1-\nu^2\right)\,\frac{1}{\tan(\alpha)}\,\frac{1}{\delta^2}\cdot F_K \, .
             \label{eqn:EEE}
         \end{equation}
         Um die Kraft $F_K$ und die Eindringtiefe $\delta$ zu bestimmen muss die zu untersuchende Teflon-Probe mit einer undeformierbaren Probe - in unserem Fall Edelstahl - verglichen werden. Dazu sind ansteigenden Flanke beim Annäherungsprozess aus den Kraft-Abstand-Kurven für Teflon und Edelstahl in Abbildung \ref{fig:Ela} aufgetragen. Der Snap-In wurde jeweils auf den Ursprung beider Achsen gelegt, um beide Proben vergleichen zu können.
@@ -147,7 +139,7 @@
             \caption{Annäherungsprozess der Edelstahl- und Teflon-Proben. Die Snap-In Punkte beider Proben sind auf den Ursprung gelegt.}
             \label{fig:Ela}
         \end{figure}
-        Als Ausgangspunkt wurde beispielhaft eine z-Auslenkung von $z_{Edelstahl}=\SI{0.75}{\micro\metre}$ der Edelstahl-Probe betrachtet. Die z-Auslenkung der Teflon-Probe, welche die selbe Piezospannung des Cantilevers zur Folge hat liegt bei $z_{Teflon}=\SI{0.97}{\micro\metre}$. Für die Eindringtiefe der Spitze in die Teflon-Probe ergibt sich damit
+        Als Ausgangspunkt wurde beispielhaft eine z-Auslenkung von $z_{Edelstahl}=\SI{0.75}{\micro\metre}$ der Edelstahl-Probe betrachtet. Die z-Auslenkung der Teflon-Probe, welche die selbe Spannung an der Vier-Segment-Photodiode zur Folge hat liegt bei $z_{Teflon}=\SI{0.97}{\micro\metre}$. Für die Eindringtiefe der Spitze in die Teflon-Probe ergibt sich damit
         \begin{equation}
             \delta = z_{Teflon} - z_{Edelstahl}
             \label{eqn:Eindringen}
@@ -159,6 +151,6 @@
         \end{equation}
         Mit dem halben Öffnungswinkel $\alpha = 10°$ \cite{tu_dortmund_versuchsanleitung_nodate}, der Poissonzahl $\nu = 0.46$ von Teflon \cite{DuPont} und der über \ref{eqn:Eindringen} und \ref{eqn:Druck} berechneten Eindringtiefe $\delta$ und Kraft $F_K$ ergibt sich für das Elastizitätsmodul $E$ mit Formel \ref{eqn:EEE}
         \begin{equation}
-            E = \SI{20.8580}{\mega\pascal} \, .
+            E = \SI{20.86}{\mega\pascal} \, .
         \end{equation}
 

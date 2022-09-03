@@ -1,22 +1,22 @@
 \section{Ziel}
-    In diesem Versuch sollen die Topologien verschiedener Strukturen im Micrometerbereich sowie die von Speicherdiscs wie CD, DVD und Blu-Ray untersucht werden. Dazu wird die Methode der \textit{atomic force
+    In diesem Versuch sollen die Topologien verschiedener Strukturen im Mikrometerbereich sowie die von Speicherdiscs wie CD, DVD und Blu-Ray untersucht werden. Dazu wird die Methode der \textit{atomic force
     microscopy} (AFM) verwendet, die auf der Auslenkung einer wenigen Nanometer großen Spitze aufgrund der Wechselwirkung zwischen dieser und den Oberflächenatomen basiert. Da diese Wechselwirkungen nicht
     auf Elektrostatik basieren, können im Vergleich zum Rastertunnelmikroskop auch nicht leitende Proben vermessen werden.    
     
 \section{Theoretische Grundlagen}
     \subsection{Messprinzip}
         Das klassische Messprinzip der AFM ist in Abbildung \ref{fig:prinzip} visualisiert. Eine \textbf{Messspitze} (\textit{Probe Tip}), die an einem \textbf{Cantilever} befestigt ist, wird auf eine 
-        Entfernung von wenigen Angström bis einigen \SI{100}{\nano\metre} an die Probenoberfläche gebracht. Die zwischen der Messspitze und den Oberflächenatomen wirkende Kraft resultiert aus verschiedenen
+        Entfernung von wenigen \AA ngström bis einigen \SI{100}{\nano\metre} an die Probenoberfläche gebracht. Die zwischen der Messspitze und den Oberflächenatomen wirkende Kraft resultiert aus verschiedenen
         distanzabhängigen \textbf{Wechselwirkungen} und wird auf den Cantilever übertragen. Verschiedene \textbf{Detektionssysteme} erlauben es die wirkende Kraft über den Cantilever zu messen und so den 
         Abstand zwischen Messspitze und Oberfläche zu bestimmen. In Kombination eines elektronischen Feedback-Loops mit \textbf{Piezoelementen}, die die Probe relativ zur Messspitze in x-, y- und z-Richtung
-        verschieben können, ist es möglich diese Abstandsmessung auf der gesamten Probe durchzuführen und so ein Höhenprofil der Oberfläche zu ermitteln. Da je nach Distanz verschiedene Kräfte dominieren und
+        verschieben können (\textit{xyz-Piezo Scanner}), ist es möglich diese Abstandsmessung auf der gesamten Probe durchzuführen und so ein Höhenprofil der Oberfläche zu ermitteln. Da je nach Distanz verschiedene Kräfte dominieren und
         der Feedback-Loop es auch ermöglicht auf verschiedene Weise über die Probe zu rastern, kann die AFM in mehreren \textbf{Messmodi} betrieben werden.
 
         \FloatBarrier
 
         \begin{figure}[h]
           \centering
-          \includegraphics[width = 0.4\textwidth]{pictures/prinzip.png}
+          \includegraphics[width = 0.7\textwidth]{pictures/prinzip.png}
           \caption{Schematische Abbildung eines Atomic-Force Mikroskops bestehend aus Spitze und Cantilever, Feedback-Loop, Auslenkungssensor und Piezoelementen. Entnommen aus \cite{meyer_atomic_1992}}
           \label{fig:prinzip}
         \end{figure}
@@ -28,58 +28,52 @@
 
         \subsubsection{Spitze - Oberfläche}
 
-          \FloatBarrier
-
-          \begin{wrapfigure}[38]{L}{8.2cm}
-            \includegraphics[scale = 0.42]{pictures/LJ.png}
-            \caption{Zusammensetzung des gesamten Potentials zwischen Messspitze und Oberfläche aus anziehendem und abstoßendem Potential in der Beschreibung eines Lennard-Jones-Potentials. Entnommen aus \cite{voigtlander_scanning_2015}}
-            \label{fig:LJ}
-          \end{wrapfigure}
-          \FloatBarrier
-
-          Zur Vermessung des Höhenprofils der Oberfläche wird die distanzabhängige Kraft zwischen Messspitze und Oberfläche genutzt. Das zugehörige Potential wird als Lennard-Jones-Potential 
-
-          \begin{equation*}
-            \text{U(R)} = 4\text{U}_0 \left[ \left(\frac{\text{R}_{\text{a}}}{\text{r}}\right)^{12} - \left(\frac{\text{R}_{\text{a}}}{\text{r}}\right)^{6} \right]
-          \end{equation*}
-
-          angenähert, das einen positiven und demnach repulsiven Anteil und einen attraktiven Anteil besitzt, und in Abbildung \ref{fig:LJ} (a) mitsamt der resultierenden Kraft (b) und dem zugehörigen
-          Kraftgradienten (c) dargestellt ist.
-
-
-          
-
-          Das Potential setzt sich aus verschiedenen Wechselwirkungen zusammen, die für unterschiedliche Entfernungen dominant sind.\newline 
-          Der attraktive Bereich für Abstände über \SI{1}{\nano\metre} resultiert hauptsächlich aus den \textit{Van-der-Waals-Kräften}. Diese beschreiben die Anziehung zweier eigentlich neutraler Atome durch die 
-          spontane Entstehung von fluktuierenden Dipolen. Entsteht in einem Atom eine 
-          spontaner Dipol, wird im benachbarten Atom ebenfalls ein Dipol induziert und die Atome ziehen sich an. Das zugehörige Potential fällt mit $\frac{1}{\text{r}^6}$ ab und ist demnach langreichweitig. 
-          Deswegen wechselwirkt nicht nur das vorderste Atom der Spitze mit der Oberfläche, sondern auch dahinterliegende.\newline
-
-          Für Distanzen unter \SI{1}{\nano\metre} kommt es zu chemischen Bindungen, bei denen die Orbitale der beteiligten Atome hybridisieren. Führt dies zu einer Verringerrung der Gesamtenergie wirken diese 
-          Bindungen attraktiv. Erhöht sich die Gesamtenergie wirken die Bindungen repulsiv.
-
+        Zur Vermessung des Höhenprofils der Oberfläche wird die distanzabhängige Kraft zwischen Messspitze und Oberfläche genutzt. Das zugehörige Potential wird als Lennard-Jones-Potential 
+        %
+        \begin{equation*}
+          \text{U(R)} = 4\text{U}_0 \left[ \left(\frac{\text{R}_{\text{a}}}{\text{r}}\right)^{12} - \left(\frac{\text{R}_{\text{a}}}{\text{r}}\right)^{6} \right]
+        \end{equation*}
+        %
+        angenähert, das einen positiven und demnach repulsiven Anteil (\textit{Repulsive interaction}) und einen attraktiven Anteil (\textit{Attractive interaction}) besitzt, und in Abbildung 
+        \ref{fig:LJ} (a) mitsamt der resultierenden Kraft (b) und dem zugehörigen Kraftgradienten (c) dargestellt ist.
+        %
+        Das Potential setzt sich aus verschiedenen Wechselwirkungen zusammen, die für unterschiedliche Entfernungen dominant sind.\newline 
+        Der attraktive Bereich für Abstände über \SI{1}{\nano\metre} resultiert hauptsächlich aus den \textit{Van-der-Waals-Kräften}. Diese beschreiben die Anziehung zweier eigentlich neutraler Atome durch die 
+        spontane Entstehung von fluktuierenden Dipolen. Entsteht in einem Atom eine 
+        spontaner Dipol, wird im benachbarten Atom ebenfalls ein Dipol induziert und die Atome ziehen sich an. Das zugehörige Potential fällt mit $\frac{1}{\text{r}^6}$ ab und ist demnach langreichweitig. 
+        Deswegen wechselwirkt nicht nur das vorderste Atom der Spitze mit der Oberfläche, sondern auch dahinterliegende.\newline
+        \FloatBarrier
+% 
+        \begin{wrapfigure}[39]{L}{8.2cm}
+          \includegraphics[scale = 0.42]{pictures/LJ.png}
+          \caption{Zusammensetzung des gesamten Potentials zwischen Messspitze und Oberfläche aus anziehendem (\textit{attractive}) und abstoßendem (\textit{repulsive}) Potential in der Beschreibung eines Lennard-Jones-Potentials sowie die negative Änderung der Kraft (\textit{Neg. force gradient}). Entnommen aus \cite{voigtlander_scanning_2015}}
+          \label{fig:LJ}
+        \end{wrapfigure}
+        \FloatBarrier
+        %
+        %
+        Für Distanzen unter \SI{1}{\nano\metre} kommt es zu chemischen Bindungen, bei denen die Orbitale der beteiligten Atome hybridisieren. Führt dies zu einer Verringerrung der Gesamtenergie wirken diese 
+        Bindungen attraktiv. Erhöht sich die Gesamtenergie wirken die Bindungen repulsiv.
+        %
           Relevanter für diese Distanzen unter \SI{1}{\angstrom} ist das Auftreten stark repulsiver Wechselwirkungen. Die dominante Abstoßung folgt aus dem Pauli-Prinzip, nach dem zwei Elektronen mit dem 
           selben Spin nicht den selben Zustand besetzen dürfen. Bei sehr geringen Distanzen führt der Überlapp der Orbitale dazu, dass Elektronen in höhere unbesetzte Bänder ausweichen müssen. Dies führt zu einer 
           starken Erhöhung der Gesamtenergie und somit zu einer repulsiven Kraft. Zusätzlich kann auch Coulombabstoßung zwischen den Kernen auftreten, wenn diese nicht komplett durch ihre Elektronen 
           abgeschirmt sind.
-
+%
           Falls zwischen der Spitze und der Oberfläche eine Potentialdifferenz vorliegt, kommt es zusätzlich zu elektrostatischen Kräften. Diese können jedoch vermieden werden, indem die Potentialdifferenz durch
           das Anlegen einer entsprechenden Spannung kompensiert wird.\newline
-
+%
           Da die entstehenden Kräfte in Bereich einiger Nanonewton liegen und die Auslenkungen des Systems demenstprechend sehr gering sind, ist die Messung der Auslenkung besonders anfällig für externe Erschütterungen des Mikroskops.
           
-        \newpage
+        
         \subsubsection{Cantilever - Spitze - Oberfläche}
-
           \FloatBarrier
-
           \begin{wrapfigure}[35]{L}{8cm}
             \includegraphics[scale = 0.45]{pictures/pot_contact.png}
             \caption{Mit abnehmender Distanz zwischen Messspitze und Probe entsteht zunächst ein zweites lokales Minimum nahe der Oberfläche. Ab einem gewissen Abstand verschwindet das erste lokale Minima und die Messspitze springt an die Oberfläche (snap-to-contact). Entnommen aus \cite{voigtlander_scanning_2015}}
             \label{fig:pot_contact}
           \end{wrapfigure}
-
-          \FloatBarrier      
+          % \FloatBarrier      
           %
           In einem AFM-Aufbau ist die Spitze an einem Cantilever befestigt, der als Feder fungiert und so ebenfalls Einfluss auf die Gesamtkraft nimmt. Nach dem Hook'schen Gesetz ergibt sich ein Potential 
           %
@@ -93,7 +87,7 @@
           Minimum an der Ruheposition des Cantilevers. Wird der Cantilever mitsamt der Spitze angenähert (b), entsteht ein zweites lokales Minimum. Dieses liegt nah an der Oberfläche und ist von der Ruheposition
           nicht zu erreichen, da ein Maximum die beiden Minima trennt. Ab einer Grenze geht dieses Maximum in einen Sattelpunkt über und ein Übergang in das zweite Minimum wird möglich. Dieser Übergang wird als
           snap-to-contact bezeichnet und beschreibt einen Endzustand, in dem die abstoßenden Kräfte ein weiteres Annähern an die Probe verhindern. 
-
+          \FloatBarrier
 
 
 
@@ -103,32 +97,44 @@
 
           Aus den gegebenen Potentialverläufen lässt sich begründen, welche Kraft auf das System aus Messspitze und Cantilever wirkt, wenn es an die Oberfläche herangebracht oder entfernt wird. Dieses Verhalten
           wird in Kraft-Distanz-Kurven dargestellt, die die Kraft für einen vollen Zyklus aus Annäherung und Entfernung gegen den Abstand auftragen. Zum Verständnis der folgenden Beschreibung werden die Punkte A) bis E) in Abbildung \ref{fig:forcedist} beschrieben. Charakteristisch für den Annäherungsprozess ist zunächst
-          eine Kräftefreiheit A), bis zu einem plötzlichem negativem Kraftgradienten B), der einer Anziehung zur Probe entspricht und aufgrund des snap-to-contacts auftritt. Dabei wirken die attraktive Van-der-Waals-Kraft und für eine Messung außerhalb des Vakuums Kapillarkräfte. Da mit dem snap-to-contact die Messspitze auf 
+          eine Kräftefreiheit A), bis zu einem plötzlichem negativem Kraftgradienten B), der einer Anziehung zur Probe entspricht und aufgrund des snap-to-contacts (\textit{Snap-In}) auftritt. Dabei wirkt die attraktive Van-der-Waals-Kraft. Da mit dem snap-to-contact die Messspitze auf 
           der Oberfläche aufliegt, steigt die Kraft bei weiterer Annäherung aufgrund der repulsiven Pauli-Kraft linear C) bis zu einem Maximum, bei dem das Annähern gestoppt wird. Wenn das Messsystem entfernt wird, sinkt die Kraft analog zu ihrem 
-          vorherigen Anstieg D), bis die wirkende Kraft bei dem selben Abstand wieder ihr Vorzeichen wechselt. In Abhängigkeit von der Stärke der attraktiven Adhesionskräfte verbleibt die Spitze nun länger in Kontakt E) und es treten stärker anziehende Kräfte als beim snap-to-contact auf. 
+          vorherigen Anstieg D), bis die wirkende Kraft bei dem selben Abstand wieder ihr Vorzeichen wechselt. In Abhängigkeit von der Stärke der attraktiven Adhesions- und Kapillarkräfte verbleibt die Spitze nun länger in Kontakt E) und es treten stärker anziehende Kräfte als beim snap-to-contact auf bis die Spitze den Kontakt verliert (\textit{Pull-Off}).  
+          Die Adhäsionskraft $F_A$ ist also die Kraft, die überwunden werden muss, um den Kontakt zwischen Spitze und Probe aufzulösen. Diese kann aus der Abstandsdifferenz $\Delta_{SP}$ zwischen Snap-In und Pull-Off berechnet werden. Es gilt
+          \begin{equation}
+              F_A = k\cdot\Delta_{SP} \, .
+              \label{eqn:Addi}
+          \end{equation}
+  
           
           \FloatBarrier
 
           \begin{figure}[h]
             \centering
-            \includegraphics[width = 0.4\textwidth]{pictures/forcedist.png}
-            \caption{Eine vollständige Kraft-Distanz-Kurve mit den entsprechenden Positionen und Auslenkung der Cantilever an ausgewählten Punkten a) bis f). Entnommen aus \cite{park_systems_force-distance_nodate}}
+            \includegraphics[width = 0.65\textwidth]{pictures/forcedist.png}
+            \caption{Eine vollständige Kraft-Distanz-Kurve mit den entsprechenden Positionen und Auslenkung der Cantilever an ausgewählten Punkten A) bis E). Entnommen aus \cite{park_systems_force-distance_nodate}}
             \label{fig:forcedist}
           \end{figure}
         
           \FloatBarrier
-          
-          Der lineare Anstieg und Abfall der Kurve hängt dabei von der Härte der Probe ab. Da die Messspitze nur schlecht in besonders harte Proben eindringen kann, steigt die Kraft, wie in Abbildung \ref{fig:force_hard_soft} zu sehen, stärker an und sinkt auch schneller ab. Die Messspitze löst sich
-          bei gleicher Kraft von der Oberfläche, wie bei einer weichen Probe, erreicht diese aber bereits bei geringerem Abstand. Mit einer höheren Federkonstante des Cantilevers kann der Scanbereich der
+          \newpage
+          Der lineare Anstieg und Abfall der Kurve hängt dabei von der Härte der Probe ab. Da die Messspitze nur schlecht in besonders harte Proben eindringen kann, steigt die Kraft, wie in Abbildung \ref{fig:force_hard_soft} zu sehen, stärker an und sinkt auch schneller ab. 
+          %Die Messspitze löst sich bei gleicher Kraft von der Oberfläche, wie bei einer weichen Probe, erreicht diese aber bereits bei geringerem Abstand. 
+          Mit einer höheren Federkonstante des Cantilevers kann der Scanbereich der
           Kraft-Distanz-Kurve auf Kosten der Kraftauflösung erweitert werden, da der Cantilever größere Kräfte aushält, bevor er inelastisch verformt wird.
 
-
+          Der Elastizitätsmodul $E$ einer Probe kann über folgende Gleichung \cite{Elastic} beschrieben werden:
+          \begin{equation}
+              F_K = \frac{E}{1-\nu^2}\,\frac{2\,\tan(\alpha)}{\pi}\,\delta^2 \qquad
+              \label{eqn:FFF}
+          \end{equation}
+          Diese beschreibt die Kraft $F_K$, welche durch eine kegelförmige Spitze mit Öffnungswinkel $2\alpha$ auf eine Probe mit dem \textit{Young Elastizitätsmodul} $E$ wirkt. $\nu$ ist dabei die materialabhängige \textit{Poisson-Zahl} und $\delta$ beschreibt die Eindringtiefe der Spitze in die Probe. 
 
 
 
           \begin{figure}[h]
             \centering
-            \includegraphics[width = 0.4\textwidth]{pictures/force_hard_soft.png}
+            \includegraphics[width = 0.7\textwidth]{pictures/force_hard_soft.png}
             \caption{Die Kraft-Distanz-Kurve einer harten a) und einer weichen Probe b) zeigen die unterschiedlich starken Steigungen der Kraftkurve. Entnommen aus \cite{park_systems_force-distance_nodate}}
             \label{fig:force_hard_soft}
           \end{figure}
@@ -151,18 +157,15 @@
         \subsubsection*{Messspitze}
           Die Messspitze ist das Bauteil, das der Oberfläche am nähesten kommt und tatsächlich mit ihr wechselwirkt. Eine unendliche glatte Oberfläche könnte mit einer stumpfen Spitze vermessen werden. Wenn
           die Oberfläche jedoch nicht glatt ist und distinkte Hindernisse gemessen werden sollen, kommen neue Anforderungen auf die am besten über die in Abbildung \ref{fig:defekte} abgebildeten Messdefekte
-          zu begründen sind. In Abbildung \ref{fig:defekte} a) und b) ist zu erkennen, dass eine zu stumpfe Spitze womöglich nicht in der Lage ist zu steile Objekte zu erkennen. Das gemessene Profil (rot) ist
-          immer eine Faltung aus dem Profil der Spitze und dem der Oberfläche. Um nun kleine und steile Signale zu detektieren, muss die Spitze steiler zusammenlaufen als der steilste Gradient an der 
-          Probenoberfläche und dünner sein, als das kleinste Objekt. In der Anwendung sind Spitzendurchmesser im einstelligen Micrometerbereich und Krümmugsradien von wenigen Nanometern möglich. Eine weitere
-          Quelle für Defekte sind die in Abbildung \ref{fig:defekte} zu sehenden Beulen an der sonst flachen Spitze. Diese müssen unbedingt vermieden werden, da sie nicht vorhandene Strukturen an der Oberfläche
-          im Höhenprofil erzeugen. 
+          zu begründen sind. In Abbildung \ref{fig:defekte} a) und b) ist zu erkennen, dass eine zu stumpfe Spitze womöglich nicht in der Lage ist zu steile Objekte zu erkennen. Das gemessene Profil (rot) entspricht der mathematischen Faltung aus dem Profil der Spitze und dem der Oberfläche. Um nun kleine und steile Signale zu detektieren, muss die Spitze steiler zusammenlaufen als der steilste Gradient an der Probenoberfläche und dünner sein, als das kleinste Objekt. Mathematisch entspräche die Struktur der Spitze idealerweise einer Delta-Distribution, da die Faltung dann nur der Struktur der Probenoberfläche entspricht. In der Anwendung sind Spitzendurchmesser im einstelligen Mikrometerbereich und Krümmugsradien von wenigen Nanometern möglich. 
+          Eine weitere Quelle für Defekte sind die in Abbildung \ref{fig:defekte} zu sehenden Beulen an der sonst flachen Spitze. Diese müssen unbedingt vermieden werden, da sie nicht vorhandene Strukturen an der Oberfläche im Höhenprofil erzeugen. 
         
           \FloatBarrier
 
           \begin{figure}[h]
             \centering
-            \includegraphics[width = 0.8\textwidth]{pictures/defekte.png}
-            \caption{Es können Messartifakte auftreten, wenn die Spitze nicht in der Lage ist steile An- oder Abstiege im Höhenprofil zu erkennen oder Defekte an der Messspitze vorhanden sind. Bearbeitet aus \cite{tu_dortmund_versuchsanleitung_nodate}}
+            \includegraphics[width = 1\textwidth]{pictures/defekte.png}
+            \caption{Es können Messartefakte auftreten, wenn die Spitze nicht in der Lage ist steile An- oder Abstiege im Höhenprofil zu erkennen oder Defekte an der Messspitze vorhanden sind. Bearbeitet aus \cite{tu_dortmund_versuchsanleitung_nodate}}
             \label{fig:defekte}
           \end{figure}
         
@@ -173,7 +176,7 @@
         \subsubsection*{Cantilever}
           Der Cantilever nimmt die auf die Messspitze wirkende Kraft auf, indem er sich verbiegt. Um diese Verbiegung zu Kraftmessung gut detektieren zu können, muss auch der Cantilever bestimmte Eigenschaften
           besitzen. Diese sind besonders an verschiedene Messmodi gekoppelt. Da der Cantilever sehr geringe Kräfte im Bereich von $10^{-9} \si{\newton}$ detektierbar machen muss, soll er sich bereits bei diesen
-          Kräften genügend auslenken. Hier werden Federkonstanten von ca. $10 \si{\newton\per\metre}$, die detektierbare Auslenkungen im Angström Bereich erlauben. Zusätzlich soll der Cantilever eine  
+          Kräften genügend auslenken. Hier werden Federkonstanten von ca. $10 \si{\newton\per\metre}$, die detektierbare Auslenkungen im \AA ngström Bereich erlauben. Zusätzlich soll der Cantilever eine  
           Resonanzfrequenz >> $10 \si{\kilo\hertz}$ besitzen, um in dynamischen Messungen, bei denen sich der Cantilever bewegt, die Messgeschwindigkeit zu erhöhen. Aufgrund der geringen Federkonstante folgt
           aus der Anforderung an die Resonanzfrequenz
 
@@ -199,11 +202,12 @@
       \newpage
       \subsection{Detektionssysteme}
           Zur Bestimmung der wirkenden Kraft muss in statischen Messung die Auslenkung des Cantilevers und in dynamischen Messungen dessen Schwingungsamplitude gemessen werden. Dafür kann auf elektrische
-          oder optische Detektionsmechanismen zurückgegriffen werden. 
+          oder optische Detektionsmechanismen zurückgegriffen werden, die in Form des Lichtzeigerprinzips (\textit{Beam deflection}), der Interferometriemessung (\textit{Interferometry}) und des Piezowiderstands (\textit{Piezoresistance}) schematisch in Abbildung \ref{fig:detektion} skizziert sind. 
+
           Zu den elektrischen Detektionsmechanismen gehören die Kondensatormethode, die Elektronentunnelmethode sowie Piezoelektrische Methoden. Bei der Kondensatormethode bilden der Cantilever und eine
           Elektrode einen Kondensator, dessen abstandsabhängige Kapazität gemessen wird. Während diese Methode sehr stabil und einfach zu betreiben ist, stellt die elektronstatische Anziehung des Cantilevers
-          an die Elektrode ein Problem dar. Bei der atomar auflösenden Elektronentunnelmethode wird der Tunnelstrom zwischen einer Spitze eines Elektronentunnelmikroskops (STM) und dem Cantilever gemessen. 
-          Der Betrieb im Vakuum ist jedoch umständlich und die Wechselwirkung der STM Spitze mit dem Cantilever beeinflusst die genaue Distanzmessung. Bei den piezoelektrischen Methoden induziert die Verbiegung
+          an die Elektrode ein Problem dar. Bei der atomar auflösenden Elektronentunnelmethode zur Detektion wird der Tunnelstrom zwischen einer Spitze und dem Cantilever gemessen. 
+          Der Betrieb im Vakuum ist jedoch umständlich und die Wechselwirkung der Spitze mit dem Cantilever beeinflusst die genaue Distanzmessung. Bei den piezoelektrischen Methoden induziert die Verbiegung
           des Cantilevers eine Spannung in piezoelektrischen Kristallen, die direkt oder über eine Widerstandsänderung gemessen werden und so zur Distanzberechnung genutzt werden kann. 
           Besonders sensitive Messungen lassen sich mit einer optischen Interferometriemessung durchführen, bei der durch Auslenkung des Cantilevers die optische Weglänge des Lichts geändert und aus dem so
           veränderten Interfernzeffekten eben diese Auslenkung berechnet wird.
@@ -211,15 +215,15 @@
           Ein weitere, technisch deutlich einfacher umsetzbare Technik beruht auf dem Lichtzeigerprinzip. Hier wird ein Laserstrahl auf den Cantilever geschossen und von diesem auf eine Viersegmentdiode 
           reflektiert. Diese besteht aus vier einzelnen Dioden und kann aus dem Intensitätsverhältnis der einzelnen Dioden die Position des Laserstrahls relativ zum Zentrum der Photdiode bestimmen. Aufgrund
           des Einsatzes von vier Photdioden lässt sich so neben der vertikalen auch die laterale Auslenkung bestimmen. Die mit dieser Methode minimal messbare vertikale Auslenkung ist unter anderem proportional
-          zur Wellenlänge des Lasers und der Spotgröße des Laserstrahl auf dem Cantilevers, da beides den störenden Einfluss der Interferenz senkt. Durch Optimierung dieser Parameter lassen sich mit dem
-          Lichtzeigerprinzip vertikale Auslenkung ab einem Bereich um circa $1 \si{\micro\metre}$ messen.
+          zur Wellenlänge des Lasers und der Spotgröße des Laserstrahl auf dem Cantilevers, da beide den störenden Einfluss der Interferenz beeinflussen. Durch Optimierung dieser Parameter lassen sich mit dem
+          Lichtzeigerprinzip vertikale Auslenkung ab einem Bereich um circa $1 \si{\pico\metre}$ messen \cite{voigtlander_scanning_2015}.
 
 
           \FloatBarrier
 
           \begin{figure}[h]
             \centering
-            \includegraphics[width = 0.4\textwidth]{pictures/detektion.png}
+            \includegraphics[width = 0.8\textwidth]{pictures/detektion.png}
             \caption{Schematische Darstellung der Auslenkungsdetektion (v.l.) über das Lichtzeigerprinzip, die Interferometriemessung und der piezoelektrischen Messung. Entnommen aus \cite{park_systems_force-distance_nodate}}
             \label{fig:detektion}
           \end{figure}

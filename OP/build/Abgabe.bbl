@@ -1,0 +1,263 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{ashkin}{article}{}
+      \name{author}{1}{}{%
+        {{hash=bfe1950f56183c7443a0ff66a3482a6c}{%
+           family={Ashkin},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{bfe1950f56183c7443a0ff66a3482a6c}
+      \strng{fullhash}{bfe1950f56183c7443a0ff66a3482a6c}
+      \strng{bibnamehash}{bfe1950f56183c7443a0ff66a3482a6c}
+      \strng{authorbibnamehash}{bfe1950f56183c7443a0ff66a3482a6c}
+      \strng{authornamehash}{bfe1950f56183c7443a0ff66a3482a6c}
+      \strng{authorfullhash}{bfe1950f56183c7443a0ff66a3482a6c}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{number}{156}
+      \field{title}{Acceleration and trapping of particles by radiation pressure}
+      \field{volume}{24}
+      \field{year}{1970}
+      \field{dateera}{ce}
+    \endentry
+    \entry{tu_dortmund_versuchsanleitung_OptischePinzette}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{%
+           family={Dortmund},
+           familyi={D\bibinitperiod},
+           given={{TU}},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{fullhash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{bibnamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authorbibnamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authornamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authorfullhash}{2821a70f99517ac7757c95300d43e95c}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{FP2-Versuch: Optische Pinzette}
+      \field{year}{2022}
+      \field{dateera}{ce}
+    \endentry
+    \entry{neumann}{article}{}
+      \name{author}{1}{}{%
+        {{hash=754fc9afb95905f8c4c38ef66c6d9355}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           given={K.\bibnamedelimi C.\bibnamedelimi Neuman},
+           giveni={K\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim N\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{754fc9afb95905f8c4c38ef66c6d9355}
+      \strng{fullhash}{754fc9afb95905f8c4c38ef66c6d9355}
+      \strng{bibnamehash}{754fc9afb95905f8c4c38ef66c6d9355}
+      \strng{authorbibnamehash}{754fc9afb95905f8c4c38ef66c6d9355}
+      \strng{authornamehash}{754fc9afb95905f8c4c38ef66c6d9355}
+      \strng{authorfullhash}{754fc9afb95905f8c4c38ef66c6d9355}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Rev. Sci. Instrum.}
+      \field{number}{2787}
+      \field{title}{Optical trapping}
+      \field{volume}{75}
+      \field{year}{2004}
+      \field{dateera}{ce}
+    \endentry
+    \entry{yasuda_direct_2017}{article}{}
+      \name{author}{4}{}{%
+        {{hash=a6f9cc62ddb61ae4200ebc97fce74872}{%
+           family={Yasuda},
+           familyi={Y\bibinitperiod},
+           given={Masaaki},
+           giveni={M\bibinitperiod}}}%
+        {{hash=61064ae6559f20a0d98a33d5e61ba810}{%
+           family={Takei},
+           familyi={T\bibinitperiod},
+           given={Kuniharu},
+           giveni={K\bibinitperiod}}}%
+        {{hash=63a2a0e436e5457dab951d7f23b6145d}{%
+           family={Arie},
+           familyi={A\bibinitperiod},
+           given={Takayuki},
+           giveni={T\bibinitperiod}}}%
+        {{hash=3196ce9e007b54bfd2adc137c9a0121c}{%
+           family={Akita},
+           familyi={A\bibinitperiod},
+           given={Seiji},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{54e24cd09e3506cb22d81558e8e0fc18}
+      \strng{fullhash}{9c80a62b5d7a93a2a252f8d359d2ac8a}
+      \strng{bibnamehash}{54e24cd09e3506cb22d81558e8e0fc18}
+      \strng{authorbibnamehash}{54e24cd09e3506cb22d81558e8e0fc18}
+      \strng{authornamehash}{54e24cd09e3506cb22d81558e8e0fc18}
+      \strng{authorfullhash}{9c80a62b5d7a93a2a252f8d359d2ac8a}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2045-2322}
+      \field{journaltitle}{Scientific Reports}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{1}
+      \field{shortjournal}{Sci Rep}
+      \field{title}{Direct measurement of optical trapping force gradient on polystyrene microspheres using a carbon nanotube mechanical resonator}
+      \field{urlday}{1}
+      \field{urlmonth}{9}
+      \field{urlyear}{2022}
+      \field{volume}{7}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2825}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41598-017-03068-2
+      \endverb
+      \verb{file}
+      \verb Volltext:/home/lasse/Zotero/storage/SABX8LBI/Yasuda et al. - 2017 - Direct measurement of optical trapping force gradi.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.nature.com/articles/s41598-017-03068-2
+      \endverb
+      \verb{url}
+      \verb http://www.nature.com/articles/s41598-017-03068-2
+      \endverb
+    \endentry
+    \entry{national_institute_of_standars_and_technology_nist_nodate}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=92bd96d840a5ca7c6d599c73aa305440}{%
+           family={Standars\bibnamedelimb \{and\}\bibnamedelima Technology},
+           familyi={S\bibinitperiod\bibinitdelim \~T\bibinitperiod},
+           given={National\bibnamedelima Institute},
+           giveni={N\bibinitperiod\bibinitdelim I\bibinitperiod},
+           prefix={of},
+           prefixi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{92bd96d840a5ca7c6d599c73aa305440}
+      \strng{fullhash}{92bd96d840a5ca7c6d599c73aa305440}
+      \strng{bibnamehash}{92bd96d840a5ca7c6d599c73aa305440}
+      \strng{authorbibnamehash}{92bd96d840a5ca7c6d599c73aa305440}
+      \strng{authornamehash}{92bd96d840a5ca7c6d599c73aa305440}
+      \strng{authorfullhash}{92bd96d840a5ca7c6d599c73aa305440}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The {NIST} Reference on Constants, Units and Uncertainty}
+      \field{urlday}{21}
+      \field{urlmonth}{7}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://physics.nist.gov/cuu/Constants/
+      \endverb
+      \verb{url}
+      \verb https://physics.nist.gov/cuu/Constants/
+      \endverb
+    \endentry
+    \entry{hosokawa_convection_2020}{article}{}
+      \name{author}{6}{}{%
+        {{hash=3de7d87a3d930adf6833b10b603ec806}{%
+           family={Hosokawa},
+           familyi={H\bibinitperiod},
+           given={Chie},
+           giveni={C\bibinitperiod}}}%
+        {{hash=99f60b6f37039d5035d95321b97fc1e3}{%
+           family={Tsuji},
+           familyi={T\bibinitperiod},
+           given={Tetsuro},
+           giveni={T\bibinitperiod}}}%
+        {{hash=646a733b25bdbc8598b12e8aab9bf8d3}{%
+           family={Kishimoto},
+           familyi={K\bibinitperiod},
+           given={Tatsunori},
+           giveni={T\bibinitperiod}}}%
+        {{hash=1c39ae8103dbc8bfcb225d62cdfdb7db}{%
+           family={Okubo},
+           familyi={O\bibinitperiod},
+           given={Takumi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=fea80efd8b64f7f42ed353640183bb4e}{%
+           family={Kudoh},
+           familyi={K\bibinitperiod},
+           given={Suguru\bibnamedelima N.},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=31733bcda3e9d97f6cfd64ae9a4f88dc}{%
+           family={Kawano},
+           familyi={K\bibinitperiod},
+           given={Satoyuki},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{95c88e0cf43f89c282f9ef4a95bf85b5}
+      \strng{fullhash}{4896996a8f264df7efdd79ad9f980dd1}
+      \strng{bibnamehash}{95c88e0cf43f89c282f9ef4a95bf85b5}
+      \strng{authorbibnamehash}{95c88e0cf43f89c282f9ef4a95bf85b5}
+      \strng{authornamehash}{95c88e0cf43f89c282f9ef4a95bf85b5}
+      \strng{authorfullhash}{4896996a8f264df7efdd79ad9f980dd1}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{16}
+      \field{issn}{1932-7447, 1932-7455}
+      \field{journaltitle}{The Journal of Physical Chemistry C}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{15}
+      \field{shortjournal}{J. Phys. Chem. C}
+      \field{title}{Convection Dynamics Forced by Optical Trapping with a Focused Laser Beam}
+      \field{urlday}{1}
+      \field{urlmonth}{9}
+      \field{urlyear}{2022}
+      \field{volume}{124}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{8323\bibrangedash 8333}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1021/acs.jpcc.9b11663
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.acs.org/doi/10.1021/acs.jpcc.9b11663
+      \endverb
+      \verb{url}
+      \verb https://pubs.acs.org/doi/10.1021/acs.jpcc.9b11663
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
