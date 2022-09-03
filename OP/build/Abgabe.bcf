@@ -2132,6 +2132,7 @@
     <bcf:citekey order="1">ashkin</bcf:citekey>
     <bcf:citekey order="2">tu_dortmund_versuchsanleitung_OptischePinzette</bcf:citekey>
     <bcf:citekey order="3">tu_dortmund_versuchsanleitung_OptischePinzette</bcf:citekey>
+<<<<<<< HEAD
     <bcf:citekey order="4">neumann</bcf:citekey>
     <bcf:citekey order="5">tu_dortmund_versuchsanleitung_OptischePinzette</bcf:citekey>
     <bcf:citekey order="6">tu_dortmund_versuchsanleitung_OptischePinzette</bcf:citekey>
@@ -2158,3 +2159,10 @@
                 labelalphanametemplatename="global">
   </bcf:datalist>
 </bcf:controlfile>
+||||||| merged common ancestors
+    <bcf:citekey order="4">tu_dortmund_versuchsanleitung_OptischePinzette</bcf:citekey>
+=======
+    <bcf:citekey order="4">neumann</bcf:citekey>
+    <bcf:citekey order="5">tu_dortmund_versuchsanleitung_OptischePinzette</bcf:citekey>
+    <bcf:citekey order="6">tu_dortmund_versuchsanleitung_OptischePinzette</bcf:citekey>
+>>>>>>> 0d564c5f3733e09f1b9fdedee4cbc601ee9e8314

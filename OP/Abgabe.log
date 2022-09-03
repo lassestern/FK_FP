@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.23)  2 SEP 2022 10:04
+||||||| merged common ancestors
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.10.23)  31 JUL 2022 18:50
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.10.23)  25 AUG 2022 17:41
+>>>>>>> 0d564c5f3733e09f1b9fdedee4cbc601ee9e8314
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
