@@ -106,6 +106,12 @@
           eine Kräftefreiheit A), bis zu einem plötzlichem negativem Kraftgradienten B), der einer Anziehung zur Probe entspricht und aufgrund des snap-to-contacts auftritt. Dabei wirken die attraktive Van-der-Waals-Kraft und für eine Messung außerhalb des Vakuums Kapillarkräfte. Da mit dem snap-to-contact die Messspitze auf 
           der Oberfläche aufliegt, steigt die Kraft bei weiterer Annäherung aufgrund der repulsiven Pauli-Kraft linear C) bis zu einem Maximum, bei dem das Annähern gestoppt wird. Wenn das Messsystem entfernt wird, sinkt die Kraft analog zu ihrem 
           vorherigen Anstieg D), bis die wirkende Kraft bei dem selben Abstand wieder ihr Vorzeichen wechselt. In Abhängigkeit von der Stärke der attraktiven Adhesionskräfte verbleibt die Spitze nun länger in Kontakt E) und es treten stärker anziehende Kräfte als beim snap-to-contact auf. 
+          Die Adhäsionskraft $F_A$ ist also die Kraft, die überwunden werden muss, um den Kontakt zwischen Spitze und Probe aufzulösen. Diese kann aus der Abstandsdifferenz $\Delta_{SP}$ zwischen Snap-In und Pull-Off berechnet werden. Es gilt
+          \begin{equation}
+              F_A = k\cdot\Delta_{SP} \, .
+              \label{eqn:Addi}
+          \end{equation}
+  
           
           \FloatBarrier
 
@@ -122,7 +128,12 @@
           bei gleicher Kraft von der Oberfläche, wie bei einer weichen Probe, erreicht diese aber bereits bei geringerem Abstand. Mit einer höheren Federkonstante des Cantilevers kann der Scanbereich der
           Kraft-Distanz-Kurve auf Kosten der Kraftauflösung erweitert werden, da der Cantilever größere Kräfte aushält, bevor er inelastisch verformt wird.
 
-
+          Der Elastizitätsmodul $E$ einer Probe kann über folgende Gleichung \cite{Elastic} beschrieben werden:
+          \begin{equation}
+              F_K = \frac{E}{1-\nu^2}\,\frac{2\,\tan(\alpha)}{\pi}\,\delta^2 \qquad
+              \label{eqn:FFF}
+          \end{equation}
+          Diese beschreibt die Kraft $F_K$, welche durch eine kegelförmige Spitze mit Öffnungswinkel $2\alpha$ auf eine Probe mit dem \textit{Young Elastizitätsmodul} $E$ wirkt. $\nu$ ist dabei die materialabhängige \textit{Poisson-Zahl} und $\delta$ beschreibt die Eindringtiefe der Spitze in die Probe. 
 
 
 

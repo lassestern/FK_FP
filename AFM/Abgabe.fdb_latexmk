@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1658595949 "/Users/michaelgutnikov/Documents/FK_FP/AFM/Abgabe.tex" "Abgabe.pdf" "Abgabe" 1658595949
+["pdflatex"] 1662219229 "/Users/michaelgutnikov/Documents/FK_FP/AFM/Abgabe.tex" "Abgabe.pdf" "Abgabe" 1662219229
   "/Users/michaelgutnikov/Documents/FK_FP/AFM/Abgabe.tex" 1658437689 593 604952c157e598912ff027a020c445d4 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
@@ -32,9 +32,9 @@
   "/usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf" 1621028613 40042 fe981136cbb5f3715ab1b0e46e3d3892 ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1635026324 2805612 fac580d5d9839924806a8ffd0ff83ced ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "Abgabe.aux" 1658595949 32 3985256e7290058c681f74d7a3565a19 ""
+  "Abgabe.aux" 1662219229 32 3985256e7290058c681f74d7a3565a19 ""
   "Abgabe.tex" 1658437689 593 604952c157e598912ff027a020c445d4 ""
   "inputs/header.tex" 1658006380 2667 5409e0c4e57f9c0c425df9b4e4b00200 ""
   (generated)
-  "Abgabe.log"
   "Abgabe.pdf"
+  "Abgabe.log"

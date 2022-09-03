@@ -138,6 +138,18 @@
       \verb https://www.parksystems.com/jp/index.php/park-spm-modes/force-measurement/244-force-distance-spectroscopy#
       \endverb
     \endentry
+    \entry{Elastic}{misc}{}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labeltitlesource}{title}
+      \field{title}{Determining the elastic modulus of biological samples using atomic force microscopy, JPK instruments}
+      \verb{urlraw}
+      \verb https://www.jpk.com/app-technotes-img/AFM/pdf/jpk-app-elastic-modulus.14-1.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.jpk.com/app-technotes-img/AFM/pdf/jpk-app-elastic-modulus.14-1.pdf
+      \endverb
+    \endentry
     \entry{tu_dortmund_versuchsanleitung_nodate}{misc}{}
       \name{author}{1}{}{%
         {{hash=f75df706eccca2d56ed63592858b16fb}{%
@@ -198,11 +210,11 @@
       \verb https://doi.org/10.1017/CBO9780511524356
       \endverb
     \endentry
-    \entry{Gwyddion}{misc}{}
+    \entry{Gwyddion}{online}{}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
-      \field{title}{Gwyddion}
+      \field{title}{Gwyddion (Version 2.61)}
       \verb{urlraw}
       \verb http://gwyddion.net/
       \endverb
@@ -210,7 +222,7 @@
       \verb http://gwyddion.net/
       \endverb
     \endentry
-    \entry{RadiusCD}{misc}{}
+    \entry{RadiusCD}{online}{}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
@@ -222,49 +234,23 @@
       \verb https://www.tecchannel.de/a/grundlagen-cd-rom,401389,2
       \endverb
     \endentry
-    \entry{Elastic}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=45eff2d641e798cc28fab4516958fad9}{%
-           family={instruments},
-           familyi={i\bibinitperiod},
-           given={JPK},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{45eff2d641e798cc28fab4516958fad9}
-      \strng{fullhash}{45eff2d641e798cc28fab4516958fad9}
-      \strng{bibnamehash}{45eff2d641e798cc28fab4516958fad9}
-      \strng{authorbibnamehash}{45eff2d641e798cc28fab4516958fad9}
-      \strng{authornamehash}{45eff2d641e798cc28fab4516958fad9}
-      \strng{authorfullhash}{45eff2d641e798cc28fab4516958fad9}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Determining the elastic modulus of biological samples using atomic force microscopy}
-    \endentry
     \entry{DuPont}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=9a74213e51c73aa8a3db9429d9bba472}{%
-           family={DuPont},
-           familyi={D\bibinitperiod}}}%
-      }
-      \strng{namehash}{9a74213e51c73aa8a3db9429d9bba472}
-      \strng{fullhash}{9a74213e51c73aa8a3db9429d9bba472}
-      \strng{bibnamehash}{9a74213e51c73aa8a3db9429d9bba472}
-      \strng{authorbibnamehash}{9a74213e51c73aa8a3db9429d9bba472}
-      \strng{authornamehash}{9a74213e51c73aa8a3db9429d9bba472}
-      \strng{authorfullhash}{9a74213e51c73aa8a3db9429d9bba472}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Teflon/PTFE Properties Handbook}
+      \verb{urlraw}
+      \verb http://www.rjchase.com/ptfe_handbook.pdf
+      \endverb
+      \verb{url}
+      \verb http://www.rjchase.com/ptfe_handbook.pdf
+      \endverb
     \endentry
-    \entry{CD}{misc}{}
+    \entry{CD}{online}{}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
-      \field{title}{COMPACTDISC (CD) - OPTISCHE AUFZEICHNUNGSVERFAHREN}
+      \field{title}{Compactdisc (CD) - Optische Aufzeichnungsverfahren}
       \verb{urlraw}
       \verb https://kompendium.infotip.de/compactdisc-cd.html
       \endverb
@@ -272,11 +258,11 @@
       \verb https://kompendium.infotip.de/compactdisc-cd.html
       \endverb
     \endentry
-    \entry{DVD1}{misc}{}
+    \entry{DVD1}{online}{}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
-      \field{title}{DIGITAL VERSATILE DISC (DVD) - OPTISCHE AUFZEICHNUNGSVERFAHREN}
+      \field{title}{Digital Versatile Disc (DVD) - Optische Aufzeichnungsverfahren}
       \verb{urlraw}
       \verb https://kompendium.infotip.de/digital-versatile-disc-dvd.html
       \endverb
@@ -284,7 +270,7 @@
       \verb https://kompendium.infotip.de/digital-versatile-disc-dvd.html
       \endverb
     \endentry
-    \entry{DVD2}{misc}{}
+    \entry{DVD2}{online}{}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
@@ -296,11 +282,11 @@
       \verb https://www.elektronik-kompendium.de/sites/com/0507171.htm
       \endverb
     \endentry
-    \entry{BluRay}{misc}{}
+    \entry{BluRay}{online}{}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
-      \field{title}{BLU-RAY DISC (BD) - OPTISCHE AUFZEICHNUNGSVERFAHREN}
+      \field{title}{Blu-Ray Disc (BD) - Optische Aufzeichnungsverfahren}
       \verb{urlraw}
       \verb https://kompendium.infotip.de/blu-ray-disc-bd.html
       \endverb
@@ -308,7 +294,7 @@
       \verb https://kompendium.infotip.de/blu-ray-disc-bd.html
       \endverb
     \endentry
-    \entry{Teflon}{misc}{}
+    \entry{Teflon}{online}{}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}

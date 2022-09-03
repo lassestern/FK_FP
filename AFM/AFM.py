@@ -62,10 +62,10 @@ k = 0.2 #in N/m
 F = dm*k*10**9 #in nN
 print('Adhäsionskraft (Edelstahl)')
 print(F)
-plt.plot(x_neu[:803], y[:803],'b' , linewidth=1, label=r'Annäherungskurve (Edelstahl)')
-plt.plot(x_neu[803:], y[803:],'r' , linewidth=1, label=r'Rückzugskurve (Edelstahl)')
+plt.plot(x_neu[:803], y[:803],'b.', markersize=1, label=r'Annäherungskurve (Edelstahl)')
+plt.plot(x_neu[803:], y[803:],'r.', markersize=1, label=r'Rückzugskurve (Edelstahl)')
 plt.xlabel(r'z-Auslenkung (Ursprung beliebig) / $\mu$m')
-plt.ylabel(r'Piezospannung des Cantilevers / V')
+plt.ylabel(r'x-Ablenkung / V')
 # # plt.ylim(0,80)
 plt.legend(loc='best')
 plt.savefig('pictures/Edelstahl.pdf')
@@ -81,14 +81,14 @@ k = 0.2 #in N/m
 F = dm*k*10**9 #in nN
 print('Adhäsionskraft (Teflon)')
 print(F)
-plt.plot(x_neu[:804], y[:804],'b' , linewidth=1, label=r'Annäherungskurve (Teflon)')
-plt.plot(x_neu[804:], y[804:],'r' , linewidth=1, label=r'Rückzugskurve (Teflon)')
+plt.plot(x_neu[:804], y[:804],'b.' , markersize=1, label=r'Annäherungskurve (Teflon)')
+plt.plot(x_neu[804:], y[804:],'r.' , markersize=1, label=r'Rückzugskurve (Teflon)')
 plt.xlabel(r'z-Auslenkung (Ursprung beliebig) / $\mu$m')
-plt.ylabel(r'Piezospannung des Cantilevers / V')
+plt.ylabel(r'x-Ablenkung / V')
 # # plt.ylim(0,80)
 plt.legend(loc='best')
 plt.savefig('pictures/Teflon.pdf')
-# plt.show()
+plt.show()
 plt.clf()
 
 x,y = np.genfromtxt("data/DLC.csv", unpack = "True")
@@ -100,14 +100,14 @@ k = 0.2 #in N/m
 F = dm*k*10**9 #in nN
 print('Adhäsionskraft (DLC)')
 print(F)
-plt.plot(x_neu[:803], y[:803],'b' , linewidth=1, label=r'Annäherungskurve (DLC)')
-plt.plot(x_neu[803:], y[803:],'r' , linewidth=1, label=r'Rückzugskurve (DLC)')
+plt.plot(x_neu[:803], y[:803],'b.' , markersize=1, label=r'Annäherungskurve (DLC)')
+plt.plot(x_neu[803:], y[803:],'r.' , markersize=1, label=r'Rückzugskurve (DLC)')
 plt.xlabel(r'z-Auslenkung (Ursprung beliebig) / $\mu$m')
-plt.ylabel(r'Piezospannung des Cantilevers / V')
+plt.ylabel(r'x-Ablenkung / V')
 # # plt.ylim(0,80)
 plt.legend(loc='best')
 plt.savefig('pictures/DLC.pdf')
-# plt.show()
+plt.show()
 plt.clf()
 
 
@@ -119,14 +119,14 @@ ex_move = ex_neu - ex_neu[632]
 ey_move = ey - ey[632]
 tx_move = tx_neu - tx_neu[438]
 ty_move = ty - ty[438]
-plt.plot(ex_move[632:803], ey_move[632:803],'b' , linewidth=1, label=r'Annäherungskurve (Edelstahl)')
-plt.plot(tx_move[438:804], ty_move[438:804],'r' , linewidth=1, label=r'Annäherungskurve (Teflon)')
+plt.plot(ex_move[632:803], ey_move[632:803],'b.' , markersize=1, label=r'Annäherungskurve (Edelstahl)')
+plt.plot(tx_move[438:804], ty_move[438:804],'r.' , markersize=1, label=r'Annäherungskurve (Teflon)')
 plt.xlabel(r'z-Auslenkung (Ursprung beliebig) / $\mu$m')
-plt.ylabel(r'Piezospannung des Cantilevers / V')
+plt.ylabel(r'x-Ablenkung / V')
 # # plt.ylim(0,80)
 plt.legend(loc='best')
 plt.savefig('pictures/Ursprung.pdf')
-# plt.show()
+plt.show()
 plt.clf()
 
 

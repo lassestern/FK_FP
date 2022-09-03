@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.10.23)  22 JUL 2022 01:09
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.10.23)  3 SEP 2022 17:33
  restricted system commands enabled.
 **Abgabe.tex
 (./Abgabe.tex
@@ -1696,70 +1696,67 @@ Underfull \hbox (badness 1221) in paragraph at lines 78--78
 <pictures/forcedist.png, id=117, 691.58376pt x 452.69125pt>
 File: pictures/forcedist.png Graphic file (type png)
 <use pictures/forcedist.png>
-Package luatex.def Info: pictures/forcedist.png  used on input line 114.
+Package luatex.def Info: pictures/forcedist.png  used on input line 120.
 (luatex.def)             Requested size: 167.29967pt x 109.50464pt.
-<pictures/force_hard_soft.png, id=121, 809.0225pt x 301.125pt>
+ [7<./pictures/forcedist.png>]
+<pictures/force_hard_soft.png, id=132, 809.0225pt x 301.125pt>
 File: pictures/force_hard_soft.png Graphic file (type png)
 <use pictures/force_hard_soft.png>
-Package luatex.def Info: pictures/force_hard_soft.png  used on input line 131.
+Package luatex.def Info: pictures/force_hard_soft.png  used on input line 142.
 (luatex.def)             Requested size: 167.29967pt x 62.2686pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7<./pictures/forcedist.png>]
-<pictures/defekte.png, id=136, 1067.99pt x 243.91125pt>
+ [8<./pictures/force_hard_soft.png>]
+<pictures/defekte.png, id=146, 1067.99pt x 243.91125pt>
 File: pictures/defekte.png Graphic file (type png)
 <use pictures/defekte.png>
-Package luatex.def Info: pictures/defekte.png  used on input line 164.
+Package luatex.def Info: pictures/defekte.png  used on input line 175.
 (luatex.def)             Requested size: 334.60571pt x 76.41933pt.
- [8<./pictures/force_hard_soft.png><./pictures/defekte.png>]
-<pictures/Cantilever_Spitze.png, id=149, 473.77pt x 327.2225pt>
+ [9<./pictures/defekte.png>]
+<pictures/Cantilever_Spitze.png, id=158, 473.77pt x 327.2225pt>
 File: pictures/Cantilever_Spitze.png Graphic file (type png)
 <use pictures/Cantilever_Spitze.png>
-Package luatex.def Info: pictures/Cantilever_Spitze.png  used on input line 189
+Package luatex.def Info: pictures/Cantilever_Spitze.png  used on input line 200
 .
 (luatex.def)             Requested size: 250.95587pt x 173.32722pt.
- [9<./pictures/Cantilever_Spitze.png>]
-<pictures/detektion.png, id=161, 1189.44376pt x 289.08pt>
+ [10<./pictures/Cantilever_Spitze.png>]
+<pictures/detektion.png, id=171, 1189.44376pt x 289.08pt>
 File: pictures/detektion.png Graphic file (type png)
 <use pictures/detektion.png>
-Package luatex.def Info: pictures/detektion.png  used on input line 222.
+Package luatex.def Info: pictures/detektion.png  used on input line 233.
 (luatex.def)             Requested size: 167.29967pt x 40.65617pt.
- [10<./pictures/detektion.png>]
-<pictures/const_height_force.png, id=173, 792.9625pt x 770.88pt>
+ [11<./pictures/detektion.png>]
+<pictures/const_height_force.png, id=183, 792.9625pt x 770.88pt>
 File: pictures/const_height_force.png Graphic file (type png)
 <use pictures/const_height_force.png>
-Package luatex.def Info: pictures/const_height_force.png  used on input line 24
-7.
+Package luatex.def Info: pictures/const_height_force.png  used on input line 25
+8.
 (luatex.def)             Requested size: 167.29967pt x 162.63062pt.
-[11<./pictures/const_height_force.png>] [12]
-<pictures/hysterese.png, id=189, 912.40875pt x 643.40375pt>
+ [12<./pictures/const_height_force.png>]
+[13]
+<pictures/hysterese.png, id=198, 912.40875pt x 643.40375pt>
 File: pictures/hysterese.png Graphic file (type png)
 <use pictures/hysterese.png>
-Package luatex.def Info: pictures/hysterese.png  used on input line 287.
+Package luatex.def Info: pictures/hysterese.png  used on input line 298.
 (luatex.def)             Requested size: 250.95587pt x 176.96112pt.
- [13<./pictures/hysterese.png>])
-(./chapters/Durchfuehrung.tex [14]
-<pictures/Aufbau.png, id=204, 1052.93375pt x 673.51625pt>
+ [14<./pictures/hysterese.png>]) (./chapters/Durchfuehrung.tex [15]
+<pictures/Aufbau.png, id=213, 1052.93375pt x 673.51625pt>
 File: pictures/Aufbau.png Graphic file (type png)
 <use pictures/Aufbau.png>
 Package luatex.def Info: pictures/Aufbau.png  used on input line 14.
 (luatex.def)             Requested size: 250.95587pt x 160.52701pt.
- [15<./pictures/Aufbau.png>]
-<pictures/Mikrostruktur.png, id=215, 946.53625pt x 490.83376pt>
+
+[16<./pictures/Aufbau.png>]
+<pictures/Mikrostruktur.png, id=224, 946.53625pt x 490.83376pt>
 File: pictures/Mikrostruktur.png Graphic file (type png)
 <use pictures/Mikrostruktur.png>
 Package luatex.def Info: pictures/Mikrostruktur.png  used on input line 29.
 (luatex.def)             Requested size: 250.95587pt x 130.13023pt.
-)
-(./chapters/Auswertung.tex [16<./pictures/Mikrostruktur.png>] [17]
-<pictures/OhneStrain.png, id=232, 657.45625pt x 532.99126pt>
+) (./chapters/Auswertung.tex [17<./pictures/Mikrostruktur.png>] [18]
+<pictures/OhneStrain.png, id=241, 657.45625pt x 532.99126pt>
 File: pictures/OhneStrain.png Graphic file (type png)
 <use pictures/OhneStrain.png>
 Package luatex.def Info: pictures/OhneStrain.png  used on input line 9.
 (luatex.def)             Requested size: 167.29967pt x 135.62225pt.
-<pictures/Raw.png, id=233, 657.45625pt x 532.99126pt>
+<pictures/Raw.png, id=242, 657.45625pt x 532.99126pt>
 File: pictures/Raw.png Graphic file (type png)
 <use pictures/Raw.png>
 Package luatex.def Info: pictures/Raw.png  used on input line 10.
@@ -1768,7 +1765,7 @@ File: pictures/Raw.png Graphic file (type png)
 <use pictures/Raw.png>
 Package luatex.def Info: pictures/Raw.png  used on input line 18.
 (luatex.def)             Requested size: 167.29967pt x 135.62225pt.
-<pictures/Kreis.png, id=236, 652.4375pt x 536.0025pt>
+<pictures/Kreis.png, id=245, 652.4375pt x 536.0025pt>
 File: pictures/Kreis.png Graphic file (type png)
 <use pictures/Kreis.png>
 Package luatex.def Info: pictures/Kreis.png  used on input line 19.
@@ -1777,129 +1774,128 @@ File: pictures/Kreis.png Graphic file (type png)
 <use pictures/Kreis.png>
 Package luatex.def Info: pictures/Kreis.png  used on input line 26.
 (luatex.def)             Requested size: 167.29967pt x 137.44354pt.
-<pictures/Kreis3D.png, id=238, 420.82219pt x 351.56343pt>
+<pictures/Kreis3D.png, id=247, 420.82219pt x 351.56343pt>
 File: pictures/Kreis3D.png Graphic file (type png)
 <use pictures/Kreis3D.png>
 Package luatex.def Info: pictures/Kreis3D.png  used on input line 27.
 (luatex.def)             Requested size: 188.21371pt x 157.23648pt.
-<pictures/Quadrat.png, id=239, 652.4375pt x 536.0025pt>
+<pictures/Quadrat.png, id=248, 652.4375pt x 536.0025pt>
 File: pictures/Quadrat.png Graphic file (type png)
 <use pictures/Quadrat.png>
 Package luatex.def Info: pictures/Quadrat.png  used on input line 28.
 (luatex.def)             Requested size: 167.29967pt x 137.44354pt.
-<pictures/Quadrat3D.png, id=240, 420.82219pt x 355.3275pt>
+<pictures/Quadrat3D.png, id=249, 420.82219pt x 355.3275pt>
 File: pictures/Quadrat3D.png Graphic file (type png)
 <use pictures/Quadrat3D.png>
 Package luatex.def Info: pictures/Quadrat3D.png  used on input line 29.
 (luatex.def)             Requested size: 188.21371pt x 158.91995pt.
-<pictures/Linie.png, id=241, 652.4375pt x 536.0025pt>
+<pictures/Linie.png, id=250, 652.4375pt x 536.0025pt>
 File: pictures/Linie.png Graphic file (type png)
 <use pictures/Linie.png>
 Package luatex.def Info: pictures/Linie.png  used on input line 30.
 (luatex.def)             Requested size: 167.29967pt x 137.44354pt.
-<pictures/Linie3D.png, id=242, 423.08063pt x 358.33875pt>
+<pictures/Linie3D.png, id=251, 423.08063pt x 358.33875pt>
 File: pictures/Linie3D.png Graphic file (type png)
 <use pictures/Linie3D.png>
 Package luatex.def Info: pictures/Linie3D.png  used on input line 31.
 (luatex.def)             Requested size: 188.21371pt x 159.4083pt.
-<pictures/Linienprofil.png, id=244, 410.2828pt x 244.66406pt>
+<pictures/Linienprofil.png, id=253, 410.2828pt x 244.66406pt>
 File: pictures/Linienprofil.png Graphic file (type png)
 <use pictures/Linienprofil.png>
 Package luatex.def Info: pictures/Linienprofil.png  used on input line 38.
 (luatex.def)             Requested size: 250.95587pt x 149.65178pt.
- [18<./pictures/OhneStrain.png><./pictures/Raw.png>]
+ [19<./pictures/OhneStrain.png><./pictures/Raw.png>]
 Overfull \hbox (25.45564pt too wide) in paragraph at lines 46--57
  [] 
  []
 
-[19<./pictures/Kreis.png>] [20<./pictures/Kreis3D.png><./pictures/Quadrat.png><.
+[20<./pictures/Kreis.png>] [21<./pictures/Kreis3D.png><./pictures/Quadrat.png><.
 /pictures/Quadrat3D.png><./pictures/Linie.png><./pictures/Linie3D.png>]
-<pictures/CD.png, id=274, 652.4375pt x 536.0025pt>
+<pictures/CD.png, id=285, 652.4375pt x 536.0025pt>
 File: pictures/CD.png Graphic file (type png)
 <use pictures/CD.png>
 Package luatex.def Info: pictures/CD.png  used on input line 63.
 (luatex.def)             Requested size: 167.29967pt x 137.44354pt.
-<pictures/CD3D.png, id=275, 421.575pt x 356.83313pt>
+<pictures/CD3D.png, id=286, 421.575pt x 356.83313pt>
 File: pictures/CD3D.png Graphic file (type png)
 <use pictures/CD3D.png>
 Package luatex.def Info: pictures/CD3D.png  used on input line 64.
 (luatex.def)             Requested size: 188.21371pt x 159.31021pt.
-<pictures/DVD.png, id=276, 643.40375pt x 536.0025pt>
+<pictures/DVD.png, id=287, 643.40375pt x 536.0025pt>
 File: pictures/DVD.png Graphic file (type png)
 <use pictures/DVD.png>
 Package luatex.def Info: pictures/DVD.png  used on input line 65.
 (luatex.def)             Requested size: 167.29967pt x 139.37372pt.
-<pictures/DVD3D.png, id=277, 419.31656pt x 355.3275pt>
+<pictures/DVD3D.png, id=288, 419.31656pt x 355.3275pt>
 File: pictures/DVD3D.png Graphic file (type png)
 <use pictures/DVD3D.png>
 Package luatex.def Info: pictures/DVD3D.png  used on input line 66.
 (luatex.def)             Requested size: 188.21371pt x 159.48924pt.
-<pictures/BluRay.png, id=278, 643.40375pt x 536.0025pt>
+<pictures/BluRay.png, id=289, 643.40375pt x 536.0025pt>
 File: pictures/BluRay.png Graphic file (type png)
 <use pictures/BluRay.png>
 Package luatex.def Info: pictures/BluRay.png  used on input line 67.
 (luatex.def)             Requested size: 167.29967pt x 139.37372pt.
-<pictures/BluRay3D.png, id=279, 419.31656pt x 353.82187pt>
+<pictures/BluRay3D.png, id=290, 419.31656pt x 353.82187pt>
 File: pictures/BluRay3D.png Graphic file (type png)
 <use pictures/BluRay3D.png>
 Package luatex.def Info: pictures/BluRay3D.png  used on input line 68.
 (luatex.def)             Requested size: 188.21371pt x 158.81345pt.
 
-[21<./pictures/Linienprofil.png>] [22<./pictures/CD.png><./pictures/CD3D.png><./
+[22<./pictures/Linienprofil.png>] [23<./pictures/CD.png><./pictures/CD3D.png><./
 pictures/DVD.png><./pictures/DVD3D.png><./pictures/BluRay.png><./pictures/BluRay
 3D.png>]
-<pictures/Edelstahl.pdf, id=306, 462.528pt x 346.896pt>
+<pictures/Edelstahl.pdf, id=317, 462.528pt x 346.896pt>
 File: pictures/Edelstahl.pdf Graphic file (type pdf)
 <use pictures/Edelstahl.pdf>
-Package luatex.def Info: pictures/Edelstahl.pdf  used on input line 107.
+Package luatex.def Info: pictures/Edelstahl.pdf  used on input line 108.
 (luatex.def)             Requested size: 250.95587pt x 188.22089pt.
-<pictures/Teflon.pdf, id=307, 462.528pt x 346.896pt>
+<pictures/Teflon.pdf, id=318, 462.528pt x 346.896pt>
 File: pictures/Teflon.pdf Graphic file (type pdf)
 <use pictures/Teflon.pdf>
-Package luatex.def Info: pictures/Teflon.pdf  used on input line 108.
+Package luatex.def Info: pictures/Teflon.pdf  used on input line 109.
 (luatex.def)             Requested size: 250.95587pt x 188.22089pt.
-<pictures/DLC.pdf, id=308, 462.528pt x 346.896pt>
+<pictures/DLC.pdf, id=319, 462.528pt x 346.896pt>
 File: pictures/DLC.pdf Graphic file (type pdf)
 <use pictures/DLC.pdf>
-Package luatex.def Info: pictures/DLC.pdf  used on input line 109.
+Package luatex.def Info: pictures/DLC.pdf  used on input line 110.
 (luatex.def)             Requested size: 250.95587pt x 188.22089pt.
 
 
-LaTeX Warning: Float too large for page by 22.6624pt on input line 112.
+LaTeX Warning: Float too large for page by 22.6624pt on input line 113.
 
-[23] [24<./pictures/Edelstahl.pdf><./pictures/Teflon.pdf><./pictures/DLC.pdf>]
-<pictures/Ursprung.pdf, id=501, 462.528pt x 346.896pt>
+[24] [25<./pictures/Edelstahl.pdf><./pictures/Teflon.pdf><./pictures/DLC.pdf>]
+<pictures/Ursprung.pdf, id=509, 462.528pt x 346.896pt>
 File: pictures/Ursprung.pdf Graphic file (type pdf)
 <use pictures/Ursprung.pdf>
-Package luatex.def Info: pictures/Ursprung.pdf  used on input line 146.
+Package luatex.def Info: pictures/Ursprung.pdf  used on input line 138.
 (luatex.def)             Requested size: 250.95587pt x 188.22089pt.
-
-[25<./pictures/Ursprung.pdf>]) (./chapters/Diskussion.tex [26] [27]) [28]
+) (./chapters/Diskussion.tex [26<./pictures/Ursprung.pdf>] [27]) [28] [29]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-[29] (./build/Abgabe.aux)
+[30] (./build/Abgabe.aux)
 Package rerunfilecheck Info: File `Abgabe.aux' has not changed.
-(rerunfilecheck)             Checksum: A26E625475B1D53FE4CD596E92599609;33988.
+(rerunfilecheck)             Checksum: 20E84AFD85675E4A75F7881D4B6D2702;34037.
 Package rerunfilecheck Info: File `Abgabe.toc' has not changed.
-(rerunfilecheck)             Checksum: 24B47FFF76C094EDC98B800EA40A6AAB;3361.
+(rerunfilecheck)             Checksum: 8CDF017D299C08F3B53DBD23756C5667;3361.
 Package logreq Info: Writing requests to 'Abgabe.run.xml'.
 
 \openout1 = Abgabe.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 36915 strings out of 478092
+ 36916 strings out of 478092
  100000,1977958 words of node,token memory allocated
- 1061 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 penalty, 2 glyph, 194 attribute, 
-81 glue_spec, 29 attribute_list, 1 write nodes
-   avail lists: 1:4,2:3654,3:362,4:139,5:409,6:81,7:6147,8:74,9:385,10:49,11:834
-
+ 1193 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 penalty, 2 glyph, 236 attribute, 
+81 glue_spec, 35 attribute_list, 1 write, 6 pdf_action nodes
+   avail lists: 1:3,2:3606,3:362,4:140,5:401,6:75,7:6144,8:115,9:428,10:49,11:83
+4
  55884 multiletter control sequences out of 65536+600000
- 95 fonts using 35051511 bytes
+ 95 fonts using 35051367 bytes
  113i,11n,117p,10658b,2933s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.ot
 f></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmromancaps10-reg
@@ -1913,10 +1909,10 @@ pe/public/lm/lmroman10-italic.otf></usr/local/texlive/2021/texmf-dist/fonts/open
 type/public/lm/lmroman10-regular.otf></usr/local/texlive/2021/texmf-dist/fonts/o
 pentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2021/texmf-dist/font
 s/opentype/public/lm/lmsans10-bold.otf>
-Output written on Abgabe.pdf (29 pages, 2971063 bytes).
+Output written on Abgabe.pdf (30 pages, 2951563 bytes).
 
-PDF statistics: 778 PDF objects out of 1000 (max. 8388607)
- 458 compressed objects within 5 object streams
- 109 named destinations out of 1000 (max. 131072)
+PDF statistics: 798 PDF objects out of 1000 (max. 8388607)
+ 478 compressed objects within 5 object streams
+ 110 named destinations out of 1000 (max. 131072)
  201 words of extra memory for PDF output out of 10000 (max. 100000000)
 
