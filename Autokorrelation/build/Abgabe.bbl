@@ -45,7 +45,7 @@
       \strng{authornamehash}{626e109164fb2946e65a349465133b74}
       \strng{authorfullhash}{626e109164fb2946e65a349465133b74}
       \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The interaction of radiation and matter, and the principles of laser operation are treated at a level suitable for fourth-year undergraduate courses or introductory graduate courses in physics, chemistry, or engineering. The factors which determine efficiency, wavelength coverage, output power, and beam quality of the different classes of laser are treated both in terms of fundamental theory and practical construction aspects. Details of established types of solid-state, semiconductor, and gas lasers are examined together with the techniques that enable their output to be converted widely across the spectrum. The latest advances in high poser fibre lasers, femtosecond lasers, and X-ray lasers are explained. The test is liberally illustrated with more than 300 diagrams. An extensive bibliography is provided, together with numerical problems in each chapter}
@@ -75,7 +75,7 @@
       \strng{authorfullhash}{79f4d16f07c7433c9141fbbfca975cfa}
       \field{extraname}{1}
       \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Toptica FFS Lasersystem}
@@ -101,7 +101,7 @@
       \strng{authorfullhash}{e529f2ab4ff5cd13bf045b98e1cdcee0}
       \field{extraname}{2}
       \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Kohärente Kontrolle elektrischer Ströme in Galliumarsenid: Si- gnaturen jenseits des störungstheoretischen χ(3)-Limits. Masterarbeit}
